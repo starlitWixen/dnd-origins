@@ -1,0 +1,19 @@
+{
+    "name": "Trunk",
+    "description": "You have a long trunk that grants you extra reach.",
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "name": "Trunk block reach",
+            "attribute": "reach-entity-attributes:reach",
+            "value": 1.5,
+            "operation": "addition"
+        },
+        {
+            "name": "Trunk entity reach",
+            "attribute": "reach-entity-attributes:attack_range",
+            "value": 1.5,
+            "operation": "addition"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Powerful Build",
+    "description": "You are naturally strong.",
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Powerful Build buff",
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "addition",
+        "value": 3
+    }
+}

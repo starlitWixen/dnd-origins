@@ -1,0 +1,56 @@
+{
+    "name": "Integrated Protection",
+    "description": "Your body has built-in defensive layers, which can be enhanced with armor. You have extra defense when you aren't wearing armor, and your armor cannot be removed against your will, even upon death.",
+    "type": "origins:multiple",
+    "armor": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "name": "Integrated Protection armor bonus",
+            "attribute": "minecraft:generic.armor",
+            "operation": "addition",
+            "value": 5
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "head",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "chest",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "legs",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "feet",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                }
+            ]
+        }
+    },
+    "keep_inventory": {
+        "type": "origins:keep_inventory",
+        "slots": [
+            36,
+            37,
+            38,
+            39
+        ]
+    }
+}

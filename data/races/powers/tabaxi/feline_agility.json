@@ -1,0 +1,11 @@
+{
+	"name": "Feline Agility",
+    "description": "Your movement speed is increased.",
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Feline Agility movement speed",
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_base",
+        "value": 0.1
+    }
+}

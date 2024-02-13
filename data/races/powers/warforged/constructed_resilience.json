@@ -1,0 +1,47 @@
+{
+    "name": "Constructed Resilience",
+    "description": "You were created to have remarkable fortitude.  You don't need to eat, drink, sleep, or breathe.",
+    "type": "origins:multiple",
+    "prevent_regen": {
+        "type": "origins:disable_regen"
+    },
+    "prevent_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:feed",
+            "food": 4,
+            "saturation": 0
+        }
+    },
+    "prevent_eat": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:food"
+        }
+    },
+    "no_phantoms": {
+        "type": "origins:modify_insomnia_ticks",
+        "modifier": {
+            "operation": "set_total",
+            "value": 0
+        }
+    },
+    "no_sleep": {
+        "type": "origins:prevent_sleep",
+        "message": "You cannot sleep.",
+        "set_spawn_point": true
+    },
+    "breathe": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:gain_air",
+            "value": 20
+        },
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    }
+}

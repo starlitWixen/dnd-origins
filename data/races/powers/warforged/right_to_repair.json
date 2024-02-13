@@ -1,0 +1,193 @@
+{
+    "name": "Right to Repair",
+    "description": "You can restore your health by consuming raw and refined metals.",
+    "type": "origins:active_self",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Active ability, use with %s while holding raw metals, metal nuggets, or metal ingots."
+        }
+    ],
+    "entity_action": {
+        "type": "origins:if_else_list",
+        "actions": [
+            {
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:iron_nugget"
+                                }
+                            },
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:gold_nugget"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:equipped_item_action",
+                            "equipment_slot": "mainhand",
+                            "action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            }
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.iron_golem.repair"
+                        },
+                        {
+                            "type": "origins:heal",
+                            "amount": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:raw_iron"
+                                }
+                            },
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:raw_gold"
+                                }
+                            },
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:raw_copper"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:equipped_item_action",
+                            "equipment_slot": "mainhand",
+                            "action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            }
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.iron_golem.repair"
+                        },
+                        {
+                            "type": "origins:heal",
+                            "amount": 2
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 3,
+                            "action": {
+                                "type": "origins:heal",
+                                "amount": 2
+                            }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 5,
+                            "action": {
+                                "type": "origins:heal",
+                                "amount": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:iron_ingot"
+                                }
+                            },
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:gold_ingot"
+                                }
+                            },
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:copper_ingot"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:equipped_item_action",
+                            "equipment_slot": "mainhand",
+                            "action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            }
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.iron_golem.repair"
+                        },
+                        {
+                            "type": "origins:heal",
+                            "amount": 2
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 3,
+                            "action": {
+                                "type": "origins:heal",
+                                "amount": 2
+                            }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 5,
+                            "action": {
+                                "type": "origins:heal",
+                                "amount": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

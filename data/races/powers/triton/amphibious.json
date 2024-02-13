@@ -1,0 +1,15 @@
+{
+    "name": "Amphibious",
+    "description": "You can breathe air and water.",
+    "hidden": false,
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:gain_air",
+        "value": 20
+    }
+}

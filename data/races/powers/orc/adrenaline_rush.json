@@ -1,0 +1,19 @@
+{
+	"name": "Adrenaline Rush",
+	"description": "You can charge forward with a rush of adrenaline.",
+	"type": "origins:active_self",
+  	"entity_action": {
+		"type": "origins:add_velocity",
+		"y": 0.1,
+		"z": 2.0,
+		"space": "local"
+	  },
+	"cooldown": 100,
+	"hud_render": {
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 20
+    },
+	"key": {
+		"key": "key.origins.primary_active"
+  	}
+}
