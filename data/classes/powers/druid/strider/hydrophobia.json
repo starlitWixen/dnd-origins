@@ -1,6 +1,6 @@
 {
     "name": "Hydrophobia",
-    "description": "You receive damage over time while in contact with water",
+    "description": "You receive damage over time while in contact with water.",
     "loading_priority": 10,
     "type": "origins:damage_over_time",
     "interval": 20,
