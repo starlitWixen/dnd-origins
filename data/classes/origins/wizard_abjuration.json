@@ -1,0 +1,13 @@
+{
+	"name": "Abjuration",
+	"description": "You can learn and cast spells from the school of abjuration. You can learn the Blast Protection, Fire Protection, Knockback, Projectile Protection, Protection, Silk Touch, Thorns, and Water Protection spells.",
+	"powers": [
+		"classes:wizard/spellcasting_abjuration",
+		"classes:wizard/abjuration_collection"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}

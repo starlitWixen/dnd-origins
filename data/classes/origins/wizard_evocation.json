@@ -1,0 +1,13 @@
+{
+	"name": "Evocation",
+	"description": "You can learn and cast spells from the school of evocation. You can learn the Channeling, Fire Aspect, Flame, and Frost Walker spells.",
+	"powers": [
+		"classes:wizard/spellcasting_evocation",
+		"classes:wizard/evocation_collection"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 4,
+	"impact": 0
+}

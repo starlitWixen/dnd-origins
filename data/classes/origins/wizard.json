@@ -1,0 +1,14 @@
+{
+	"name": "Wizard",
+	"description": "A scholarly magic-user capable of manipulating the structures of reality.",
+	"powers": [
+		"classes:wizard/hp",
+		"classes:wizard/spellcasting",
+		"origins-classes:better_enchanting"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 11,
+	"impact": 0
+}

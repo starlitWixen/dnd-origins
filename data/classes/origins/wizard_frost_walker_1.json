@@ -1,0 +1,9 @@
+{
+	"name": "Frost Walker I",
+	"description": "You have the Frost Walker I spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 4,
+	"impact": 0
+}

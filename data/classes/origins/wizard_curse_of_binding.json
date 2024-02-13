@@ -1,0 +1,9 @@
+{
+	"name": "Curse of Binding",
+	"description": "You have the Curse of Binding spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

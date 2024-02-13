@@ -1,0 +1,9 @@
+{
+	"name": "Blast Protection III",
+	"description": "You have the Blast Protection III spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

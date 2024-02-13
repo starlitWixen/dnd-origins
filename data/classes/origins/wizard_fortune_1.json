@@ -1,0 +1,9 @@
+{
+	"name": "Fortune I",
+	"description": "You have the Fortune I spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

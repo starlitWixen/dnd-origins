@@ -1,0 +1,13 @@
+{
+	"name": "Divination",
+	"description": "You can learn and cast spells from the school of divination. You can learn the Bane of Arthropods, Impaling, Sharpness, and Smite spells.",
+	"powers": [
+		"classes:wizard/spellcasting_divination",
+		"classes:wizard/divination_collection"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

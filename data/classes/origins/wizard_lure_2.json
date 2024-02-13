@@ -1,0 +1,9 @@
+{
+	"name": "Lure II",
+	"description": "You have the Lure II spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 4,
+	"impact": 0
+}

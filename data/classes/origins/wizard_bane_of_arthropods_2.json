@@ -1,0 +1,9 @@
+{
+	"name": "Bane of Arthropods II",
+	"description": "You have the Bane of Arthropods II spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

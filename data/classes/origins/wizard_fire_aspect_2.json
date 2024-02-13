@@ -1,0 +1,9 @@
+{
+	"name": "Fire Aspect II",
+	"description": "You have the Fire Aspect II spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

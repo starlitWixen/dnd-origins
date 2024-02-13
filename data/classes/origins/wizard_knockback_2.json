@@ -1,0 +1,9 @@
+{
+	"name": "Knockback II",
+	"description": "You have the Knockback II spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

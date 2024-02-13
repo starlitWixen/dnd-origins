@@ -1,0 +1,14 @@
+{
+	"name": "Witch",
+	"description": "A wielder of magic with extensive knowledge of potions and the ingredients used to make them.",
+	"powers": [
+		"classes:witch/hp",
+		"classes:witch/potion_bag",
+		"origins-classes:longer_potions"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 10,
+	"impact": 0
+}

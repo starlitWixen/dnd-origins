@@ -1,0 +1,9 @@
+{
+	"name": "Depth Strider III",
+	"description": "You have the Depth Strider III spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

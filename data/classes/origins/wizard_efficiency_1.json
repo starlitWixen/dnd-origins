@@ -1,0 +1,9 @@
+{
+	"name": "Efficiency I",
+	"description": "You have the Efficiency I spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

@@ -1,0 +1,9 @@
+{
+	"name": "Curse of Vanishing",
+	"description": "You have the Curse of Vanishing spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

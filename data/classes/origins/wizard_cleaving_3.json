@@ -1,0 +1,9 @@
+{
+	"name": "Cleaving III",
+	"description": "You have the Cleaving III spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

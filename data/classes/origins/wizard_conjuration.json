@@ -1,0 +1,13 @@
+{
+	"name": "Conjuration",
+	"description": "You can learn and cast spells from the school of conjuration. You can learn the Fortune, Infinity, Looting, Luck of the Sea, and Multishot spells.",
+	"powers": [
+		"classes:wizard/spellcasting_conjuration",
+		"classes:wizard/conjuration_collection"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

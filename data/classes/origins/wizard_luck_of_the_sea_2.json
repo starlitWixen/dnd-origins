@@ -1,0 +1,9 @@
+{
+	"name": "Luck of the Sea II",
+	"description": "You have the Luck of the Sea II spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 4,
+	"impact": 0
+}

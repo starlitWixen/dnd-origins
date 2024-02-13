@@ -1,0 +1,13 @@
+{
+	"name": "Enchantment",
+	"description": "You can learn and cast spells from the school of enchantment. You can learn the Cleaving, Efficiency, Loyalty, Lure, Piercing, Power, Punch, Quick Charge, and Sweeping Edge spells.",
+	"powers": [
+		"classes:wizard/spellcasting_enchantment",
+		"classes:wizard/enchantment_collection"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

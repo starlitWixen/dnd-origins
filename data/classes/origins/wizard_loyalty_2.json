@@ -1,0 +1,9 @@
+{
+	"name": "Loyalty II",
+	"description": "You have the Loyalty II spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

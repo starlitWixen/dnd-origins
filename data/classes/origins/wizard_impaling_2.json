@@ -1,0 +1,9 @@
+{
+	"name": "Impaling II",
+	"description": "You have the Impaling II spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

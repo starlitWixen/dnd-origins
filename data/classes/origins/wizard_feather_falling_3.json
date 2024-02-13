@@ -1,0 +1,9 @@
+{
+	"name": "Feather Falling III",
+	"description": "You have the Feather Falling III spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}
