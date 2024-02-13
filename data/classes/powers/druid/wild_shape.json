@@ -1,0 +1,12 @@
+{
+    "name": "Wild Shape",
+    "description": "You can take the shape of any animal you have seen before. Right click an animal to register it to your memory.",
+    "type": "origins:active_self",
+    "key": {
+        "key": "key.loadToolbarActivator"
+    },
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "origin gui @s classes:druid"
+    }
+}

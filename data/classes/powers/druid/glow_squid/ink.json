@@ -1,0 +1,27 @@
+{
+    "name": "Glow Ink",
+    "hidden": true,
+    "type": "origins:multiple",
+    "particles": {
+        "type": "origins:particle",
+        "particle": "minecraft:glow",
+        "frequency": 4,
+        "visible_in_first_person": false
+    },
+    "ink": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.glow_squid.squirt"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:glow_squid_ink ~ ~1 ~ .5 .5 .5 0 30 force"
+                }
+            ]
+        }
+    }
+}

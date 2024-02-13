@@ -1,0 +1,9 @@
+{
+    "name": "Strong Legs",
+    "description": "You have a stronger jump.",
+    "type": "origins:modify_jump",
+    "modifier": {
+        "operation": "addition",
+        "value": 0.3
+    }
+}

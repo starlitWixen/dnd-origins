@@ -1,0 +1,27 @@
+{
+	"name": "Leap",
+	"description": "You can launch yourself several blocks upwards.",
+	"hidden": false,
+	"type": "origins:launch",
+  	"cooldown": 100,
+	"speed": 1,
+  	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/resource_bar.png",
+		"bar_index": 5
+	},
+	"sound": "minecraft:entity.goat.long_jump",
+	"condition": {
+		"type": "origins:on_block"
+	},
+	"key": {
+		"key": "key.origins.secondary_active"
+	},
+	"badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Active power, trigger with %s"
+        }
+    ]
+}

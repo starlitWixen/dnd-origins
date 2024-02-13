@@ -1,0 +1,15 @@
+{
+    "name": "Rideable Creature",
+    "description": "Other players can ride you.",
+    "type": "origins:action_on_being_used",
+    "bientity_action": {
+        "type": "origins:mount"
+    },
+    "bientity_condition": {
+        "type": "origins:target_condition",
+        "condition": {
+            "type": "origins:passenger",
+            "inverted": true
+        }
+    }
+}

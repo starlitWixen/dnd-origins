@@ -1,0 +1,49 @@
+{
+    "name": "Play Dead",
+    "description": "You can freeze in place and regenerate health.",
+    "hidden": false,
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "play_dead": {
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "minecraft:slowness",
+                    "duration": 11,
+                    "amplifier": 9,
+                    "show_particles": false
+                },
+                {
+                    "effect": "minecraft:regeneration",
+                    "duration": 20,
+                    "amplifier": 0,
+                    "show_particles": true
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "no_jump": {
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "set_base",
+            "value": 0
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    }
+}

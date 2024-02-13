@@ -1,0 +1,10 @@
+{
+    "name": "Storage",
+    "description": "You have extra storage space available. The contents of this extra storage drop upon death, and upon switching to a Wild Shape beast without this power.",
+    "type": "origins:inventory",
+    "title": "Storage",
+    "drop_on_death": true,
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}

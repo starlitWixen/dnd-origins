@@ -1,0 +1,186 @@
+{
+    "name": "Reset Height",
+    "hidden": true,
+    "type": "origins:action_on_callback",
+    "entity_action_added": {
+        "type": "origins:if_else_list",
+        "actions": [
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:aarakocra",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:2.0"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:dragonborn",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:3.0"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:dwarf",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:1.2"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:elf",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:2.0"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:fairy",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:0.5"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:genasi",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:2.0"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:gnome",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:1.0"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:goblin",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:1.0"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:halfling",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:1.0"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "origins:human",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:2.0"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:loxodon",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:3.0"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:orc",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:2.0"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:tabaxi",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:2.0"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:tiefling",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:2.0"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:triton",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:2.0"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "races:warforged",
+                    "layer": "origins:origin"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:2.0"
+                }
+            }
+        ]
+    }
+}

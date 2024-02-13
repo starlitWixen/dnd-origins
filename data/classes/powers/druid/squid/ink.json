@@ -1,0 +1,18 @@
+{
+    "name": "Ink",
+    "hidden": true,
+    "type": "origins:self_action_when_hit",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.squid.squirt"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:squid_ink ~ ~1 ~ .5 .5 .5 0 30 force"
+            }
+        ]
+    }
+}
