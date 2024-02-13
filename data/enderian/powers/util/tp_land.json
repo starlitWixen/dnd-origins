@@ -1,0 +1,114 @@
+{
+    "type": "origins:multiple",
+    "start": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": true,
+        "entity_action_added": {
+            "type": "origins:delay",
+            "action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_loops",
+                        "change": 10,
+                        "operation": "set"
+                    },
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_run",
+                        "change": 1,
+                        "operation": "set"
+                    },
+                    {
+                        "type": "origins:delay",
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:execute_command",
+                                    "command": "power remove @s enderian:util/tp_land"
+                                }
+                            ]
+                        },
+                        "ticks": 0
+                    }
+                ]
+            },
+            "ticks": 0
+        }
+    },
+    "loops": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 10,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "run": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "max_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_loops",
+                "comparison": ">",
+                "compare_to": 0
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:if_else",
+                        "condition": {
+                            "type": "origins:block_collision",
+                            "offset_x": 0,
+                            "offset_y": 0,
+                            "offset_z": 0
+                        },
+                        "if_action": {
+                            "type": "origins:execute_command",
+                            "command": "tp @s ~ ~0.1 ~"
+                        },
+                        "else_action": {
+                            "type": "origins:change_resource",
+                            "resource": "*:*_loops",
+                            "change": 1,
+                            "operation": "set"
+                        }
+                    },
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_loops",
+                        "change": -1,
+                        "operation": "add"
+                    },
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_run",
+                        "change": 0,
+                        "operation": "set"
+                    },
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_run",
+                        "change": 1,
+                        "operation": "set"
+                    }
+                ]
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_run",
+                "change": 0,
+                "operation": "set"
+            }
+        }
+    }
+}
