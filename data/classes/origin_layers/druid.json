@@ -1,0 +1,452 @@
+{
+    "name": "Wild Shape",
+    "gui_title": {
+        "choose_origin": "Choose a wild shape.",
+        "view_origin": "This is your wild shape."
+    },
+    "replace": false,
+    "order": 4,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "classes:druid",
+                "layer": "origins-classes:class"
+            },
+            "origins": [
+                "classes:druid_none"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_axolotl",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_axolotl"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_bat",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_bat"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_camel",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_camel"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_cat",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_cat"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_chicken",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_chicken"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_cod",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_cod"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_cow",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_cow"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_donkey",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_donkey"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_fox",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_fox"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_frog",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_frog"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_glow_squid",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_glow_squid"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_horse",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_horse"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_mooshroom",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_mooshroom"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_mule",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_mule"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_ocelot",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_ocelot"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_parrot",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_parrot"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_pig",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_pig"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_rabbit",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_rabbit"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_sheep",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_sheep"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_sniffer",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_sniffer"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_squid",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_squid"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_strider",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_strider"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_tadpole",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_tadpole"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_tropical_fish",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_tropical_fish"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_turtle",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_turtle"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_pufferfish",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_pufferfish"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_skeleton_horse",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_skeleton_horse"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_bee",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_bee"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_cave_spider",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_cave_spider"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_dolphin",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_dolphin"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_goat",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_goat"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_llama",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_llama"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_panda",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_panda"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_polar_bear",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_polar_bear"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_spider",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_spider"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_wolf",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_wolf"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_hoglin",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_hoglin"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_ravager",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_ravager"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_zoglin",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_zoglin"
+            ]
+        }
+    ],
+    "allow_random": true
+}

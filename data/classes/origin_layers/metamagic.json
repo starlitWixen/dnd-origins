@@ -1,0 +1,27 @@
+{
+    "name": "Metamagic",
+    "gui_title": {
+        "choose_origin": "Choose your metamagic.",
+        "view_origin": "This is your metamagic."
+    },
+    "replace": false,
+    "order": 5,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "classes:sorcerer",
+                "layer": "origins-classes:class"
+            },
+            "origins": [
+                "classes:metamagic_none",
+                "classes:metamagic_empowered",
+                "classes:metamagic_extended",
+                "classes:metamagic_quickened",
+                "classes:metamagic_subtle"
+            ]
+        }
+    ],
+    "allow_random": true
+}

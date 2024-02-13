@@ -1,0 +1,40 @@
+{
+    "name": "Favored Enemy",
+    "gui_title": {
+        "choose_origin": "Choose a favored enemy.",
+        "view_origin": "This is your favored enemy."
+    },
+    "replace": false,
+    "order": 4,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "classes:ranger",
+                "layer": "origins-classes:class"
+            },
+            "origins": [
+                "classes:ranger_blaze",
+                "classes:ranger_bugs",
+                "classes:ranger_creeper",
+                "classes:ranger_end",
+                "classes:ranger_fae",
+                "classes:ranger_guardians",
+                "classes:ranger_illagers",
+                "classes:ranger_phantom",
+                "classes:ranger_pigs",
+                "classes:ranger_skeletons",
+                "classes:ranger_slimes",
+                "classes:ranger_witch",
+                "classes:ranger_wither_skeleton",
+                "classes:ranger_zombies",
+                "classes:ranger_player",
+                "classes:ranger_ender_dragon",
+                "classes:ranger_warden",
+                "classes:ranger_wither"
+            ]
+        }
+    ],
+    "allow_random": true
+}

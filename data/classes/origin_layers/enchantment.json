@@ -1,0 +1,364 @@
+{
+    "name": "Enchantment Spells",
+    "gui_title": {
+        "choose_origin": "Choose a enchantment spell.",
+        "view_origin": "This is your prepared enchantment spell."
+    },
+    "replace": false,
+    "order": 5,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "classes:wizard_enchantment",
+                "layer": "classes:wizard"
+            },
+            "origins": [
+                "classes:wizard_none"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_cleaving",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_cleaving_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_cleaving",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_cleaving_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_cleaving",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_cleaving_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_efficiency",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_efficiency_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_efficiency",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_efficiency_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_efficiency",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_efficiency_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_efficiency",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_efficiency_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_efficiency",
+                "comparison": "==",
+                "compare_to": 5
+            },
+            "origins": [
+                "classes:wizard_efficiency_5"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_loyalty",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_loyalty_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_loyalty",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_loyalty_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_loyalty",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_loyalty_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_lure",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_lure_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_lure",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_lure_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_lure",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_lure_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_piercing",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_piercing_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_piercing",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_piercing_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_piercing",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_piercing_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_piercing",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_piercing_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_power",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_power_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_power",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_power_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_power",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_power_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_power",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_power_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_power",
+                "comparison": "==",
+                "compare_to": 5
+            },
+            "origins": [
+                "classes:wizard_power_5"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_punch",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_punch_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_punch",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_punch_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_quick_charge",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_quick_charge_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_quick_charge",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_quick_charge_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_quick_charge",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_quick_charge_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_sweeping_edge",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_sweeping_edge_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_sweeping_edge",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_sweeping_edge_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_sweeping_edge",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_sweeping_edge_3"
+            ]
+        }
+    ],
+    "allow_random": true
+}

@@ -1,0 +1,89 @@
+{
+    "name": "Evocation Spells",
+    "gui_title": {
+        "choose_origin": "Choose an evocation spell.",
+        "view_origin": "This is your prepared evocation spell."
+    },
+    "replace": false,
+    "order": 5,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "classes:wizard_evocation",
+                "layer": "classes:wizard"
+            },
+            "origins": [
+                "classes:wizard_none"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/evocation_collection_channeling",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_channeling"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/evocation_collection_fire_aspect",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_fire_aspect_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/evocation_collection_fire_aspect",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_fire_aspect_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/evocation_collection_flame",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_flame"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/evocation_collection_frost_walker",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_frost_walker_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/evocation_collection_frost_walker",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_frost_walker_2"
+            ]
+        }
+    ],
+    "allow_random": true
+}

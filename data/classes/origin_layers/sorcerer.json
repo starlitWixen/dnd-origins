@@ -1,0 +1,311 @@
+{
+    "name": "Prepared Spell",
+    "gui_title": {
+        "choose_origin": "Choose a prepared spell.",
+        "view_origin": "This is your prepared spell."
+    },
+    "replace": false,
+    "order": 4,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "classes:sorcerer",
+                "layer": "origins-classes:class"
+            },
+            "origins": [
+                "classes:sorcerer_luck",
+                "classes:sorcerer_instant_damage",
+                "classes:sorcerer_unluck"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_speed",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_speed"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_slowness",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_slowness"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_haste",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_haste"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_mining_fatigue",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_mining_fatigue"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_strength",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_strength"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_jump_boost",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_jump_boost"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_nausea",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_nausea"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_regeneration",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_regeneration"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_resistance",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_resistance"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_fire_resistance",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_fire_resistance"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_water_breathing",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_water_breathing"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_invisibility",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_invisibility"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_blindness",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_blindness"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_night_vision",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_night_vision"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_hunger",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_hunger"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_weakness",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_weakness"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_poison",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_poison"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_wither",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_wither"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_absorption",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_absorption"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_saturation",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_saturation"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_glowing",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_glowing"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_levitation",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_levitation"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_slow_falling",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_slow_falling"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_conduit_power",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_conduit_power"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_dolphins_grace",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_dolphins_grace"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:sorcerer/effect_collection_darkness",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:sorcerer_darkness"
+            ]
+        }
+    ],
+    "allow_random": true
+}

@@ -1,0 +1,29 @@
+{
+    "name": "School",
+    "gui_title": {
+        "choose_origin": "Choose a school of magic.",
+        "view_origin": "This is your school of magic."
+    },
+    "replace": false,
+    "order": 4,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "classes:wizard",
+                "layer": "origins-classes:class"
+            },
+            "origins": [
+                "classes:wizard_abjuration",
+                "classes:wizard_conjuration",
+                "classes:wizard_divination",
+                "classes:wizard_enchantment",
+                "classes:wizard_evocation",
+                "classes:wizard_necromancy",
+                "classes:wizard_transmutation"
+            ]
+        }
+    ],
+    "allow_random": true
+}

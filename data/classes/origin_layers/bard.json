@@ -1,0 +1,189 @@
+{
+    "name": "Bardic Inspiration",
+    "gui_title": {
+        "choose_origin": "Choose a bard song.",
+        "view_origin": "This is your bard song."
+    },
+    "replace": false,
+    "order": 4,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_13",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_13"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_cat",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_cat"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_blocks",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_blocks"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_chirp",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_chirp"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_far",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_far"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_mall",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_mall"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_mellohi",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_mellohi"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_stal",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_stal"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_strad",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_strad"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_ward",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_ward"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_11",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_11"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_wait",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_wait"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_otherside",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_otherside"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_5",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_5"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_pigstep",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_pigstep"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:bard/disc_collection_relic",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:bard_relic"
+            ]
+        }
+    ],
+    "allow_random": true
+}
