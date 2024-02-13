@@ -1,0 +1,9 @@
+{
+	"name": "Power I",
+	"description": "You have the Power I spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 6,
+	"impact": 0
+}

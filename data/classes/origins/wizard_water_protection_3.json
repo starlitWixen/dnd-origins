@@ -1,0 +1,9 @@
+{
+	"name": "Water Protection III",
+	"description": "You have the Water Protection III spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 7,
+	"impact": 0
+}

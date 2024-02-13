@@ -1,0 +1,13 @@
+{
+	"name": "Transmutation",
+	"description": "You can learn and cast spells from the school of transmutation. You can learn the Aqua Affinity, Depth Strider, Feather Falling, Respiration, Riptide, Soul Speed, Swift Sneak, and Unbreaking spells.",
+	"powers": [
+		"classes:wizard/spellcasting_transmutation",
+		"classes:wizard/transmutation_collection"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 6,
+	"impact": 0
+}

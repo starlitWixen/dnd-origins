@@ -1,0 +1,9 @@
+{
+	"name": "Sharpness III",
+	"description": "You have the Sharpness III spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

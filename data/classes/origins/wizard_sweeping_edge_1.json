@@ -1,0 +1,9 @@
+{
+	"name": "Sweeping Edge I",
+	"description": "You have the Sweeping Edge I spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 9,
+	"impact": 0
+}

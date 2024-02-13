@@ -1,0 +1,13 @@
+{
+	"name": "Necromancy",
+	"description": "You can learn and cast spells from the school of necromancy. You can learn the Curse of Binding, Curse of Vanishing, and Mending spells.",
+	"powers": [
+		"classes:wizard/spellcasting_necromancy",
+		"classes:wizard/necromancy_collection"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 5,
+	"impact": 0
+}

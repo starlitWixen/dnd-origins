@@ -1,0 +1,9 @@
+{
+	"name": "Unbreaking III",
+	"description": "You have the Swift Unbreaking III spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 8,
+	"impact": 0
+}

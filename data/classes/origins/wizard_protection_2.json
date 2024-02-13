@@ -1,0 +1,9 @@
+{
+	"name": "Protection II",
+	"description": "You have the Protection II spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 5,
+	"impact": 0
+}

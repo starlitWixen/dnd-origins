@@ -1,0 +1,9 @@
+{
+	"name": "Projectile Protection III",
+	"description": "You have the Projectile Protection III spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 4,
+	"impact": 0
+}

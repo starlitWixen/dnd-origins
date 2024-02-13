@@ -1,0 +1,9 @@
+{
+	"name": "Punch II",
+	"description": "You have the Punch II spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 7,
+	"impact": 0
+}

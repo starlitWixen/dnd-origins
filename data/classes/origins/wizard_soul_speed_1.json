@@ -1,0 +1,9 @@
+{
+	"name": "Soul Speed I",
+	"description": "You have the Soul Speed I spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 6,
+	"impact": 0
+}

@@ -1,0 +1,9 @@
+{
+	"name": "Thorns I",
+	"description": "You have the Thorns I spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 7,
+	"impact": 0
+}

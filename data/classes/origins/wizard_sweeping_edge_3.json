@@ -1,0 +1,9 @@
+{
+	"name": "Sweeping Edge III",
+	"description": "You have the Sweeping Edge III spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 9,
+	"impact": 0
+}

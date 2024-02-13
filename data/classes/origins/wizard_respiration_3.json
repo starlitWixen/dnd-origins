@@ -1,0 +1,9 @@
+{
+	"name": "Respiration III",
+	"description": "You have the Respiration III spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 4,
+	"impact": 0
+}

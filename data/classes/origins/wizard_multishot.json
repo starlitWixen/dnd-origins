@@ -1,0 +1,9 @@
+{
+	"name": "Multishot",
+	"description": "You have the Multishot spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 5,
+	"impact": 0
+}

@@ -1,0 +1,9 @@
+{
+	"name": "Piercing IV",
+	"description": "You have the Piercing IV spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 5,
+	"impact": 0
+}

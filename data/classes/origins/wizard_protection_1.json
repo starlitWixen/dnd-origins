@@ -1,0 +1,9 @@
+{
+	"name": "Protection I",
+	"description": "You have the Protection I spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 5,
+	"impact": 0
+}

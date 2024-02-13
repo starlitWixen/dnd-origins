@@ -1,0 +1,9 @@
+{
+	"name": "None",
+	"description": "You do not have a spell prepared.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}
