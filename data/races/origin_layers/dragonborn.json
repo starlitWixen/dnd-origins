@@ -1,0 +1,30 @@
+{
+    "name": "Scale Color",
+    "gui_title": {
+        "choose_origin": "Choose a scale color.",
+        "view_origin": "This is your scale color."
+    },
+    "replace": false,
+    "order": 1,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "races:dragonborn",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "races:dragonborn_black",
+                "races:dragonborn_blue",
+                "races:dragonborn_bronze",
+                "races:dragonborn_gold",
+                "races:dragonborn_green",
+                "races:dragonborn_red",
+                "races:dragonborn_silver",
+                "races:dragonborn_white"
+            ]
+        }
+    ],
+    "allow_random": true
+}
