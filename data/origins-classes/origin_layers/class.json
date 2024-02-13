@@ -1,0 +1,22 @@
+{
+    "name": "Class",
+    "order": 3,
+    "replace": true,
+    "origins": [
+        "origins-classes:nitwit",
+        "classes:barbarian",
+        "classes:bard",
+        "classes:cleric",
+        "classes:druid",
+        "classes:fighter",
+        "classes:monk",
+        "classes:paladin",
+        "classes:ranger",
+        "classes:rogue",
+        "classes:sorcerer",
+        "classes:witch",
+        "classes:wizard"
+    ],
+    "allow_random": true,
+    "loading_priority": 10
+}

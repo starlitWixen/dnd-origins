@@ -1,0 +1,11 @@
+{
+    "powers": [
+        "origins-classes:longer_potions",
+        "origins-classes:better_enchanting"
+    ],
+    "icon": "minecraft:potion",
+    "order": 7,
+    "impact": 0,
+    "unchoosable": true,
+    "loading_priority": 10
+}

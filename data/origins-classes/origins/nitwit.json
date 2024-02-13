@@ -1,0 +1,9 @@
+{
+  "name": "Commoner",
+  "description": "You're just an average person.",
+  "powers": [],
+  "icon": "minecraft:player_head",
+  "order": 0,
+  "impact": 0,
+  "loading_priority": 10
+}

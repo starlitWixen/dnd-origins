@@ -1,0 +1,24 @@
+{
+    "name": "Race",
+    "order": 0,
+    "replace": true,
+    "origins": [
+        "races:aarakocra",
+        "races:dragonborn",
+        "races:dwarf",
+        "races:elf",
+        "races:fairy",
+        "races:genasi",
+        "races:gnome",
+        "races:goblin",
+        "races:halfling",
+        "origins:human",
+        "races:loxodon",
+        "races:orc",
+        "races:tabaxi",
+        "races:tiefling",
+        "races:triton",
+        "races:warforged"
+    ],
+    "allow_random": true
+}

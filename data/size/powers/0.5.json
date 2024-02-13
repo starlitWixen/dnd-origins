@@ -1,0 +1,109 @@
+{
+    "name": "0.5",
+    "hidden": true,
+    "type": "origins:multiple",
+    "modify_size": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+	    	"type": "origins:and",
+	    	"actions": [
+	    	    {
+	    	    	"type": "origins:execute_command",
+	    	    	"command": "scale set pehkui:height 0.25 @s"
+	    	    },
+	    	    {
+	    	    	"type": "origins:execute_command",
+	    	    	"command": "scale set pehkui:width 0.25 @s"
+	    	    },
+	    	    {
+	    	    	"type": "origins:execute_command",
+	    	    	"command": "scale persist set true @s"
+	    	    }
+		    ]
+        },
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "scale reset @s"
+        }
+    },
+    "attribute_modifiers": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "name": "Origin modifier",
+                "attribute": "minecraft:generic.attack_speed",
+                "operation": "addition",
+                "value": 0.5
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "minecraft:generic.movement_speed",
+                "operation": "addition",
+                "value": -0.015
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "reach-entity-attributes:attack_range",
+                "operation": "addition",
+                "value": -0.25
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "reach-entity-attributes:reach",
+                "operation": "addition",
+                "value": -1
+            }
+        ],
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:druid_bat",
+                    "layer": "classes:druid"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:druid_bee",
+                    "layer": "classes:druid"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:druid_cod",
+                    "layer": "classes:druid"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:druid_frog",
+                    "layer": "classes:druid"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:druid_pufferfish",
+                    "layer": "classes:druid"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:druid_rabbit",
+                    "layer": "classes:druid"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:druid_salmon",
+                    "layer": "classes:druid"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:druid_tadpole",
+                    "layer": "classes:druid"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:druid_tropical_fish",
+                    "layer": "classes:druid"
+                }
+            ],
+            "inverted": true
+        }
+    }
+}

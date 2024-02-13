@@ -1,0 +1,13 @@
+{
+    "name": "Size",
+    "order": 10,
+    "replace": true,
+    "origins": [
+        "size:0.5",
+        "size:1.0",
+        "size:1.2",
+        "size:2.0",
+        "size:3.0"
+    ],
+    "allow_random": false
+}
