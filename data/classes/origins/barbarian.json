@@ -1,0 +1,14 @@
+{
+	"name": "Barbarian",
+	"description": "A fierce warrior of primitive background who can enter a battle rage.",
+	"powers": [
+		"classes:barbarian/hp",
+		"classes:barbarian/rage",
+		"classes:barbarian/unarmored"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}
