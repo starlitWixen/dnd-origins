@@ -1,0 +1,9 @@
+{
+	"name": "Absorb Fire",
+	"description": "This spell grants the Fire Resistance effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}

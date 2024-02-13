@@ -1,0 +1,9 @@
+{
+	"name": "End Denizens",
+	"description": "Endermen, endermites, and shulkers are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

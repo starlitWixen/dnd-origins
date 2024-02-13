@@ -1,0 +1,9 @@
+{
+	"name": "Quickened Spell",
+	"description": "Spells take less time to cast, but don't have as long of a duration.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

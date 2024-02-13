@@ -1,0 +1,15 @@
+{
+	"name": "Polar Bear",
+	"description": "Your Wild Shape is a polar bear.",
+	"powers": [
+		"classes:druid/polar_bear/stats",
+		"classes:druid/polar_bear/thick_fur",
+		"classes:druid/polar_bear/claws",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 25,
+	"impact": 0
+}

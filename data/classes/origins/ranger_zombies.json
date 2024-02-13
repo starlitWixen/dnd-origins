@@ -1,0 +1,9 @@
+{
+	"name": "Zombies",
+	"description": "All forms of zombie are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 13,
+	"impact": 0
+}

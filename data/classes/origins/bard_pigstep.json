@@ -1,0 +1,9 @@
+{
+	"name": "Pigstep",
+	"description": "Your Bardic Inspiration imparts the Fire Resistance, Haste, Luck, and Strength effects.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 98,
+	"impact": 0
+}

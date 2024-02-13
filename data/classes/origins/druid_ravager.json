@@ -1,0 +1,16 @@
+{
+	"name": "Ravager",
+	"description": "Your Wild Shape is a ravager.",
+	"powers": [
+		"classes:druid/ravager/stats",
+		"classes:druid/ravager/bite",
+		"classes:druid/ravager/illager",
+        "classes:druid/rideable_creature",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 28,
+	"impact": 0
+}

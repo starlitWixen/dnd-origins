@@ -1,0 +1,9 @@
+{
+	"name": "Darkness",
+	"description": "This spell inflicts the Darkness effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 16,
+	"impact": 0
+}

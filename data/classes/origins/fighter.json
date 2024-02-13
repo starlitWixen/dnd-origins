@@ -1,0 +1,13 @@
+{
+	"name": "Fighter",
+	"description": "A master of martial combat, skilled with a variety of weapons and armor.",
+	"powers": [
+		"classes:fighter/hp",
+		"classes:fighter/martial_versatility"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 4,
+	"impact": 0
+}

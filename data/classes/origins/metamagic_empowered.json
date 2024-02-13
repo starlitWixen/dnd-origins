@@ -1,0 +1,9 @@
+{
+	"name": "Empowered Spell",
+	"description": "Spells you cast induce more powerful effects, but don't have as long of a duration.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

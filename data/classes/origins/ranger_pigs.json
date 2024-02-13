@@ -1,0 +1,9 @@
+{
+	"name": "Pigs",
+	"description": "Hoglins, piglin brutes, piglins, and pigs are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 8,
+	"impact": 0
+}

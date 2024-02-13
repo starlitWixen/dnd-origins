@@ -1,0 +1,9 @@
+{
+	"name": "Subtle Spell",
+	"description": "Spells make no sound and have no visual effect when cast.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 4,
+	"impact": 0
+}

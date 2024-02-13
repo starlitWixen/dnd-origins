@@ -1,0 +1,14 @@
+{
+	"name": "Sniffer",
+	"description": "Your Wild Shape is a sniffer.",
+	"powers": [
+		"classes:druid/sniffer/stats",
+		"classes:druid/sniffer/dig",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 32,
+	"impact": 0
+}

@@ -1,0 +1,17 @@
+{
+	"name": "Frog",
+	"description": "Your Wild Shape is a frog.",
+	"powers": [
+		"classes:druid/frog/stats",
+        "classes:druid/amphibious",
+        "classes:druid/aquatic_adaptations",
+		"classes:druid/frog/strong_legs",
+        "classes:druid/frog/leap",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 13,
+	"impact": 0
+}

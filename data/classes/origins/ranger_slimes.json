@@ -1,0 +1,9 @@
+{
+	"name": "Slimes",
+	"description": "Magma cubes and slimes are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 10,
+	"impact": 0
+}

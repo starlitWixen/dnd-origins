@@ -1,0 +1,9 @@
+{
+	"name": "No Metamagic",
+	"description": "Spells are cast standardly.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}

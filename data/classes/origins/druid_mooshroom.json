@@ -1,0 +1,16 @@
+{
+	"name": "Mooshroom",
+	"description": "Your Wild Shape is a mooshroom.",
+	"powers": [
+		"classes:druid/mooshroom/stats",
+        "classes:druid/mooshroom/milk",
+        "classes:druid/mooshroom/soup",
+		"classes:druid/mooshroom/shear",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 19,
+	"impact": 0
+}

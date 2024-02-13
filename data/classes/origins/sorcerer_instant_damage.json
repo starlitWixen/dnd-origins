@@ -1,0 +1,9 @@
+{
+	"name": "Eldritch Blast",
+	"description": "This spell inflicts the Harming effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 17,
+	"impact": 0
+}

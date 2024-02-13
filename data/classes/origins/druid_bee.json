@@ -1,0 +1,19 @@
+{
+	"name": "Bee",
+	"description": "Your Wild Shape is a bee.",
+	"powers": [
+		"classes:druid/bee/stats",
+		"classes:druid/bee/honey",
+		"classes:druid/bee/stinger",
+		"classes:druid/hover",
+		"origins:slow_falling",
+		"origins:like_air",
+		"classes:druid/bee/particles",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

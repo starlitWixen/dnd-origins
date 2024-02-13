@@ -1,0 +1,9 @@
+{
+	"name": "Relic",
+	"description": "Your Bardic Inspiration imparts the Regeneration, Resistance, Saturation, and Strength effects.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 99,
+	"impact": 0
+}

@@ -1,0 +1,9 @@
+{
+	"name": "Wait",
+	"description": "Your Bardic Inspiration imparts the Invisibility effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}

@@ -1,0 +1,15 @@
+{
+	"name": "Rogue",
+	"description": "A scoundrel who uses stealth and trickery to overcome obstacles and enemies.",
+	"powers": [
+		"classes:rogue/hp",
+		"classes:rogue/expertise",
+		"classes:rogue/sneak_attack",
+		"origins-classes:sneaky"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 8,
+	"impact": 0
+}

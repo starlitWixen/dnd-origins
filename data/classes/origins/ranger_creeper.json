@@ -1,0 +1,9 @@
+{
+	"name": "Creeper",
+	"description": "Creepers are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

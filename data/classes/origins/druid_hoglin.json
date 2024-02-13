@@ -1,0 +1,16 @@
+{
+	"name": "Hoglin",
+	"description": "Your Wild Shape is a hoglin.",
+	"powers": [
+		"classes:druid/hoglin/stats",
+		"classes:druid/hoglin/tusks",
+        "classes:druid/hoglin/launch",
+		"classes:druid/hoglin/zombify",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 16,
+	"impact": 0
+}

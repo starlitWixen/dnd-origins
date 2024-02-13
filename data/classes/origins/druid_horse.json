@@ -1,0 +1,14 @@
+{
+	"name": "Horse",
+	"description": "Your Wild Shape is a horse.",
+	"powers": [
+		"classes:druid/horse/stats",
+		"classes:druid/rideable_creature",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 17,
+	"impact": 0
+}

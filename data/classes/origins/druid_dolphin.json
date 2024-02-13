@@ -1,0 +1,16 @@
+{
+	"name": "Dolphin",
+	"description": "Your Wild Shape is a dolphin.",
+	"powers": [
+		"classes:druid/dolphin/stats",
+        "classes:druid/bimodal_respiration",
+        "classes:druid/aquatic_adaptations",
+        "classes:druid/dolphin/dolphins_grace",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 10,
+	"impact": 0
+}

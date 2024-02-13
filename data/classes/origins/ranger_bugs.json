@@ -1,0 +1,9 @@
+{
+	"name": "Bugs",
+	"description": "Spiders and cave spiders are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

@@ -1,0 +1,14 @@
+{
+	"name": "Cleric",
+	"description": "A priestly champion who wields divine magic in service of a higher power.",
+	"powers": [
+		"classes:cleric/hp",
+		"classes:cleric/blessed_healer",
+		"classes:cleric/turn_undead"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

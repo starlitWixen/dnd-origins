@@ -1,0 +1,15 @@
+{
+	"name": "Goat",
+	"description": "Your Wild Shape is a goat.",
+	"powers": [
+		"classes:druid/goat/stats",
+        "classes:druid/goat/leap",
+        "classes:druid/goat/ram",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 15,
+	"impact": 0
+}

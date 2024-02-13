@@ -1,0 +1,16 @@
+{
+	"name": "Tropical Fish",
+	"description": "Your Wild Shape is a tropical fish.",
+	"powers": [
+		"classes:druid/tropical_fish/stats",
+        "origins:water_breathing",
+		"classes:druid/aquatic_adaptations",
+        "classes:druid/tropical_fish/flop",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 37,
+	"impact": 0
+}

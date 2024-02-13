@@ -1,0 +1,16 @@
+{
+	"name": "Skeleton Horse",
+	"description": "Your Wild Shape is a skeleton horse.",
+	"powers": [
+		"classes:druid/skeleton_horse/stats",
+		"classes:druid/skeleton_horse/undead_attributes",
+		"classes:druid/skeleton_horse/high_density",
+		"classes:druid/rideable_creature",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 31,
+	"impact": 0
+}

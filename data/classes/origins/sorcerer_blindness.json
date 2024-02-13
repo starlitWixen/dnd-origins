@@ -1,0 +1,9 @@
+{
+	"name": "Blindness",
+	"description": "This spell inflicts the Blindness effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 15,
+	"impact": 0
+}

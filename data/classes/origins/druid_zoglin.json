@@ -1,0 +1,17 @@
+{
+	"name": "Zoglin",
+	"description": "Your Wild Shape is a zoglin.",
+	"powers": [
+		"classes:druid/zoglin/stats",
+		"classes:druid/zoglin/undead_attributes",
+		"classes:druid/zoglin/tusks",
+        "classes:druid/zoglin/launch",
+		"classes:druid/zoglin/cure",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 40,
+	"impact": 0
+}

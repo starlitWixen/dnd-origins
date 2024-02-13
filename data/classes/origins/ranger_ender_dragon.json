@@ -1,0 +1,9 @@
+{
+	"name": "Ender Dragon",
+	"description": "The Ender Dragon is your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 15,
+	"impact": 0
+}

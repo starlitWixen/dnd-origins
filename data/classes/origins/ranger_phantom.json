@@ -1,0 +1,9 @@
+{
+	"name": "Phantom",
+	"description": "Phantoms are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 7,
+	"impact": 0
+}

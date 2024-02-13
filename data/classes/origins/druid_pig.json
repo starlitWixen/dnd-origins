@@ -1,0 +1,14 @@
+{
+	"name": "Pig",
+	"description": "Your Wild Shape is a pig.",
+	"powers": [
+		"classes:druid/pig/stats",
+		"classes:druid/rideable_creature",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 24,
+	"impact": 0
+}

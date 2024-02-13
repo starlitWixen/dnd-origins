@@ -1,0 +1,16 @@
+{
+	"name": "Strider",
+	"description": "Your Wild Shape is a strider.",
+	"powers": [
+		"classes:druid/strider/stats",
+		"classes:druid/strider/lava_walk",
+        "classes:druid/rideable_creature",
+		"classes:druid/strider/hydrophobia",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 35,
+	"impact": 0
+}

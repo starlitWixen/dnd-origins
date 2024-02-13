@@ -1,0 +1,9 @@
+{
+	"name": "Otherside",
+	"description": "Your Bardic Inspiration imparts the Conduit Power, Dolphin's Grace, and Water Breathing effects.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 97,
+	"impact": 0
+}

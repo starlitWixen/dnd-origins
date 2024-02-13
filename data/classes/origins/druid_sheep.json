@@ -1,0 +1,15 @@
+{
+	"name": "Sheep",
+	"description": "Your Wild Shape is a sheep.",
+	"powers": [
+		"classes:druid/sheep/stats",
+		"classes:druid/sheep/dye",
+		"classes:druid/sheep/shear",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 30,
+	"impact": 0
+}

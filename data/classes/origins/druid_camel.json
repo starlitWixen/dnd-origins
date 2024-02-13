@@ -1,0 +1,15 @@
+{
+	"name": "Camel",
+	"description": "Your Wild Shape is a camel.",
+	"powers": [
+		"classes:druid/camel/stats",
+		"classes:druid/rideable_creature",
+		"classes:druid/camel/dash",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 4,
+	"impact": 0
+}

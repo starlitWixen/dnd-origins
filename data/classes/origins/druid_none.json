@@ -1,0 +1,12 @@
+{
+	"name": "None",
+	"description": "You aren't in your Wild Shape.",
+	"powers": [
+		"classes:druid/reset_size"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}

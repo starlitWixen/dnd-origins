@@ -1,0 +1,14 @@
+{
+	"name": "Cow",
+	"description": "Your Wild Shape is a cow.",
+	"powers": [
+		"classes:druid/cow/stats",
+        "classes:druid/cow/milk",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 9,
+	"impact": 0
+}

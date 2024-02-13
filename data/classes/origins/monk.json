@@ -1,0 +1,14 @@
+{
+	"name": "Monk",
+	"description": "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.",
+	"powers": [
+		"classes:monk/hp",
+		"classes:monk/acrobatics",
+		"classes:monk/unarmored"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 5,
+	"impact": 0
+}

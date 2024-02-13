@@ -1,0 +1,9 @@
+{
+	"name": "Wither Skeleton",
+	"description": "Wither skeletons are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 12,
+	"impact": 0
+}

@@ -1,0 +1,9 @@
+{
+	"name": "Finger of Death",
+	"description": "This spell inflicts the Wither effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 18,
+	"impact": 0
+}

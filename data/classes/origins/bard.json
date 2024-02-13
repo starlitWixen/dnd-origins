@@ -1,0 +1,15 @@
+{
+	"name": "Bard",
+	"description": "An inspiring magician whose power echoes the music of creation.",
+	"powers": [
+		"classes:bard/hp",
+		"classes:bard/bardic_inspiration",
+		"classes:bard/global_renown",
+		"classes:bard/disc_collection"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

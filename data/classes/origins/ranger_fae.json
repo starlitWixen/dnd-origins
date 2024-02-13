@@ -1,0 +1,9 @@
+{
+	"name": "Fae",
+	"description": "Allay and vexes are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 4,
+	"impact": 0
+}

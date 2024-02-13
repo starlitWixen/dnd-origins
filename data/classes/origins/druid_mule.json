@@ -1,0 +1,15 @@
+{
+	"name": "Mule",
+	"description": "Your Wild Shape is a mule.",
+	"powers": [
+		"classes:druid/mule/stats",
+        "classes:druid/rideable_creature",
+        "classes:druid/storage",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 20,
+	"impact": 0
+}

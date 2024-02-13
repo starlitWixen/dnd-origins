@@ -1,0 +1,14 @@
+{
+	"name": "Druid",
+	"description": "A priest of the Old Faith, wielding the powers of nature and adopting animal forms.",
+	"powers": [
+		"classes:druid/hp",
+		"classes:druid/wild_shape",
+		"classes:druid/beast_collection"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

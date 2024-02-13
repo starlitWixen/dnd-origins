@@ -1,0 +1,9 @@
+{
+	"name": "Bears Endurance",
+	"description": "This spell grants the Absorption effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

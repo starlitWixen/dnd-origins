@@ -1,0 +1,9 @@
+{
+	"name": "Extended Spell",
+	"description": "Spells you cast have a longer duration.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

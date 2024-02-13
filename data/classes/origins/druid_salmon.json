@@ -1,0 +1,16 @@
+{
+	"name": "Salmon",
+	"description": "Your Wild Shape is a salmon.",
+	"powers": [
+		"classes:druid/salmon/stats",
+        "origins:water_breathing",
+		"classes:druid/aquatic_adaptations",
+        "classes:druid/salmon/flop",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 29,
+	"impact": 0
+}

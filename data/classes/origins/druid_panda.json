@@ -1,0 +1,14 @@
+{
+	"name": "Panda",
+	"description": "Your Wild Shape is a panda.",
+	"powers": [
+		"classes:druid/panda/stats",
+        "classes:druid/panda/bamboo",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 22,
+	"impact": 0
+}

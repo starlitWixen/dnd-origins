@@ -1,0 +1,14 @@
+{
+	"name": "Paladin",
+	"description": "A holy warrior bound to a sacred oath.",
+	"powers": [
+		"classes:paladin/hp",
+		"classes:paladin/protection",
+		"classes:paladin/lay_on_hands"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 6,
+	"impact": 0
+}

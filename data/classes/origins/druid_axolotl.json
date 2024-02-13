@@ -1,0 +1,16 @@
+{
+	"name": "Axolotl",
+	"description": "Your Wild Shape is an axolotl.",
+	"powers": [
+		"classes:druid/axolotl/stats",
+		"classes:druid/amphibious",
+		"classes:druid/aquatic_adaptations",
+		"classes:druid/axolotl/play_dead",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

@@ -1,0 +1,9 @@
+{
+	"name": "5",
+	"description": "Your Bardic Inspiration imparts the Silence, Night Vision, and Speed effects.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 96,
+	"impact": 0
+}

@@ -1,0 +1,15 @@
+{
+	"name": "Fox",
+	"description": "Your Wild Shape is a fox.",
+	"powers": [
+		"classes:druid/fox/stats",
+		"classes:druid/fox/nyoom",
+        "classes:druid/fox/mouth",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 12,
+	"impact": 0
+}

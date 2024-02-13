@@ -1,0 +1,16 @@
+{
+	"name": "Parrot",
+	"description": "Your Wild Shape is a parrot.",
+	"powers": [
+		"classes:druid/parrot/stats",
+		"classes:druid/parrot/imitate",
+		"classes:druid/flight",
+		"classes:druid/nimble",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 23,
+	"impact": 0
+}

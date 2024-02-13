@@ -1,0 +1,9 @@
+{
+	"name": "Warden",
+	"description": "Wardens are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 17,
+	"impact": 0
+}

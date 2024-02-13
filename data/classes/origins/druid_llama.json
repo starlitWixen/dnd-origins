@@ -1,0 +1,16 @@
+{
+	"name": "Llama",
+	"description": "Your Wild Shape is a llama.",
+	"powers": [
+		"classes:druid/llama/stats",
+		"classes:druid/rideable_creature",
+		"classes:druid/storage",
+		"classes:druid/llama/spit",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 18,
+	"impact": 0
+}

@@ -1,0 +1,9 @@
+{
+	"name": "Haste",
+	"description": "This spell grants the Haste effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 9,
+	"impact": 0
+}

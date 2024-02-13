@@ -1,0 +1,9 @@
+{
+	"name": "Wither",
+	"description": "Withers are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 18,
+	"impact": 0
+}

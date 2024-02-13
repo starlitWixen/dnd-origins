@@ -1,0 +1,15 @@
+{
+	"name": "Sorcerer",
+	"description": "A spellcaster who draws on inherent magic from a gift or bloodline.",
+	"powers": [
+		"classes:sorcerer/hp",
+		"classes:sorcerer/spellcasting",
+		"classes:sorcerer/metamagic",
+		"classes:sorcerer/effect_collection"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 9,
+	"impact": 0
+}

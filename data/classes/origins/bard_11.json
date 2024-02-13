@@ -1,0 +1,9 @@
+{
+	"name": "11",
+	"description": "Your Bardic Inspiration imparts the Strength effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}

@@ -1,0 +1,9 @@
+{
+	"name": "Witch",
+	"description": "Witches are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 11,
+	"impact": 0
+}

@@ -1,0 +1,17 @@
+{
+	"name": "Bat",
+	"description": "Your Wild Shape is a bat.",
+	"powers": [
+		"classes:druid/bat/stats",
+		"classes:druid/bat/sonar",
+		"classes:druid/flight",
+		"classes:druid/nimble",
+		"classes:druid/darkvision",
+		"classes:druid/neutral"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

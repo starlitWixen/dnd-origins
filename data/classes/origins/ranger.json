@@ -1,0 +1,14 @@
+{
+	"name": "Ranger",
+	"description": "A warrior who combats threats on the edge of civilization.",
+	"powers": [
+		"classes:ranger/hp",
+		"classes:ranger/favored_enemy",
+		"classes:ranger/rough_terrain"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 7,
+	"impact": 0
+}

@@ -1,0 +1,9 @@
+{
+	"name": "Ward",
+	"description": "Your Bardic Inspiration imparts the Saturation effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}

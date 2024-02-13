@@ -1,0 +1,9 @@
+{
+	"name": "Skeletons",
+	"description": "Skeletons and strays are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 9,
+	"impact": 0
+}

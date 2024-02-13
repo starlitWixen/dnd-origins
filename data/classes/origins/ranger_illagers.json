@@ -1,0 +1,9 @@
+{
+	"name": "Illagers",
+	"description": "All forms of Illagers are your favored enemy.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 6,
+	"impact": 0
+}
