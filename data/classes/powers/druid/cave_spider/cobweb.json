@@ -1,0 +1,8 @@
+{
+    "name": "Cobweb Phasing",
+    "hidden": true,
+    "type": "extraorigins:prevent_block_slowness",
+    "blocks": [
+        "minecraft:cobweb"
+    ]
+}
