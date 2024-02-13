@@ -1,0 +1,847 @@
+{
+    "name": "Conjuration Spellcasting",
+    "hidden": true,
+    "type": "origins:multiple",
+    "equipment": { 
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_fortune_1",
+                                "layer": "classes:conjuration"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:pickaxes"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:shovels"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:axes"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:hoes"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:fortune 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_fortune_2",
+                                "layer": "classes:conjuration"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:pickaxes"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:shovels"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:axes"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:hoes"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:fortune 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_fortune_3",
+                                "layer": "classes:conjuration"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:pickaxes"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:shovels"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:axes"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:hoes"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:fortune 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_infinity",
+                                "layer": "classes:conjuration"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:bow"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:infinity"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_looting_1",
+                                "layer": "classes:conjuration"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:looting 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_looting_2",
+                                "layer": "classes:conjuration"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:looting 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_looting_3",
+                                "layer": "classes:conjuration"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:looting 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_luck_of_the_sea_1",
+                                "layer": "classes:conjuration"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:fishing_rod"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:luck_of_the_sea 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_luck_of_the_sea_2",
+                                "layer": "classes:conjuration"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:fishing_rod"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:luck_of_the_sea 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_luck_of_the_sea_3",
+                                "layer": "classes:conjuration"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:fishing_rod"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:luck_of_the_sea 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_multishot",
+                                "layer": "classes:conjuration"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:crossbow"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:multishot"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:xp_levels",
+            "comparison": ">=",
+            "compare_to": 5
+        }
+    },
+    "books": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_fortune_1",
+                        "layer": "classes:conjuration"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:fortune\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_fortune_2",
+                        "layer": "classes:conjuration"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:fortune\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_fortune_3",
+                        "layer": "classes:conjuration"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:fortune\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_infinity",
+                        "layer": "classes:conjuration"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:infinity\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_looting_1",
+                        "layer": "classes:conjuration"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:looting\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_looting_2",
+                        "layer": "classes:conjuration"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:looting\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_looting_3",
+                        "layer": "classes:conjuration"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:looting\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_luck_of_the_sea_1",
+                        "layer": "classes:conjuration"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:luck_of_the_sea\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_luck_of_the_sea_2",
+                        "layer": "classes:conjuration"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:luck_of_the_sea\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_luck_of_the_sea_3",
+                        "layer": "classes:conjuration"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:luck_of_the_sea\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_multishot",
+                        "layer": "classes:conjuration"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:multishot\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:book"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:xp_levels",
+                    "comparison": ">=",
+                    "compare_to": 5
+                }
+            ]
+        }
+    }
+}

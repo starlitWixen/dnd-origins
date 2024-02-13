@@ -1,0 +1,199 @@
+{
+    "name": "and i missed",
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:if_else_list",
+        "actions": [
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_absorption",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_unluck",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_conduit_power",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_dolphins_grace",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_fire_resistance",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_glowing",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_haste",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_invisibility",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_jump_boost",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_luck",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_mining_fatigue",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_night_vision",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_regeneration",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_resistance",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_saturation",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_slow_falling",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_slowness",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_speed",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_strength",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_water_breathing",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_weakness",
+                            "layer": "classes:sorcerer"
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:change_resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "change": 6
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_hunger",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_poison",
+                            "layer": "classes:sorcerer"
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:change_resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "change": 9
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_blindness",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_darkness",
+                            "layer": "classes:sorcerer"
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:change_resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "change": 18
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_levitation",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_nausea",
+                            "layer": "classes:sorcerer"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "classes:sorcerer_wither",
+                            "layer": "classes:sorcerer"
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:change_resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "change": 36
+                }
+            }
+        ]
+    }
+}

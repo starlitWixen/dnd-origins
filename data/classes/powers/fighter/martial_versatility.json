@@ -1,0 +1,11 @@
+{
+    "name": "Martial Versatility",
+    "description": "You do extra damage, regardless of what you are wielding.",
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Martial Versatility strength buff",
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "addition",
+        "value": 3
+    }
+}

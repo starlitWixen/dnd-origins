@@ -1,0 +1,523 @@
+{
+    "name": "Necromancy Spellcasting",
+    "hidden": true,
+    "type": "origins:multiple",
+    "equipment": { 
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_mending",
+                                "layer": "classes:necromancy"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:tools"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:trimmable_armor"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:trident"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:bow"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:crossbow"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:fishing_rod"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:shears"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:flint_and_steel"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:carrot_on_a_stick"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:warped_fungus_on_a_stick"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:shield"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:elytra"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:brush"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:mending"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_curse_of_binding",
+                                "layer": "classes:necromancy"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:trimmable_armor"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:elytra"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:carved_pumpkin"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:player_head"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:zombie_head"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:skeleton_skull"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:wither_skeleton_skull"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:creeper_head"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:piglin_head"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:dragon_head"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:binding_curse"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_curse_of_vanishing",
+                                "layer": "classes:necromancy"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:tools"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:trimmable_armor"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:trident"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:bow"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:crossbow"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:fishing_rod"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:shears"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:flint_and_steel"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:carrot_on_a_stick"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:warped_fungus_on_a_stick"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:shield"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:elytra"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:brush"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:carved_pumpkin"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:player_head"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:zombie_head"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:skeleton_skull"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:wither_skeleton_skull"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:creeper_head"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:piglin_head"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:dragon_head"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:compass"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:recovery_compass"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:vanishing_curse"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:xp_levels",
+            "comparison": ">=",
+            "compare_to": 5
+        }
+    },
+    "books": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_mending",
+                        "layer": "classes:necromancy"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:mending\"}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_curse_of_binding",
+                        "layer": "classes:necromancy"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:binding_curse\"}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_curse_of_vanishing",
+                        "layer": "classes:necromancy"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:vanishing_curse\"}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:book"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:xp_levels",
+                    "comparison": ">=",
+                    "compare_to": 5
+                }
+            ]
+        }
+    }
+}

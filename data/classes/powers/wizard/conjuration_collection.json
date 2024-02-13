@@ -1,0 +1,870 @@
+{
+    "name": "Conjuration Collection",
+    "description": "Fortune, Infinity, Looting, Luck of the Sea, Multishot",
+    "hidden": true,
+    "type": "origins:multiple",
+    "fortune": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 3,
+        "start_value": 0
+    },
+    "fortune_activate": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.use"
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_fortune",
+                                "comparison": "<",
+                                "compare_to": 1
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:nbt",
+                                    "nbt": "{StoredEnchantments: [{lvl: 1s}]}"
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_fortune",
+                                "operation": "set",
+                                "change": 1
+                            },
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:book"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_fortune",
+                                "comparison": "<",
+                                "compare_to": 2
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:nbt",
+                                    "nbt": "{StoredEnchantments: [{lvl: 2s}]}"
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_fortune",
+                                "operation": "set",
+                                "change": 2
+                            },
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:origin",
+                                    "origin": "classes:wizard_fortune_1",
+                                    "layer": "classes:conjuration"
+                                },
+                                "if_action": {
+                                    "type": "origins:execute_command",
+                                    "command": "origin set @s classes:conjuration classes:wizard_fortune_2"
+                                },
+                                "else_action": {
+                                    "type": "origins:nothing"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:book"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_fortune",
+                                "comparison": "<",
+                                "compare_to": 3
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:nbt",
+                                    "nbt": "{StoredEnchantments: [{lvl: 3s}]}"
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_fortune",
+                                "operation": "set",
+                                "change": 3
+                            },
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:origin",
+                                            "origin": "classes:wizard_fortune_1",
+                                            "layer": "classes:conjuration"
+                                        },
+                                        {
+                                            "type": "origins:origin",
+                                            "origin": "classes:wizard_fortune_2",
+                                            "layer": "classes:conjuration"
+                                        }
+                                    ]
+                                },
+                                "if_action": {
+                                    "type": "origins:execute_command",
+                                    "command": "origin set @s classes:conjuration classes:wizard_fortune_3"
+                                },
+                                "else_action": {
+                                    "type": "origins:nothing"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:book"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:enchanted_book"
+                        }
+                    },
+                    {
+                        "type": "origins:nbt",
+                        "nbt": "{StoredEnchantments: [{id:\"minecraft:fortune\"}]}"
+                    }
+                ]
+            }
+        }
+    },
+    "infinity": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "infinity_activate": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.use"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_infinity",
+                    "operation": "set",
+                    "change": 1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.amethyst_block.chime"
+                },
+                {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:book"
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:enchanted_book"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{StoredEnchantments: [{id:\"minecraft:infinity\"}]}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_infinity",
+                    "comparison": "<",
+                    "compare_to": 1
+                }
+            ]
+        }
+    },
+    "looting": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 3,
+        "start_value": 0
+    },
+    "looting_activate": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.use"
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_looting",
+                                "comparison": "<",
+                                "compare_to": 1
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:nbt",
+                                    "nbt": "{StoredEnchantments: [{lvl: 1s}]}"
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_looting",
+                                "operation": "set",
+                                "change": 1
+                            },
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:book"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_looting",
+                                "comparison": "<",
+                                "compare_to": 2
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:nbt",
+                                    "nbt": "{StoredEnchantments: [{lvl: 2s}]}"
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_looting",
+                                "operation": "set",
+                                "change": 2
+                            },
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:origin",
+                                    "origin": "classes:wizard_looting_1",
+                                    "layer": "classes:conjuration"
+                                },
+                                "if_action": {
+                                    "type": "origins:execute_command",
+                                    "command": "origin set @s classes:conjuration classes:wizard_looting_2"
+                                },
+                                "else_action": {
+                                    "type": "origins:nothing"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:book"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_looting",
+                                "comparison": "<",
+                                "compare_to": 3
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:nbt",
+                                    "nbt": "{StoredEnchantments: [{lvl: 3s}]}"
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_looting",
+                                "operation": "set",
+                                "change": 3
+                            },
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:origin",
+                                            "origin": "classes:wizard_looting_1",
+                                            "layer": "classes:conjuration"
+                                        },
+                                        {
+                                            "type": "origins:origin",
+                                            "origin": "classes:wizard_looting_2",
+                                            "layer": "classes:conjuration"
+                                        }
+                                    ]
+                                },
+                                "if_action": {
+                                    "type": "origins:execute_command",
+                                    "command": "origin set @s classes:conjuration classes:wizard_looting_3"
+                                },
+                                "else_action": {
+                                    "type": "origins:nothing"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:book"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:enchanted_book"
+                        }
+                    },
+                    {
+                        "type": "origins:nbt",
+                        "nbt": "{StoredEnchantments: [{id:\"minecraft:looting\"}]}"
+                    }
+                ]
+            }
+        }
+    },
+    "luck_of_the_sea": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 3,
+        "start_value": 0
+    },
+    "luck_of_the_sea_activate": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.use"
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_luck_of_the_sea",
+                                "comparison": "<",
+                                "compare_to": 1
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:nbt",
+                                    "nbt": "{StoredEnchantments: [{lvl: 1s}]}"
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_luck_of_the_sea",
+                                "operation": "set",
+                                "change": 1
+                            },
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:book"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_luck_of_the_sea",
+                                "comparison": "<",
+                                "compare_to": 2
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:nbt",
+                                    "nbt": "{StoredEnchantments: [{lvl: 2s}]}"
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_luck_of_the_sea",
+                                "operation": "set",
+                                "change": 2
+                            },
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:origin",
+                                    "origin": "classes:wizard_luck_of_the_sea_1",
+                                    "layer": "classes:conjuration"
+                                },
+                                "if_action": {
+                                    "type": "origins:execute_command",
+                                    "command": "origin set @s classes:conjuration classes:wizard_luck_of_the_sea_2"
+                                },
+                                "else_action": {
+                                    "type": "origins:nothing"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:book"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_luck_of_the_sea",
+                                "comparison": "<",
+                                "compare_to": 3
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:nbt",
+                                    "nbt": "{StoredEnchantments: [{lvl: 3s}]}"
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_luck_of_the_sea",
+                                "operation": "set",
+                                "change": 3
+                            },
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:origin",
+                                            "origin": "classes:wizard_luck_of_the_sea_1",
+                                            "layer": "classes:conjuration"
+                                        },
+                                        {
+                                            "type": "origins:origin",
+                                            "origin": "classes:wizard_luck_of_the_sea_2",
+                                            "layer": "classes:conjuration"
+                                        }
+                                    ]
+                                },
+                                "if_action": {
+                                    "type": "origins:execute_command",
+                                    "command": "origin set @s classes:conjuration classes:wizard_luck_of_the_sea_3"
+                                },
+                                "else_action": {
+                                    "type": "origins:nothing"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:book"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:enchanted_book"
+                        }
+                    },
+                    {
+                        "type": "origins:nbt",
+                        "nbt": "{StoredEnchantments: [{id:\"minecraft:luck_of_the_sea\"}]}"
+                    }
+                ]
+            }
+        }
+    },
+    "multishot": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "multishot_activate": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.use"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_multishot",
+                    "operation": "set",
+                    "change": 1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.amethyst_block.chime"
+                },
+                {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:book"
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:enchanted_book"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{StoredEnchantments: [{id:\"minecraft:multishot\"}]}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_multishot",
+                    "comparison": "<",
+                    "compare_to": 1
+                }
+            ]
+        }
+    }
+}

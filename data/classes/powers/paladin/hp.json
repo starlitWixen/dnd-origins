@@ -1,0 +1,5 @@
+{
+    "name": "Health",
+    "description": "You have 10 hearts.",
+    "type": "origins:simple"
+}

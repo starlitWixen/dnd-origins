@@ -1,0 +1,21 @@
+{
+    "name": "Expertise",
+    "description": "You are a master of your craft, and yield better results with your tools than others. You have permanent Looting and Fortune.",
+    "type": "origins:multiple",
+    "fortune": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:fortune",
+        "modifier": {
+            "operation": "set_total",
+            "value": 1
+        }
+    },
+    "looting": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:looting",
+        "modifier": {
+            "operation": "set_total",
+            "value": 1
+        }
+    }
+}

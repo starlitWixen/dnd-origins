@@ -1,0 +1,499 @@
+{
+    "name": "Effect Collection",
+    "hidden": true,
+    "type": "origins:multiple",
+    "speed": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "speed_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_speed",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:speed"
+        }
+    },
+    "slowness": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "slowness_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_slowness",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:slowness"
+        }
+    },
+    "haste": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "haste_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_haste",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:haste"
+        }
+    },
+    "mining_fatigue": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "mining_fatigue_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_mining_fatigue",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:mining_fatigue"
+        }
+    },
+    "strength": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "strength_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_strength",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:strength"
+        }
+    },
+    "jump_boost": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "jump_boost_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_jump_boost",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:jump_boost"
+        }
+    },
+    "nausea": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "nausea_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_nausea",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:nausea"
+        }
+    },
+    "regeneration": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "regeneration_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_regeneration",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:regeneration"
+        }
+    },
+    "resistance": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "resistance_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resistance",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:resistance"
+        }
+    },
+    "fire_resistance": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "fire_resistance_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_fire_resistance",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:fire_resistance"
+        }
+    },
+    "water_breathing": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "water_breathing_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_water_breathing",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:water_breathing"
+        }
+    },
+    "invisibility": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "invisibility_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_invisibility",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:invisibility"
+        }
+    },
+    "blindness": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "blindness_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_blindness",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:blindness"
+        }
+    },
+    "night_vision": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "night_vision_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_night_vision",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:night_vision"
+        }
+    },
+    "hunger": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "hunger_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_hunger",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:hunger"
+        }
+    },
+    "weakness": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "weakness_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_weakness",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:weakness"
+        }
+    },
+    "poison": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "poison_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_poison",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:poison"
+        }
+    },
+    "wither": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "wither_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_wither",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:wither"
+        }
+    },
+    "absorption": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "absorption_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_absorption",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:absorption"
+        }
+    },
+    "saturation": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "saturation_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_saturation",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:saturation"
+        }
+    },
+    "glowing": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "glowing_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_glowing",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:glowing"
+        }
+    },
+    "levitation": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "levitation_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_levitation",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:levitation"
+        }
+    },
+    "slow_falling": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "slow_falling_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_slow_falling",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:slow_falling"
+        }
+    },
+    "conduit_power": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "conduit_power_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_conduit_power",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:conduit_power"
+        }
+    },
+    "dolphins_grace": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "dolphins_grace_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_dolphins_grace",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:dolphins_grace"
+        }
+    },
+    "darkness": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "darkness_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_darkness",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:darkness"
+        }
+    }
+}

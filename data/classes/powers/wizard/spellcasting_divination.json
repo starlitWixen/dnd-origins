@@ -1,0 +1,1372 @@
+{
+    "name": "Divination Spellcasting",
+    "hidden": true,
+    "type": "origins:multiple",
+    "equipment": { 
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_bane_of_arthropods_1",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:bane_of_arthropods 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_bane_of_arthropods_2",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:bane_of_arthropods 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_bane_of_arthropods_3",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:bane_of_arthropods 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_bane_of_arthropods_4",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:bane_of_arthropods 4"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_bane_of_arthropods_5",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:bane_of_arthropods 5"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_impaling_1",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:trident"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:impaling 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_impaling_2",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:trident"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:impaling 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_bane_of_arthropods_3",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:trident"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:impaling 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_impaling_4",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:trident"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:impaling 4"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_impaling_5",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:trident"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:impaling 5"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_sharpness_1",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:sharpness 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_sharpness_2",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:sharpness 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_sharpness_3",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:sharpness 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_sharpness_4",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:sharpness 4"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_sharpness_5",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:sharpness 5"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_smite_1",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:smite 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_smite_2",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:smite 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_smite_3",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:smite 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_smite_4",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:smite 4"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_smite_5",
+                                "layer": "classes:divination"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "tag": "minecraft:swords"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:smite 5"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:xp_levels",
+            "comparison": ">=",
+            "compare_to": 5
+        }
+    },
+    "books": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_bane_of_arthropods_1",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:bane_of_arthropods\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_bane_of_arthropods_2",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:bane_of_arthropods\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_bane_of_arthropods_3",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:bane_of_arthropods\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_bane_of_arthropods_4",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:bane_of_arthropods\", lvl: 4s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_bane_of_arthropods_5",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:bane_of_arthropods\", lvl: 5s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_impaling_1",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:impaling\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_impaling_2",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:impaling\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_impaling_3",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:impaling\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_impaling_4",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:impaling\", lvl: 4s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_impaling_5",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:impaling\", lvl: 5s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_sharpness_1",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:sharpness\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_sharpness_2",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:sharpness\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_sharpness_3",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:sharpness\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_sharpness_4",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:sharpness\", lvl: 4s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_sharpness_5",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:sharpness\", lvl: 5s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_smite_1",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:smite\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_smite_2",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:smite\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_smite_3",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:smite\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_smite_4",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:smite\", lvl: 4s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_smite_5",
+                        "layer": "classes:divination"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:smite\", lvl: 5s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:book"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:xp_levels",
+                    "comparison": ">=",
+                    "compare_to": 5
+                }
+            ]
+        }
+    }
+}

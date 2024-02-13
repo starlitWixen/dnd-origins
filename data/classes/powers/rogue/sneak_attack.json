@@ -1,0 +1,27 @@
+{
+    "name": "Sneak Attack",
+    "description": "You know how to strike subtly and exploit a foe's distraction. You deal extra damage when your target can't see you.",
+    "type": "origins:modify_damage_dealt",
+    "bientity_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:relative_rotation",
+                "actor_rotation": "head",
+                "target_rotation": "body",
+                "comparison": ">=",
+                "compare_to": 0.0
+            },
+            {
+                "type": "origins:actor_condition",
+                "condition": {
+                    "type": "origins:invisible"
+                }
+            }
+        ]
+    },
+    "modifier": {
+        "operation": "addition",
+        "value": 3
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Global Renown", 
+    "description": "Villagers from all over the world recognize and admire you. You have permanent Hero of the Village.",
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:hero_of_the_village",
+            "duration": 20,
+            "show_particles": false,
+            "show_icon": false
+        }
+    }
+}

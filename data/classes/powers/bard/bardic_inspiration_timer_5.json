@@ -1,0 +1,39 @@
+{
+    "name": "Bardic Inspiration Timer",
+    "hidden": true,
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1200,
+        "start_value": 1200,
+        "min_action": {
+            "type": "origins:revoke_power",
+            "power": "*:bard/bardic_inspiration_timer_5",
+            "source": "*:*"
+        }
+    },
+    "decrease": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "change": -1
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:bard/bardic_inspiration_resource",
+                    "change": -1
+                }
+            ]
+        }
+    },
+    "silence": {
+        "type": "origins:prevent_game_event",
+        "tag": "vibrations"
+    }
+}

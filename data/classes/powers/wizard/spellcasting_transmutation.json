@@ -1,0 +1,2420 @@
+{
+    "name": "Transmutation Spellcasting",
+    "hidden": true,
+    "type": "origins:multiple",
+    "equipment": { 
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_aqua_affinity",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:turtle_helmet"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:aqua_affinity"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_depth_strider_1",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_boots"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:depth_strider 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_depth_strider_2",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_boots"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:depth_strider 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_depth_strider_3",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_boots"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:depth_strider 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_feather_falling_1",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_boots"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:feather_falling 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_feather_falling_2",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_boots"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:feather_falling 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_feather_falling_3",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_boots"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:feather_falling 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_feather_falling_4",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_boots"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:feather_falling 4"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_respiration_1",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:turtle_helmet"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:respiration 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_respiration_2",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:turtle_helmet"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:respiration 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_respiration_3",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_helmet"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:turtle_helmet"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:respiration 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_riptide_1",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:trident"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:riptide 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_riptide_2",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:trident"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:riptide 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_riptide_3",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:trident"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:riptide 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_soul_speed_1",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_boots"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:soul_speed 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_soul_speed_2",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_boots"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:soul_speed 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_soul_speed_3",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_boots"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_boots"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:soul_speed 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_swift_sneak_1",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_leggings"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:swift_sneak 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_swift_sneak_2",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_leggings"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:swift_sneak 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_swift_sneak_3",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:iron_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:chainmail_leggings"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:leather_leggings"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:swift_sneak 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_unbreaking_1",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:tools"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:trimmable_armor"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:trident"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:bow"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:crossbow"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:fishing_rod"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:shears"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:flint_and_steel"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:carrot_on_a_stick"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:warped_fungus_on_a_stick"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:shield"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:elytra"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:brush"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:unbreaking 1"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_unbreaking_2",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:tools"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:trimmable_armor"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:trident"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:bow"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:crossbow"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:fishing_rod"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:shears"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:flint_and_steel"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:carrot_on_a_stick"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:warped_fungus_on_a_stick"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:shield"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:elytra"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:brush"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:unbreaking 2"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:origin",
+                                "origin": "classes:wizard_unbreaking_3",
+                                "layer": "classes:transmutation"
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:tools"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "minecraft:trimmable_armor"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:trident"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:bow"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:crossbow"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:fishing_rod"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:shears"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:flint_and_steel"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:carrot_on_a_stick"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:warped_fungus_on_a_stick"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:shield"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:elytra"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:brush"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "enchant @s minecraft:unbreaking 3"
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:xp_levels",
+            "comparison": ">=",
+            "compare_to": 5
+        }
+    },
+    "books": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_aqua_affinity",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:aqua_affinity\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_depth_strider_1",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:depth_strider\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_depth_strider_2",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:depth_strider\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_depth_strider_3",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:depth_strider\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_feather_falling_1",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:feather_falling\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_feather_falling_2",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:feather_falling\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_feather_falling_3",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:feather_falling\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_feather_falling_4",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:feather_falling\", lvl: 4s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_respiration_1",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:respiration\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_respiration_2",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:respiration\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_respiration_3",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:respiration\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_riptide_1",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:riptide\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_riptide_2",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:riptide\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_riptide_3",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:riptide\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_soul_speed_1",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:soul_speed\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_soul_speed_2",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:soul_speed\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_soul_speed_3",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:soul_speed\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_swift_sneak_1",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:swift_sneak\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_swift_sneak_2",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:swift_sneak\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_swift_sneak_3",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:swift_sneak\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_unbreaking_1",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:unbreaking\", lvl: 1s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_unbreaking_2",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:unbreaking\", lvl: 2s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:wizard_unbreaking_3",
+                        "layer": "classes:transmutation"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:enchanted_book",
+                                    "tag": "{StoredEnchantments: [{id:\"minecraft:unbreaking\", lvl: 3s}]}"
+                                }
+                            },
+                            {
+                                "type": "origins:add_xp",
+                                "levels": -5
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:book"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:xp_levels",
+                    "comparison": ">=",
+                    "compare_to": 5
+                }
+            ]
+        }
+    }
+}

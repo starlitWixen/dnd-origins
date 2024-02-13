@@ -1,0 +1,238 @@
+{
+    "name": "Potion Bag",
+    "description": "You always have the perfect potion for the situation. You can grant yourself an effect relevant to your circumstances.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1200,
+        "start_value": 0,
+        "min_action": {
+            "type": "origins:revoke_power",
+            "power": "*:witch/potion_bag_timer",
+            "source": "*:*"
+        },
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 10,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "<",
+                "compare_to": 1200
+            }
+        }
+    },
+    "charge": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:power",
+            "power": "*:witch/potion_bag_timer",
+            "inverted": true
+        }
+    },
+    "grant": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:on_fire"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:fire_resistance",
+                                    "duration": 1200,
+                                    "show_particles": false
+                                }
+                            },
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:potion_bag_timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.brewing_stand.brew"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:submerged_in",
+                        "fluid": "minecraft:water"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:apply_effect",
+                                "effects": {
+                                    "effect": "minecraft:water_breathing",
+                                    "duration": 1200,
+                                    "show_particles": false
+                                }
+                            },
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:potion_bag_timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.brewing_stand.brew"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:fall_distance",
+                        "comparison": ">=",
+                        "compare_to": 4
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:apply_effect",
+                                "effects": {
+                                    "effect": "minecraft:slow_falling",
+                                    "duration": 1200,
+                                    "show_particles": false
+                                }
+                            },
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:potion_bag_timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.brewing_stand.brew"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:health",
+                        "comparison": "<=",
+                        "compare_to": 6
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:apply_effect",
+                                "effects": {
+                                    "effect": "minecraft:regeneration",
+                                    "duration": 1200,
+                                    "show_particles": false
+                                }
+                            },
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:potion_bag_timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.brewing_stand.brew"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:brightness",
+                                "comparison": "<=",
+                                "compare_to": 0.1
+                            },
+                            {
+                                "type": "origins:status_effect",
+                                "effect": "minecraft:night_vision",
+                                "inverted": true
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:apply_effect",
+                                "effects": {
+                                    "effect": "minecraft:night_vision",
+                                    "duration": 1200,
+                                    "show_particles": false
+                                }
+                            },
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:potion_bag_timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.brewing_stand.brew"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:constant",
+                        "value": true
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:apply_effect",
+                                "effects": {
+                                    "effect": "minecraft:speed",
+                                    "duration": 1200,
+                                    "show_particles": false
+                                }
+                            },
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:potion_bag_timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.brewing_stand.brew"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 1200
+        }
+    }
+}

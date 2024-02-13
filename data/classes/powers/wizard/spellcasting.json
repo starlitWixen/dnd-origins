@@ -1,0 +1,90 @@
+{
+    "name": "Spellcasting",
+    "description": "You can cast spells to enchant items in exchange for 5 levels. You must first encounter an enchantment naturally in order to learn how to cast it.",
+    "type": "origins:active_self",
+    "key": {
+        "key": "key.loadToolbarActivator"
+    },
+    "entity_action": {
+        "type": "origins:if_else_list",
+        "actions": [
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "classes:wizard_abjuration",
+                    "layer": "classes:wizard"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin gui @s classes:abjuration"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "classes:wizard_conjuration",
+                    "layer": "classes:wizard"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin gui @s classes:conjuration"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "classes:wizard_divination",
+                    "layer": "classes:wizard"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin gui @s classes:divination"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "classes:wizard_enchantment",
+                    "layer": "classes:wizard"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin gui @s classes:enchantment"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "classes:wizard_evocation",
+                    "layer": "classes:wizard"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin gui @s classes:evocation"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "classes:wizard_necromancy",
+                    "layer": "classes:wizard"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin gui @s classes:necromancy"
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "classes:wizard_transmutation",
+                    "layer": "classes:wizard"
+                },
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "origin gui @s classes:transmutation"
+                }
+            }
+        ]
+    }
+}
