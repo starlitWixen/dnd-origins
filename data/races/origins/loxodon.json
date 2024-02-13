@@ -1,0 +1,15 @@
+{
+	"name": "Loxodon",
+	"description": "The humanoid elephants called loxodons are often oases of calm, though if provoked to action, they are true terrors — bellowing with rage, trumpeting and flapping their ears.",
+	"powers": [
+		"races:looming_stature",
+		"races:loxodon/powerful_build",
+		"races:loxodon/natural_armor",
+		"races:loxodon/trunk"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 11,
+	"impact": 0
+}

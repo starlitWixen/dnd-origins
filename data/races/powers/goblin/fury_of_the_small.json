@@ -1,0 +1,94 @@
+{
+    "name": "Fury of the Small",
+    "description": "You deal extra damage to entities that are larger than you.",
+    "type": "origins:multiple",
+    "normal": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name": "Fury of the Small",
+            "operation": "addition",
+            "value": 3
+        },
+        "bientity_condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:origin",
+                "origin": "size:1.0",
+                "layer": "size:size"
+            }
+        },
+        "target_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "size:3.0",
+                    "layer": "size:size"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "size:2.0",
+                    "layer": "size:size"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "size:1.2",
+                    "layer": "size:size"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "races:big"
+                }
+            ]
+        }
+    },
+    "small": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name": "Fury of the Small",
+            "operation": "addition",
+            "value": 3
+        },
+        "bientity_condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:origin",
+                "origin": "size:0.5",
+                "layer": "size:size"
+            }
+        },
+        "target_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "size:3.0",
+                    "layer": "size:size"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "size:2.0",
+                    "layer": "size:size"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "size:1.2",
+                    "layer": "size:size"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "size:1.0",
+                    "layer": "size:size"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "races:big"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "races:medium"
+                }
+            ]
+        }
+    }
+}

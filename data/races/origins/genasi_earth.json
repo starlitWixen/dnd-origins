@@ -1,0 +1,15 @@
+{
+	"name": "Earth Genasi",
+	"description": "Tracing their ancestry to dao, the genies of the Elemental Plane of Earth, earth genasi inherit dao’s steadfast strength and control over earth.",
+	"powers": [
+		"races:genasi/earth/earth_armor",
+		"origins:strong_arms",
+		"races:genasi/earth/merge_with_stone",
+		"origins:strong_arms_break_speed"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Orc",
+	"description": "The divine qualities of Gruumsh resonate within orcs, granting them a reflection of his toughness and tenacity that can't be matched.",
+	"powers": [
+		"races:orc/adrenaline_rush",
+		"races:darkvision",
+		"races:orc/powerful_build",
+		"races:orc/relentless_endurance",
+		"races:normal_height"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 12,
+	"impact": 0
+}

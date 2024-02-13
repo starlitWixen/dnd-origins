@@ -1,0 +1,11 @@
+{
+    "name": "Fleet of Foot",
+    "description": "Your movement speed is increased.",
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Fleet of Foot movement speed",
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_base",
+        "value": 0.1
+    }
+}

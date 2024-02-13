@@ -1,0 +1,9 @@
+{
+    "name": "Superior Darkvision",
+    "description": "You are immune to the blindness and darkness effects.",
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:blindness",
+        "minecraft:darkness"
+    ]
+}

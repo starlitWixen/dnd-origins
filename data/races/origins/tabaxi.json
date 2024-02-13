@@ -1,0 +1,16 @@
+{
+	"name": "Tabaxi",
+	"description": "Created by the Cat Lord to blend the qualities of humanoids and cats, tabaxi are a varied people in both attitude and appearance.",
+	"powers": [
+		"races:tabaxi/climbing",
+		"races:tabaxi/cats_claws",
+		"races:darkvision",
+		"races:tabaxi/feline_agility",
+		"races:normal_height"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 13,
+	"impact": 0
+}

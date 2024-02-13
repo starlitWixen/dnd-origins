@@ -1,0 +1,15 @@
+{
+	"name": "Goblin",
+	"description": "A subterranean folk, goblins can be found in every corner of the multiverse.",
+	"powers": [
+		"races:slight_build",
+		"races:darkvision",
+		"races:goblin/fury_of_the_small",
+		"races:goblin/nimble_escape"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 8,
+	"impact": 0
+}

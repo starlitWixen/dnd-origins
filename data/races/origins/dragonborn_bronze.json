@@ -1,0 +1,13 @@
+{
+	"name": "Bronze Dragonborn",
+	"description": "Your draconic ancestor was a bronze dragon, and your elemental affinity is lightning.",
+	"powers": [
+		"races:dragonborn/breath_weapon_lightning",
+		"races:immunity_lightning"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

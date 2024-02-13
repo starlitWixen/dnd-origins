@@ -1,0 +1,104 @@
+{
+    "name": "Produce Flame",
+    "description": "You can ignite blocks with your bare hands.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 60,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 15,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "==",
+                "compare_to": 60,
+                "inverted": true
+            }
+        },
+        "start_value": 60
+    },
+    "charge": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "<",
+            "compare_to": 60
+        }
+    },
+    "ignite_block": {
+        "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 0,
+            "operation": "set"
+        },
+        "block_action": {
+            "type": "origins:offset",
+            "action": {
+                "type": "origins:set_block",
+                "block": "minecraft:fire"
+            },
+            "y": 1
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_resource",
+                    "comparison": "==",
+                    "compare_to": 60
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        }
+    },
+    "ignite_entities": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:set_on_fire",
+                        "duration": 4
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "change": 0,
+                        "operation": "set"
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 60
+        }
+    }
+}

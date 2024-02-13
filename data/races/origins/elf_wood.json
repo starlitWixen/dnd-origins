@@ -1,0 +1,13 @@
+{
+	"name": "Wood Elf",
+	"description": "Wood elves have keen senses and intuition, and their fleet feet carry them quickly and stealthily through their native forests.",
+	"powers": [
+		"races:elf/wood/fleet_of_foot",
+		"races:elf/wood/mask_of_the_wild"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

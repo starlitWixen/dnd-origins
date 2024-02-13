@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:dirt",
+    "minecraft:rooted_dirt",
+    "minecraft:coarse_dirt",
+    "minecraft:grass_block",
+    "minecraft:dirt_path",
+    "minecraft:podzol",
+    "minecraft:mycelium",
+    "minecraft:sand",
+    "minecraft:red_sand",
+    "minecraft:gravel",
+    "minecraft:soul_sand",
+    "minecraft:soul_soil",
+    "minecraft:mud",
+    "minecraft:clay"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+	"name": "Genasi",
+	"description": "Genasi carry the power of the elemental planes of air, earth, fire, and water in their blood.",
+	"powers": [
+		"races:darkvision",
+		"races:genasi/elemental_ancestor",
+		"races:normal_height"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 6,
+	"impact": 0
+}

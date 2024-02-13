@@ -1,0 +1,13 @@
+{
+	"name": "Silver Dragonborn",
+	"description": "Your draconic ancestor was a silver dragon, and your elemental affinity is cold.",
+	"powers": [
+		"races:dragonborn/breath_weapon_cold",
+		"races:immunity_cold"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 6,
+	"impact": 0
+}

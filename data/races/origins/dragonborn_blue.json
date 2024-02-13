@@ -1,0 +1,13 @@
+{
+	"name": "Blue Dragonborn",
+	"description": "Your draconic ancestor was a blue dragon, and your elemental affinity is lightning.",
+	"powers": [
+		"races:dragonborn/breath_weapon_lightning",
+		"races:immunity_lightning"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

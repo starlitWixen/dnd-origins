@@ -1,0 +1,12 @@
+{
+	"name": "Autumn Eladrin",
+	"description": "Your seasonal affinity is autumn, and your elemental affinity is poison.",
+	"powers": [
+		"races:immunity_poison"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Drow Weapon Training",
+    "description": "You have been trained to deal more damage when you fight.",
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "name": "Drow Weapon Training damage boost",
+        "operation": "addition",
+        "value": 3
+    },
+    "bientity_condition": {
+        "type": "origins:actor_condition",
+        "condition": {
+            "type": "origins:exposed_to_sun",
+            "inverted": true
+        }
+    }
+}

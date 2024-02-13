@@ -1,0 +1,17 @@
+{
+    "name": "Stonecunning",
+    "description": "Your mining speed is increased.",
+    "type": "origins:modify_break_speed",
+    "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "mineable/pickaxe"
+    },
+    "condition": {
+        "type": "origins:using_effective_tool"
+    },
+    "modifier": {
+        "name": "Stonecunning break speed bonus",
+        "value": 0.1,
+        "operation": "multiply_base"
+    }
+}

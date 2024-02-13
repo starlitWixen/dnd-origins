@@ -1,0 +1,16 @@
+{
+	"name": "Gnome",
+	"description": "A gnome's energy and enthusiasm for living shines through every inch of their tiny body.",
+	"powers": [
+		"races:slight_build",
+		"races:darkvision",
+		"races:gnome/gnomish_cunning",
+		"races:gnome/natural_illusionist",
+		"races:gnome/speak_with_small_beasts"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 7,
+	"impact": 0
+}

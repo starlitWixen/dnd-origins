@@ -1,0 +1,9 @@
+{
+    "name": "Gnome Cunning",
+    "description": "You are immune to damage from magic.",
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "magic"
+    }
+}

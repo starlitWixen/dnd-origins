@@ -1,0 +1,16 @@
+{
+	"name": "Halfling",
+	"description": "The diminutive halflings survive in a world full of larger creatures by avoiding notice or, barring that, avoiding offense.",
+	"powers": [
+		"races:slight_build",
+		"races:halfling/lucky",
+		"races:halfling/halfling_nimbleness",
+		"races:halfling/naturally_stealthy",
+		"races:halfling/stout_resilience"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 9,
+	"impact": 0
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Experience Manipulation",
+    "description": "You earn experience at a faster rate than others.",
+    "type": "origins:modify_xp_gain",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 1.5
+    }
+}

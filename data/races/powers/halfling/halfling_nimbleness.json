@@ -1,0 +1,6 @@
+{
+    "name": "Halfling Nimbleness",
+    "description": "You aren't slowed by blocks such as cobwebs or sweet berry bushes.",
+    "type": "extraorigins:prevent_block_slowness",
+    "inverted": true
+}

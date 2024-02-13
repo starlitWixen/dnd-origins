@@ -1,0 +1,26 @@
+{
+    "name": "Elf Subrace",
+    "gui_title": {
+        "choose_origin": "Choose an elf subrace.",
+        "view_origin": "This is your elf subrace."
+    },
+    "replace": false,
+    "order": 1,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "races:elf",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "races:elf_high",
+                "races:elf_wood",
+                "races:elf_dark",
+                "races:elf_eladrin"
+            ]
+        }
+    ],
+    "allow_random": true
+}

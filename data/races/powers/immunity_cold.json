@@ -1,0 +1,19 @@
+{
+    "name": "Cold Immunity",
+    "description": "You are immune to damage from cold.",
+    "type": "origins:multiple",
+    "mc": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "freeze"
+        }
+    },
+    "dnd": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "cold"
+        }
+    }
+}

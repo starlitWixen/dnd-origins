@@ -1,0 +1,31 @@
+{
+	"name": "Water Walk",
+	"description": "You can walk on water.",
+	"type": "apoli:walk_on_fluid",
+	"fluid": "minecraft:water",
+	"condition": {
+		"type": "apoli:and",
+		"conditions": [
+			{
+				"type": "apoli:in_block",
+				"block_condition": {
+					"type": "apoli:fluid",
+					"fluid_condition": {
+						"type": "apoli:in_tag",
+						"tag": "minecraft:water"
+					}
+				}
+				},
+			{
+				"type": "apoli:sneaking",
+				"inverted": true
+			},
+			{
+				"type": "apoli:fluid_height",
+				"fluid": "minecraft:water",
+				"comparison": "<=",
+				"compare_to": 0.4
+			}
+		]
+	}
+}

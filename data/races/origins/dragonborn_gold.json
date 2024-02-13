@@ -1,0 +1,13 @@
+{
+	"name": "Gold Dragonborn",
+	"description": "Your draconic ancestor was a gold dragon, and your elemental affinity is fire.",
+	"powers": [
+		"races:dragonborn/breath_weapon_fire",
+		"races:immunity_fire"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

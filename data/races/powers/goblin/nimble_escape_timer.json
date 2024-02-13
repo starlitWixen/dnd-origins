@@ -1,0 +1,23 @@
+{
+    "name": "Nimble Escape Timer",
+    "hidden": true,
+    "type": "origins:multiple",
+    "decrease": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:goblin/nimble_escape_resource",
+            "change": -3
+        }
+    },
+    "speed": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "name": "Nimble Escape speed boost",
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_base",
+            "value": 0.4
+        }
+    }
+}

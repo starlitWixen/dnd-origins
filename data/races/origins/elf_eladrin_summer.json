@@ -1,0 +1,12 @@
+{
+	"name": "Summer Eladrin",
+	"description": "Your seasonal affinity is summer, and your elemental affinity is fire.",
+	"powers": [
+		"races:immunity_fire"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}

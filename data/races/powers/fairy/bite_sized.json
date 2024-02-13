@@ -1,0 +1,9 @@
+{
+    "name": "Bite Sized",
+    "description": "You are half a block tall.",
+    "type": "origins:action_on_callback",
+    "entity_action_gained": {
+        "type": "origins:execute_command",
+        "command": "origin set @s size:size size:0.5.0"
+    }
+}

@@ -1,0 +1,89 @@
+{
+    "name": "Merge with Stone",
+    "description": "You can phase through natural stone.",
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        },
+        "retain_state": false,
+        "condition": {
+            "type": "apoli:food_level",
+            "comparison": ">",
+            "compare_to": 6
+        }
+    },
+    "phasing": {
+        "type": "origins:phasing",
+        "render_type": "blindness",
+        "blacklist": false,
+        "view_distance": 10,
+        "block_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "origins:natural_stone"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "races:merge"
+                }
+            ]
+        },
+        "phase_down_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:on_block"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "invis_in_block": {
+        "type": "origins:invisibility",
+        "render_armor": false,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "races:air"
+                    },
+                    "radius": 1,
+                    "shape": "cube",
+                    "comparison": "<",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:water"
+                            },
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:lava"
+                            }
+                        ]
+                    },
+                    "inverted": true
+                }
+            ]
+        }
+    }
+}

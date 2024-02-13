@@ -1,0 +1,9 @@
+{
+    "name": "Stout Build",
+    "description": "You are 1.2 blocks tall.",
+    "type": "origins:action_on_callback",
+    "entity_action_gained": {
+        "type": "origins:execute_command",
+        "command": "origin set @s size:size size:1.2"
+    }
+}

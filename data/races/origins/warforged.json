@@ -1,0 +1,16 @@
+{
+	"name": "Warforged",
+	"description": "An unexpected technological breakthrough produced the Warforged, sapient soldiers who some have only grudgingly accepted as a new species.",
+	"powers": [
+		"races:warforged/constructed_resilience",
+		"races:warforged/right_to_repair",
+		"races:warforged/integrated_protection",
+		"races:immunity_poison",
+		"races:normal_height"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 16,
+	"impact": 0
+}

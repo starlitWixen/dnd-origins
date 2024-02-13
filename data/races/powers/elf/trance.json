@@ -1,0 +1,17 @@
+{
+    "name": "Trance",
+    "description": "You don't need to sleep, and phantoms don't haunt you.",
+    "type": "origins:multiple",
+    "no_phantoms": {
+        "type": "origins:modify_insomnia_ticks",
+        "modifier": {
+            "operation": "set_total",
+            "value": 0
+        }
+    },
+    "no_sleep": {
+        "type": "origins:prevent_sleep",
+        "message": "You don't need to sleep.",
+        "set_spawn_point": true
+    }
+}

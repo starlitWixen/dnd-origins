@@ -1,0 +1,19 @@
+{
+    "name": "Lightning Immunity",
+    "description": "You are immune to damage from lightning.",
+    "type": "origins:multiple",
+    "mc": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "lightningBolt"
+        }
+    },
+    "dnd": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "lightning"
+        }
+    }
+}

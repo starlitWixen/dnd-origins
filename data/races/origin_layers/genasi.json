@@ -1,0 +1,26 @@
+{
+    "name": "Genasi Element",
+    "gui_title": {
+        "choose_origin": "Choose an element.",
+        "view_origin": "This is your element."
+    },
+    "replace": false,
+    "order": 1,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "races:genasi",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "races:genasi_air",
+                "races:genasi_earth",
+                "races:genasi_fire",
+                "races:genasi_water"
+            ]
+        }
+    ],
+    "allow_random": true
+}

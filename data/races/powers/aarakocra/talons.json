@@ -1,0 +1,20 @@
+{
+    "name": "Talons",
+    "description": "You have talons that double as weapons. You deal extra damage when empty-handed.",
+    "type": "origins:modify_damage_dealt",
+    "bientity_condition": {
+        "type": "origins:actor_condition",
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:empty"
+            }
+        }
+    },
+    "modifier": {
+        "name": "Talons unarmed damage boost",
+        "operation": "addition",
+        "value": 5
+    }
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Water Genasi",
+	"description": "Water genasi are perfectly suited to life underwater and carry the power of the waves inside themselves.",
+	"powers": [
+		"races:genasi/water/amphibious",
+		"races:genasi/water/water_walk",
+		"races:genasi/water/call_to_the_wave",
+		"origins:aquatic",
+		"origins:conduit_power_on_land"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

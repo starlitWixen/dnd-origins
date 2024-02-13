@@ -1,0 +1,188 @@
+{
+    "name": "Ignite",
+    "description": "The Pokémon can right click blocks with an empty hand to ignite them, and can right click while holding raw meat to cook it.",
+    "type": "origins:multiple",
+    "blocks": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:offset",
+            "action": {
+                "type": "origins:set_block",
+                "block": "minecraft:fire"
+            },
+            "y": 1
+        },
+        "block_condition": {
+            "type": "origins:offset",
+            "condition": {
+                "type": "origins:block",
+                "block": "minecraft:air"
+            },
+            "y": 1
+        },
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    },
+    "salmon": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:give",
+            "stack": {
+                "item": "minecraft:cooked_salmon"
+            }
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:salmon"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    },
+    "cod": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:give",
+            "stack": {
+                "item": "minecraft:cooked_cod"
+            }
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:cod"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    },
+    "rabbit": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:give",
+            "stack": {
+                "item": "minecraft:cooked_rabbit"
+            }
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:rabbit"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    },
+    "porkchop": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:give",
+            "stack": {
+                "item": "minecraft:cooked_porkchop"
+            }
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:porkchop"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    },
+    "mutton": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:give",
+            "stack": {
+                "item": "minecraft:cooked_mutton"
+            }
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:mutton"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    },
+    "chicken": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:give",
+            "stack": {
+                "item": "minecraft:cooked_chicken"
+            }
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:chicken"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    },
+    "beef": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:give",
+            "stack": {
+                "item": "minecraft:cooked_beef"
+            }
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:beef"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    }
+}

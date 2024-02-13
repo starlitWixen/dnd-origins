@@ -1,0 +1,15 @@
+{
+    "name": "Lucky",
+    "description": "You are naturally lucky.",
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:luck",
+            "duration": 200,
+            "show_particles": false,
+            "show_icon": false
+        }
+    }
+}

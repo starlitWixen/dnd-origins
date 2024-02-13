@@ -1,0 +1,15 @@
+{
+    "name": "Unending Breath",
+    "description": "You can hold your breath indefinitely.",
+    "hidden": false,
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:gain_air",
+        "value": 20
+    }
+}

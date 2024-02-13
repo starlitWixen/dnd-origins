@@ -1,0 +1,12 @@
+{
+	"name": "Spring Eladrin",
+	"description": "Your seasonal affinity is spring, and your elemental affinity is lightning.",
+	"powers": [
+		"races:immunity_lightning"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Burning Hands",
+    "description": "Your attacks deal fire damage.",
+    "type": "origins:modify_enchantment_level",
+    "enchantment": "minecraft:fire_aspect",
+    "modifier": {
+        "operation": "set_total",
+        "value": 1
+    }
+}

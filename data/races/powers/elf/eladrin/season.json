@@ -1,0 +1,5 @@
+{
+    "name": "Season",
+    "description": "Eladrin each are magically attuned to one of the four seasons: Summer, Autumn, Winter, and Spring.",
+    "type": "origins:simple"
+}

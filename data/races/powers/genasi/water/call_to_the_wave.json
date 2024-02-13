@@ -1,0 +1,67 @@
+{
+    "name": "Call to the Wave",
+    "description": "Your underwater swimming speed and underwater mining speed are increased. You do not float or sink unless you want to.",
+    "type": "origins:multiple",
+    "swim_speed": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "additionalentityattributes:water_speed",
+            "name": "Call to the Wave swim speed",
+            "value": 1.5,
+            "operation": "multiply_base"
+        }
+    },
+    "underwater": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 4
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:water"
+                },
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:aqua_affinity",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "ungrounded": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 4
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:on_block",
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "like_water": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:grant_power",
+            "power": "origins:like_water",
+            "source": "*:*"
+        }
+    }
+}

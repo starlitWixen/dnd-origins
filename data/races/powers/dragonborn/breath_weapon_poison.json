@@ -1,0 +1,52 @@
+{
+	"name": "Breath Weapon",
+	"description": "You can exhale destructive poisonous energy.",
+	"type": "origins:active_self",
+	"cooldown": 100,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+		"bar_index": 20
+	},
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:raycast",
+				"shape_type": "visual",
+				"fluid_handling": "none",
+				"bientity_action": {
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:and",
+						"actions": [
+							{
+								"type": "origins:damage",
+								"amount": 6,
+								"damage_type": "minecraft:poison"
+							},
+							{
+								"type": "origins:apply_effect",
+								"effect": {
+									"effect": "minecraft:poison",
+									"duration": 80
+								}
+							}
+						]
+					}
+				},
+				"distance": 15,
+				"command_step": 0.25,
+				"command_along_ray": "particle dust 0.15 0.3 0.1 1 ~ ~ ~ 0.12 0.23 0.08 0 2 force"
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.ghast.shoot",
+				"volume": 1
+			}
+		]
+	},
+	"key": {
+		"key": "key.origins.primary_active"
+	}
+}

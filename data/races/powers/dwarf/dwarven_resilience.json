@@ -1,0 +1,16 @@
+{
+    "name": "Dwarven Resilience",
+    "description": "You are immune to damage from poison.",
+    "type": "origins:multiple",
+    "mc": {
+        "type": "origins:effect_immunity",
+        "effect": "minecraft:poison"
+    },
+    "dnd": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "poison"
+        }
+    }
+}

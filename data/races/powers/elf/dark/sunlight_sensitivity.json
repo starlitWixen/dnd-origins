@@ -1,0 +1,16 @@
+{
+    "name": "Sunlight Sensitivity",
+    "description": "You deal less damage when in direct sunlight.",
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "name": "Sunlight Sensitivity sunlight debuff",
+        "operation": "addition",
+        "value": -3
+    },
+    "bientity_condition": {
+        "type": "origins:actor_condition",
+        "condition": {
+            "type": "origins:exposed_to_sun"
+        }
+    }
+}

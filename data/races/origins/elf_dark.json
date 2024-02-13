@@ -1,0 +1,15 @@
+{
+	"name": "Dark Elf",
+	"description": "Dark elves, also known as drow, are infused with the magic of the Underdark, an underground realm of wonders and horrors rarely seen on the surface above.",
+	"powers": [
+		"races:elf/dark/superior_darkvision",
+		"races:elf/dark/sunlight_sensitivity",
+		"races:elf/dark/drow_magic",
+		"races:elf/dark/drow_weapon_training"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

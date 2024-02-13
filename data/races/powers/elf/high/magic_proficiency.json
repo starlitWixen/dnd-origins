@@ -1,0 +1,29 @@
+{
+    "name": "Magic Proficiency",
+    "description": "You are resistant to damage from magic, and you deal extra magic damage.",
+    "type": "origins:multiple",
+    "taken": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "magic"
+        },
+        "modifier": {
+            "name": "Magic resist",
+            "operation": "multiply_base",
+            "value": 1.5
+        }
+    },
+    "dealt": {
+        "type": "origins:modify_damage_dealt",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "magic"
+        },
+        "modifier": {
+            "name": "Magic boost",
+            "operation": "multiply_base",
+            "value": 1.5
+        }
+    }
+}

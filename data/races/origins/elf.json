@@ -1,0 +1,15 @@
+{
+	"name": "Elf",
+	"description": "Elves are a magical people of otherworldly grace, living in the world but not entirely part of it.",
+	"powers": [
+		"races:darkvision",
+		"races:elf/trance",
+		"races:elf/subrace",
+		"races:normal_height"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 4,
+	"impact": 0
+}

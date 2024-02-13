@@ -1,0 +1,13 @@
+{
+	"name": "Red Dragonborn",
+	"description": "Your draconic ancestor was a red dragon, and your elemental affinity is fire.",
+	"powers": [
+		"races:dragonborn/breath_weapon_fire",
+		"races:immunity_fire"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 5,
+	"impact": 0
+}

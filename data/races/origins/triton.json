@@ -1,0 +1,17 @@
+{
+	"name": "Triton",
+	"description": "Tritons spread across the worlds' oceans, protecting the surface from terrors in the deep.",
+	"powers": [
+		"races:triton/amphibious",
+		"races:triton/control_air_and_water",
+		"races:darkvision",
+		"races:triton/emissary_of_the_sea",
+		"races:triton/guardian_of_the_depths",
+		"races:normal_height"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 15,
+	"impact": 0
+}

@@ -1,0 +1,13 @@
+{
+	"name": "White Dragonborn",
+	"description": "Your draconic ancestor was a white dragon, and your elemental affinity is cold.",
+	"powers": [
+		"races:dragonborn/breath_weapon_cold",
+		"races:immunity_cold"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 7,
+	"impact": 0
+}

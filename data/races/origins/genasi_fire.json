@@ -1,0 +1,14 @@
+{
+	"name": "Fire Genasi",
+	"description": "Descended from efreet, the genies of the Elemental Plane of Fire, fire genasi channel the flamboyant and often destructive nature of flame.",
+	"powers": [
+		"races:genasi/fire/immunity_fire",
+		"races:genasi/fire/burning_hands",
+		"races:genasi/fire/produce_flame"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

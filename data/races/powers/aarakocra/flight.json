@@ -1,0 +1,105 @@
+{
+	"name": "Flight",
+	"description": "You have wings and can use them to fly, so long as you aren't wearing armor. Sprint while in elytra flight to gain forward propulsion.",
+	"type": "origins:multiple",
+	"elytra": {
+		"type": "origins:elytra_flight",
+		"render_elytra": true,
+		"texture_location": "minecraft:textures/entity/elytra.png"
+	},
+	"resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 30,
+		"start_value": 30,
+		"hud_render": {
+			"should_render": true,
+			"bar_index": 4,
+			"condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "<",
+                "compare_to": 30
+            }
+		}
+	},
+	"gain": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_resource",
+			"change": 1
+		},
+		"interval": 20
+	},
+	"use": {
+		"type": "origins:active_self",
+		"cooldown": 0,
+		"key": {
+			"key": "key.sprint",
+			"continuous": true
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:add_velocity",
+					"z": 0.0825,
+					"space": "local"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "*:*_resource",
+					"change": -1
+				},
+				{
+					"type": "origins:exhaust",
+					"interval": 4,
+					"amount": 0.6
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:fall_flying"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_resource",
+					"comparison": ">",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:empty"
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "chest",
+					"item_condition": {
+						"type": "origins:empty"
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "legs",
+					"item_condition": {
+						"type": "origins:empty"
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "feet",
+					"item_condition": {
+						"type": "origins:empty"
+					}
+				}
+			]
+		}
+	}
+}

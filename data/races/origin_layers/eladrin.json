@@ -1,0 +1,26 @@
+{
+    "name": "Eladrin Season",
+    "gui_title": {
+        "choose_origin": "Choose a season.",
+        "view_origin": "This is your season."
+    },
+    "replace": false,
+    "order": 2,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "races:elf_eladrin",
+                "layer": "races:elf"
+            },
+            "origins": [
+                "races:elf_eladrin_summer",
+                "races:elf_eladrin_autumn",
+                "races:elf_eladrin_winter",
+                "races:elf_eladrin_spring"
+            ]
+        }
+    ],
+    "allow_random": true
+}

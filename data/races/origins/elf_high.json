@@ -1,0 +1,13 @@
+{
+	"name": "High Elf",
+	"description": "High elves have keen minds and a mastery of at least the basics of magic.",
+	"powers": [
+		"races:elf/high/magic_proficiency",
+		"races:elf/high/experience_manipulation"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}

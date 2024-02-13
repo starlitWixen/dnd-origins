@@ -1,0 +1,13 @@
+{
+	"name": "Black Dragonborn",
+	"description": "Your draconic ancestor was a black dragon, and your elemental affinity is poison.",
+	"powers": [
+		"races:dragonborn/breath_weapon_poison",
+		"races:immunity_poison"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}

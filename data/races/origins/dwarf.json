@@ -1,0 +1,16 @@
+{
+	"name": "Dwarf",
+	"description": "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal.",
+	"powers": [
+		"races:dwarf/stout_build",
+		"races:darkvision",
+		"races:dwarf/dwarven_toughness",
+		"races:dwarf/dwarven_resilience",
+		"races:dwarf/stonecunning"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

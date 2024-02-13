@@ -1,0 +1,16 @@
+{
+	"name": "Tiefling",
+	"description": "To be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling.",
+	"powers": [
+		"races:darkvision",
+		"races:tiefling/superior_darkvision",
+		"races:tiefling/hellish_resistance",
+		"races:tiefling/hellish_rebuke",
+		"races:normal_height"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 14,
+	"impact": 0
+}

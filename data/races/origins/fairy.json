@@ -1,0 +1,15 @@
+{
+	"name": "Fairy",
+	"description": "Infused with the magic of the Feywild, most fairies look like small elves with insectile wings.",
+	"powers": [
+		"races:fairy/bite_sized",
+		"races:fairy/fairy_magic",
+		"races:fairy/fairy_dust",
+		"races:fairy/flight"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 5,
+	"impact": 0
+}

@@ -1,0 +1,40 @@
+{
+	"name": "Breath Weapon",
+	"description": "You can exhale destructive freezing energy.",
+	"type": "origins:active_self",
+	"cooldown": 100,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+		"bar_index": 8
+	},
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:raycast",
+				"shape_type": "visual",
+				"fluid_handling": "none",
+				"bientity_action": {
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:damage",
+						"amount": 8,
+						"damage_type": "minecraft:cold"
+					}
+				},
+				"distance": 15,
+				"command_step": 0.25,
+				"command_along_ray": "particle minecraft:snowflake ~ ~ ~ .01 .01 .01 0 2 force"
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.ghast.shoot",
+				"volume": 1
+			}
+		]
+	},
+	"key": {
+		"key": "key.origins.primary_active"
+	}
+}
