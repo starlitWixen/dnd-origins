@@ -6,6 +6,7 @@
         "classes:druid/bimodal_respiration",
         "classes:druid/aquatic_adaptations",
         "classes:druid/dolphin/dolphins_grace",
+		"origins:aquatic",
 		"classes:druid/neutral"
 	],
 	"icon": {

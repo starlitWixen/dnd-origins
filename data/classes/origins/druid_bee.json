@@ -9,6 +9,7 @@
 		"origins:slow_falling",
 		"origins:like_air",
 		"classes:druid/bee/particles",
+		"origins:arthropod",
 		"classes:druid/neutral"
 	],
 	"icon": {

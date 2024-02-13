@@ -7,6 +7,8 @@
 		"classes:druid/cave_spider/venom_glands",
         "classes:druid/cave_spider/venom_immunity",
 		"classes:druid/darkvision",
+		"classes:druid/cave_spider/cobweb",
+		"origins:arthropod",
 		"classes:druid/neutral"
 	],
 	"icon": {

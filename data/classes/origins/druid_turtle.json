@@ -5,6 +5,7 @@
 		"classes:druid/turtle/stats",
 		"classes:druid/bimodal_respiration",
 		"classes:druid/aquatic_adaptations",
+		"origins:aquatic",
 		"classes:druid/neutral"
 	],
 	"icon": {

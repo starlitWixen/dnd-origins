@@ -5,6 +5,8 @@
 		"classes:druid/spider/stats",
 		"classes:druid/climbing",
 		"classes:druid/darkvision",
+		"classes:druid/spider/cobweb",
+		"origins:arthropod",
 		"classes:druid/neutral"
 	],
 	"icon": {
