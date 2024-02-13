@@ -1,0 +1,69 @@
+{
+    "name": "Lava Walker",
+    "description": "You can quickly move over lava without sinking.",
+    "type": "origins:multiple",
+    "walk": {
+        "type": "origins:walk_on_fluid",
+        "fluid": "minecraft:lava",
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:lava",
+            "comparison": "<=",
+            "compare_to": 0.4
+        }
+    },
+    "no_lava_fall_damage": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fall"
+        },
+        "condition": {
+            "type": "origins:in_block",
+            "block_condition": {
+                "type": "origins:fluid",
+                "fluid_condition": {
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:lava"
+                }
+            }
+        }
+    },
+    "speed": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "name": "Lava Walk lava speed",
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "addition",
+            "value": 0.145
+        },
+        "condition": {
+            "type": "origins:block_in_radius",
+            "block_condition": {
+                "type": "origins:block",
+                "block": "minecraft:lava"
+            },
+            "radius": 1,
+            "shape": "cube",
+            "comparison": ">=",
+            "compare_to": 1
+        }
+    },
+    "immunity": {
+        "type": "origins:fire_immunity"
+    },
+    "shake": {
+        "type": "origins:shaking",
+        "condition": {
+            "type": "origins:block_in_radius",
+            "block_condition": {
+                "type": "origins:block",
+                "block": "minecraft:lava"
+            },
+            "radius": 1,
+            "shape": "cube",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    }
+}

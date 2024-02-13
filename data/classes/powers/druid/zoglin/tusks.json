@@ -1,0 +1,10 @@
+{
+    "name": "Tusks",
+    "description": "You deal extra damage with your attacks.",
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "name": "Tusks damage buff",
+        "operation": "addition",
+        "value": 7
+    }
+}

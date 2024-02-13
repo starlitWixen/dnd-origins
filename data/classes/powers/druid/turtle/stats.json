@@ -1,0 +1,49 @@
+{
+    "name": "Stats",
+    "description": "You are 1 block tall, and you have 15 hearts.",
+    "type": "origins:multiple",
+    "hp": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "value": 14
+        }
+    },
+    "change_size": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:execute_command",
+            "command": "origin set @s size:size size:1.0"
+        }
+    },
+    "size_attributes": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "name": "Origin modifier",
+                "attribute": "minecraft:generic.attack_speed",
+                "operation": "addition",
+                "value": 0.25
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "minecraft:generic.movement_speed",
+                "operation": "addition",
+                "value": -0.0075
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "reach-entity-attributes:attack_range",
+                "operation": "addition",
+                "value": -0.125
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "reach-entity-attributes:reach",
+                "operation": "addition",
+                "value": -0.5
+            }
+        ]
+    }
+}
