@@ -219,6 +219,17 @@
         {
             "condition": {
                 "type": "origins:resource",
+                "resource": "classes:druid/beast_collection_salmon",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:druid_salmon"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
                 "resource": "classes:druid/beast_collection_sheep",
                 "comparison": "==",
                 "compare_to": 1
