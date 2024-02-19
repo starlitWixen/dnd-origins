@@ -48,5 +48,16 @@
             "operation": "addition",
             "value": 0.3
         }
+    },
+    "fall_damage": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fall"
+        },
+        "modifier": {
+            "operation": "addition",
+            "value": -5
+        }
     }
 }
