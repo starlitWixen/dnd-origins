@@ -1,0 +1,23 @@
+{
+    "name": "Temp Fall Immunity",
+    "hidden": true,
+    "type": "origins:multiple",
+    "immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fall"
+        }
+    },
+    "remove": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:revoke_power",
+            "power": "*:*",
+            "source": "*:triton/control_air_and_water"
+        },
+        "condition": {
+            "type": "origins:on_block"
+        }
+    }
+}
