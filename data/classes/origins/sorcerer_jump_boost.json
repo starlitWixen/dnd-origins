@@ -1,0 +1,9 @@
+{
+	"name": "Jump",
+	"description": "This spell grants the Jump Boost effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 11,
+	"impact": 0
+}

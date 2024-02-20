@@ -1,0 +1,9 @@
+{
+	"name": "Invisibility",
+	"description": "This spell grants the Invisibility effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 10,
+	"impact": 0
+}

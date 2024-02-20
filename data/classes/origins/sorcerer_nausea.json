@@ -1,0 +1,9 @@
+{
+	"name": "Ray of Sickness",
+	"description": "This spell inflicts the Nausea effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 23,
+	"impact": 0
+}

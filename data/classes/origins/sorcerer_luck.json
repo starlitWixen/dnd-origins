@@ -1,0 +1,9 @@
+{
+	"name": "Gift of Luck",
+	"description": "This spell grants the Luck effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 8,
+	"impact": 0
+}

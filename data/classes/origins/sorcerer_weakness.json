@@ -1,0 +1,9 @@
+{
+	"name": "Ray of Enfeeblement",
+	"description": "This spell inflicts the Weakness effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 22,
+	"impact": 0
+}

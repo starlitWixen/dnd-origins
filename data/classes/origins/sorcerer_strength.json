@@ -1,0 +1,9 @@
+{
+	"name": "Bull's Strength",
+	"description": "This spell grants the Strength effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

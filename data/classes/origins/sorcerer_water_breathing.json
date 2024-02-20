@@ -1,0 +1,9 @@
+{
+	"name": "Water Breathing",
+	"description": "This spell grants the Water Breathing effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 14,
+	"impact": 0
+}

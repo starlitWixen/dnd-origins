@@ -1,0 +1,9 @@
+{
+	"name": "Sickening Radiance",
+	"description": "This spell inflicts the Mining Fatigue effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 24,
+	"impact": 0
+}

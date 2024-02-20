@@ -1,0 +1,9 @@
+{
+	"name": "Poison Spray",
+	"description": "This spell inflicts the Poison effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 21,
+	"impact": 0
+}

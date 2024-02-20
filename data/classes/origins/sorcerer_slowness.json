@@ -1,0 +1,9 @@
+{
+	"name": "Slow",
+	"description": "This spell inflicts the Slowness effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 25,
+	"impact": 0
+}

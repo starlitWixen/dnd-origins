@@ -1,0 +1,9 @@
+{
+	"name": "Longstrider",
+	"description": "This spell grants the Speed effect.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 12,
+	"impact": 0
+}
