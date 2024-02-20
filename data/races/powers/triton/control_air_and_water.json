@@ -12,8 +12,12 @@
 				"space": "local"
 			},
 			{
-				"type": "origins:set_fall_distance",
-				"fall_distance": -25
+				"type": "origins:delay",
+				"ticks": 5,
+				"action": {
+					"type": "origins:set_fall_distance",
+					"fall_distance": -50
+				}
 			}
 		]
 	},
