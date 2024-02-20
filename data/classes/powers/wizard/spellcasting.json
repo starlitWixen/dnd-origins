@@ -2,6 +2,13 @@
     "name": "Spellcasting",
     "description": "You can cast spells to enchant items in exchange for 5 levels. You must first encounter an enchantment naturally in order to learn how to cast it.",
     "type": "origins:active_self",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "WARNING: Learning spells from a book that has multiple enchantments on it is risky! Only one spell will be registered, either chosen randomly or chosen based on what spells you do and don't have already."
+        }
+    ]
     "key": {
         "key": "key.loadToolbarActivator"
     },
