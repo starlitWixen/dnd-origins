@@ -2,20 +2,124 @@
     "name": "Expertise",
     "description": "You are a master of your craft, and yield better results with your tools than others. You have permanent Looting and Fortune.",
     "type": "origins:multiple",
-    "fortune": {
+    "fortune_1": {
         "type": "origins:modify_enchantment_level",
         "enchantment": "minecraft:fortune",
         "modifier": {
             "operation": "set_total",
             "value": 1
+        },
+        "condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:fortune",
+            "calculation": "sum",
+            "comparison": "==",
+            "compare_to": 0
         }
     },
-    "looting": {
+    "fortune_2": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:fortune",
+        "modifier": {
+            "operation": "set_total",
+            "value": 2
+        },
+        "condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:fortune",
+            "calculation": "sum",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "fortune_3": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:fortune",
+        "modifier": {
+            "operation": "set_total",
+            "value": 3
+        },
+        "condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:fortune",
+            "calculation": "sum",
+            "comparison": "==",
+            "compare_to": 2
+        }
+    },
+    "fortune_4": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:fortune",
+        "modifier": {
+            "operation": "set_total",
+            "value": 4
+        },
+        "condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:fortune",
+            "calculation": "sum",
+            "comparison": "==",
+            "compare_to": 3
+        }
+    },
+    "looting_1": {
         "type": "origins:modify_enchantment_level",
         "enchantment": "minecraft:looting",
         "modifier": {
             "operation": "set_total",
             "value": 1
+        },
+        "condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:looting",
+            "calculation": "sum",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "looting_2": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:looting",
+        "modifier": {
+            "operation": "set_total",
+            "value": 2
+        },
+        "condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:looting",
+            "calculation": "sum",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "looting_3": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:looting",
+        "modifier": {
+            "operation": "set_total",
+            "value": 3
+        },
+        "condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:looting",
+            "calculation": "sum",
+            "comparison": "==",
+            "compare_to": 2
+        }
+    },
+    "looting_4": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:looting",
+        "modifier": {
+            "operation": "set_total",
+            "value": 4
+        },
+        "condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:looting",
+            "calculation": "sum",
+            "comparison": "==",
+            "compare_to": 3
         }
     }
 }
