@@ -4,6 +4,6 @@
     "type": "origins:action_on_callback",
     "entity_action_gained": {
         "type": "origins:execute_command",
-        "command": "origin set @s size:size size:0.5.0"
+        "command": "origin set @s size:size size:0.5"
     }
 }
