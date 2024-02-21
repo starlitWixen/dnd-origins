@@ -1,6 +1,6 @@
 {
     "name": "Acrobatics",
-    "description": "You cannot take damage from falling, and you are capable of performing a mid-air leap.",
+    "description": "You cannot take damage from falling, and you are capable of dashing forward with incredible speed, even in mid-air.",
     "type": "origins:multiple",
     "fall": {
         "type": "origins:invulnerability",
@@ -18,51 +18,21 @@
             ]
         }
     },
-    "resource": {
-        "type": "origins:resource",
-        "min": 0,
-        "max": 2,
-        "start_value": 0
-    },
-    "jump": {
+    "dash": {
         "type": "origins:active_self",
-        "cooldown": 3,
+        "cooldown": 100,
         "key": {
-            "key": "key.jump"
+            "key": "key.origins.scondary_active"
         },
+	"hud_render": {
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 20
+    	},
         "entity_action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:change_resource",
-                    "resource": "*:*_resource",
-                    "change": 1
-                },
-                {
-		            "type": "origins:add_velocity",
-		            "y": 0.1,
-		            "z": 2.0,
-		            "space": "local"
-	            }
-            ]
-        }
-    },
-    "recharge": {
-        "type": "origins:action_over_time",
-        "interval": 5,
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_resource",
-            "operation": "set",
-            "change": 0
-        },
-        "condition": {
-            "type": "origins:on_block",
-            "block_condition": {
-                "type": "origins:block",
-                "block": "minecraft:air",
-                "inverted": true
-            }
-        }
+	    "type": "origins:add_velocity",
+	    "y": 0.1,
+	    "z": 2.0,
+	    "space": "local"
+	}
     }
 }
