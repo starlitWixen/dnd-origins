@@ -1,6 +1,6 @@
 {
     "name": "Acrobatics",
-    "description": "You cannot take damage from falling, and you are capable of dashing forward with incredible speed, even in mid-air.",
+    "description": "You cannot take damage from falling, and you can perform a mid-air leap.",
     "type": "origins:multiple",
     "fall": {
         "type": "origins:invulnerability",
@@ -18,21 +18,230 @@
             ]
         }
     },
-    "dash": {
+    "has_air_jumped": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1
+    },
+    "can_elytrafly": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1
+    },
+    "air_jump_delay": {
+        "type": "origins:cooldown",
+        "cooldown": 3
+    },
+    "jump": {
         "type": "origins:active_self",
-        "cooldown": 100,
-        "key": {
-            "key": "key.origins.secondary_active"
-        },
-	"hud_render": {
-            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
-            "bar_index": 20
-    	},
         "entity_action": {
-	    "type": "origins:add_velocity",
-	    "y": 0.1,
-	    "z": 2.0,
-	    "space": "local"
-	}
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "space": "velocity_horizontal",
+                    "z": 1,
+                    "server": false,
+                    "set": true
+                },
+                {
+                    "type": "origins:if_else_list",
+                    "actions": [
+                        {
+                            "action": {
+                                "type": "origins:add_velocity",
+                                "space": "world",
+                                "y": 0.42,
+                                "server": false,
+                                "set": false
+                            },
+                            "condition": {
+                                "type": "origins:status_effect",
+                                "effect": "minecraft:jump_boost",
+                                "inverted": true
+                            }
+                        },
+                        {
+                            "action": {
+                                "type": "origins:add_velocity",
+                                "space": "world",
+                                "y": 0.52,
+                                "server": false,
+                                "set": false
+                            },
+                            "condition": {
+                                "type": "origins:status_effect",
+                                "effect": "minecraft:jump_boost",
+                                "max_amplifier": 0
+                            }
+                        },
+                        {
+                            "action": {
+                                "type": "origins:add_velocity",
+                                "space": "world",
+                                "y": 0.62,
+                                "server": false,
+                                "set": false
+                            },
+                            "condition": {
+                                "type": "origins:status_effect",
+                                "effect": "minecraft:jump_boost",
+                                "min_amplifier": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:set_fall_distance",
+                    "fall_distance": 0
+                },
+                {
+                    "type": "origins:if_else",
+                    "if_action": {
+                        "type": "origins:exhaust",
+                        "amount": 0.2
+                    },
+                    "else_action": {
+                        "type": "origins:exhaust",
+                        "amount": 0.05
+                    },
+                    "condition": {
+                        "type": "origins:sprinting"
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_has_air_jumped",
+                    "change": 1,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:modify_stat",
+                    "stat": {
+                        "type": "minecraft:custom",
+                        "id": "minecraft:jump"
+                    },
+                    "modifier": {
+                        "operation": "add_base_early",
+                        "value": 1
+                    }
+                },
+                {
+                    "type": "origins:delay",
+                    "ticks": 1,
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_can_elytrafly",
+                        "change": 1,
+                        "operation": "set"
+                    }
+                }
+            ]
+        },
+        "key": {
+            "key": "key.jump",
+            "continuous": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:on_block",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:lava",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_has_air_jumped",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_air_jump_delay",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "jump_recover": {
+        "type": "origins:modify_jump",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_has_air_jumped",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_can_elytrafly",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "*:*_air_jump_delay"
+                }
+            ]
+        }
+    },
+    "recover": {
+        "type": "origins:action_over_time",
+        "interval": 2,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_has_air_jumped",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_can_elytrafly",
+                    "change": 0,
+                    "operation": "set"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:on_block"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_has_air_jumped",
+                    "comparison": "==",
+                    "compare_to": 1
+                }
+            ]
+        }
+    },
+    "noelytra": {
+        "type": "origins:prevent_elytra_flight",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_can_elytrafly",
+            "comparison": "==",
+            "compare_to": 0
+        }
     }
 }
