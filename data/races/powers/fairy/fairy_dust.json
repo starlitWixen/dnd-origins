@@ -13,6 +13,10 @@
         "type": "origins:projectile",
         "inverted": true
     },
+    "condition": {
+        "type": "origins:power_active",
+        "power": "*:fairy/fairy_magic"
+    }
     "cooldown": 200,
     "hud_render": {
         "should_render": true,
