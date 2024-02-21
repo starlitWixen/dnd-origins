@@ -31,9 +31,20 @@
             "key": "key.jump"
         },
         "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_resource",
-            "change": 1
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "change": 1
+                },
+                {
+		            "type": "origins:add_velocity",
+		            "y": 0.1,
+		            "z": 2.0,
+		            "space": "local"
+	            }
+            ]
         }
     },
     "recharge": {
@@ -52,15 +63,6 @@
                 "block": "minecraft:air",
                 "inverted": true
             }
-        }
-    },
-    "grounded": {
-        "type": "origins:grounded",
-        "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_resource",
-            "comparison": "==",
-            "compare_to": 1
         }
     }
 }
