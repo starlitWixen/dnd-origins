@@ -1,23 +1,117 @@
 {
 	"name": "Breath Weapon",
 	"description": "You can exhale destructive fiery energy.",
-	"type": "origins:active_self",
-	"cooldown": 100,
-	"hud_render": {
-		"should_render": true,
-		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
-		"bar_index": 15
+	"type": "origins:multiple",
+	"badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Active ability. Use %s for long-range, sneak and right-click an entity with an empty hand for short-range."
+        }
+    ],
+    "resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 100,
+		"start_value": 0,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+			"bar_index": 15,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "*:*_resource",
+				"comparison": "<",
+				"compare_to": 100
+			}
+		}
 	},
-	"entity_action": {
-		"type": "origins:and",
-		"actions": [
-			{
-				"type": "origins:raycast",
-				"shape_type": "visual",
-				"fluid_handling": "none",
-				"bientity_action": {
+	"charge": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_resource",
+			"change": 1
+		}
+	},
+	"short": {
+		"type": "origins:action_on_entity_use",
+		"bientity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:damage",
+					"amount": 6,
+					"damage_type": "minecraft:fire"
+				},
+				{
 					"type": "origins:target_action",
 					"action": {
+						"type": "origins:set_on_fire",
+						"duration": 4
+					}
+				},
+				{
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:and",
+						"actions": [
+							{
+								"type": "origins:change_resource",
+								"resource": "*:*_resource",
+								"operation": "set",
+								"change": 0
+							},
+							{
+								"type": "origins:raycast",
+								"shape_type": "visual",
+								"fluid_handling": "none",
+								"distance": 15,
+								"command_step": 0.25,
+								"command_along_ray": "particle minecraft:flame ~ ~ ~ .01 .01 .01 0 2 force"
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.ghast.shoot",
+								"volume": 1
+							}
+						]
+					}
+				}
+			]
+		},
+		"item_condition": {
+			"type": "origins:empty"
+		},
+		"hands": [
+			"main_hand"
+		],
+		"condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_resource",
+                    "comparison": "==",
+                    "compare_to": 100
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        }
+	},
+	"long": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:raycast",
+					"shape_type": "visual",
+					"fluid_handling": "none",
+					"bientity_action": {
 						"type": "origins:and",
 						"actions": [
 							{
@@ -26,24 +120,42 @@
 								"damage_type": "minecraft:fire"
 							},
 							{
-								"type": "origins:set_on_fire",
-								"duration": 4
+								"type": "origins:target_action",
+								"action": {
+									"type": "origins:set_on_fire",
+									"duration": 4
+								}
+							},
+							{
+								"type": "origins:actor_action",
+								"action": {
+									"type": "origins:change_resource",
+									"resource": "*:*_resource",
+									"operation": "set",
+									"change": 0
+								}
 							}
 						]
-					}
+					},
+					"distance": 15,
+					"command_step": 0.25,
+					"command_along_ray": "particle minecraft:flame ~ ~ ~ .01 .01 .01 0 2 force"
 				},
-				"distance": 15,
-				"command_step": 0.25,
-				"command_along_ray": "particle minecraft:flame ~ ~ ~ .01 .01 .01 0 2 force"
-			},
-			{
-				"type": "origins:play_sound",
-				"sound": "minecraft:entity.ghast.shoot",
-				"volume": 1
-			}
-		]
-	},
-	"key": {
-		"key": "key.origins.primary_active"
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.ghast.shoot",
+					"volume": 1
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_resource",
+			"comparison": "==",
+			"compare_to": 100
+		},
+		"key": {
+			"key": "key.origins.primary_active"
+		}
 	}
 }
