@@ -15,6 +15,7 @@
                 "layer": "origins-classes:class"
             },
             "origins": [
+                "classes:sorcerer_none",
                 "classes:sorcerer_luck",
                 "classes:sorcerer_instant_damage",
                 "classes:sorcerer_unluck"
