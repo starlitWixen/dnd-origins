@@ -1,0 +1,5429 @@
+{
+    "name": "Sorcerer Good Other",
+    "hidden": true,
+    "type": "origins:multiple",
+    "speed_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:speed",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:speed"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_speed",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "speed_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:speed",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:speed"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_speed",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "speed_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:speed",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:speed"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_speed",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "speed_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:speed",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:speed"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_speed",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "speed_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:speed",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_speed",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "haste_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:haste",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:haste"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_haste",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "haste_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:haste",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:haste"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_haste",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "haste_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:haste",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:haste"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_haste",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "haste_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:haste",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:haste"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_haste",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "haste_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:haste",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_haste",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "strength_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:strength",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:strength"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_strength",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "strength_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:strength",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:strength"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_strength",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "strength_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:strength",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:strength"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_strength",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "strength_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:strength",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:strength"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_strength",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "strength_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:strength",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_strength",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "jump_boost_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:jump_boost",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:jump_boost"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_jump_boost",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "jump_boost_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:jump_boost",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:jump_boost"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_jump_boost",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "jump_boost_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:jump_boost",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:jump_boost"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_jump_boost",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "jump_boost_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:jump_boost",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:jump_boost"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_jump_boost",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "jump_boost_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:jump_boost",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_jump_boost",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "regeneration_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:regeneration",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:regeneration"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_regeneration",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "regeneration_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:regeneration",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:regeneration"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_regeneration",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "regeneration_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:regeneration",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:regeneration"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_regeneration",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "regeneration_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:regeneration",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:regeneration"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_regeneration",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "regeneration_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:regeneration",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_regeneration",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "resistance_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:resistance",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:resistance"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_resistance",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "resistance_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:resistance",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:resistance"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_resistance",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "resistance_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:resistance",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:resistance"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_resistance",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "resistance_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:resistance",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:resistance"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_resistance",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "resistance_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:resistance",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_resistance",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "fire_resistance_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:fire_resistance",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:fire_resistance"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_fire_resistance",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "fire_resistance_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:fire_resistance",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:fire_resistance"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_fire_resistance",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "fire_resistance_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:fire_resistance",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:fire_resistance"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_fire_resistance",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "fire_resistance_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:fire_resistance",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:fire_resistance"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_fire_resistance",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "fire_resistance_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:fire_resistance",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_fire_resistance",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "water_breathing_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:water_breathing",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:water_breathing"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_water_breathing",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "water_breathing_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:water_breathing",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:water_breathing"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_water_breathing",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "water_breathing_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:water_breathing",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:water_breathing"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_water_breathing",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "water_breathing_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:water_breathing",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:water_breathing"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_water_breathing",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "water_breathing_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:water_breathing",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_water_breathing",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "invisibility_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:invisibility",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:invisibility"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_invisibility",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "invisibility_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:invisibility",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:invisibility"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_invisibility",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "invisibility_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:invisibility",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:invisibility"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_invisibility",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "invisibility_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:invisibility",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:invisibility"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_invisibility",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "invisibility_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:invisibility",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_invisibility",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "night_vision_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:night_vision",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:night_vision"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_night_vision",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "night_vision_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:night_vision",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:night_vision"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_night_vision",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "night_vision_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:night_vision",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:night_vision"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_night_vision",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "night_vision_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:night_vision",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:night_vision"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_night_vision",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "night_vision_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:night_vision",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_night_vision",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "absorption_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:absorption",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:absorption"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_absorption",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "absorption_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:absorption",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:absorption"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_absorption",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "absorption_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:absorption",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:absorption"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_absorption",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "absorption_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:absorption",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:absorption"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_absorption",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "absorption_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:absorption",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_absorption",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "saturation_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:saturation",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:saturation"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_saturation",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "saturation_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:saturation",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:saturation"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_saturation",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "saturation_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:saturation",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:saturation"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_saturation",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "saturation_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:saturation",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:saturation"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_saturation",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "saturation_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:saturation",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_saturation",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "luck_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:luck",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:luck"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_luck",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "luck_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:luck",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:luck"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_luck",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "luck_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:luck",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:luck"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_luck",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "luck_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:luck",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:luck"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_luck",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "luck_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:luck",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_luck",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "slow_falling_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:slow_falling",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:slow_falling"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_slow_falling",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "slow_falling_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:slow_falling",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:slow_falling"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_slow_falling",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "slow_falling_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:slow_falling",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:slow_falling"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_slow_falling",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "slow_falling_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:slow_falling",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:slow_falling"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_slow_falling",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "slow_falling_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:slow_falling",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_slow_falling",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "conduit_power_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:conduit_power",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:conduit_power"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_conduit_power",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "conduit_power_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:conduit_power",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:conduit_power"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_conduit_power",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "conduit_power_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:conduit_power",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:conduit_power"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_conduit_power",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "conduit_power_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:conduit_power",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:conduit_power"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_conduit_power",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "conduit_power_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:conduit_power",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_conduit_power",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "dolphins_grace_none": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:dolphins_grace",
+                            "duration": 1200
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:dolphins_grace"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_dolphins_grace",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_none",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "dolphins_grace_empowered": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:dolphins_grace",
+                            "amplifier": 1,
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:dolphins_grace"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_dolphins_grace",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_empowered",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "dolphins_grace_extended": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:dolphins_grace",
+                            "duration": 1800
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:dolphins_grace"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_dolphins_grace",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_extended",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "dolphins_grace_quickened": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:dolphins_grace",
+                            "duration": 600
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "*:sorcerer/timer",
+                                "source": "*:*"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.allay.item_taken"
+                            },
+                            {
+                                "type": "origins:raycast",
+                                "distance": 20,
+                                "block": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "none",
+                                "command_step": 0.25,
+                                "command_along_ray": "function classes:dolphins_grace"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_dolphins_grace",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_quickened",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    },
+    "dolphins_grace_subtle": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:dolphins_grace",
+                            "duration": 1200,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:grant_power",
+                        "power": "*:sorcerer/timer",
+                        "source": "*:*"
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:sorcerer/spellcasting_resource",
+                    "comparison": "==",
+                    "compare_to": 3600
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:sorcerer_dolphins_grace",
+                    "layer": "classes:sorcerer"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:metamagic_subtle",
+                    "layer": "classes:metamagic"
+                }
+            ]
+        }
+    }
+}
