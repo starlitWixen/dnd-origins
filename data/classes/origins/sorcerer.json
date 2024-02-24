@@ -4,6 +4,10 @@
 	"powers": [
 		"classes:sorcerer/hp",
 		"classes:sorcerer/spellcasting",
+		"classes:sorcerer/spellcasting_good_self",
+		"classes:sorcerer/spellcasting_good_other",
+		"classes:sorcerer/spellcasting_bad_self",
+		"classes:sorcerer/spellcasting_bad_other",
 		"classes:sorcerer/metamagic",
 		"classes:sorcerer/effect_collection"
 	],
