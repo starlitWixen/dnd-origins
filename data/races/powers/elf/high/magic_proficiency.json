@@ -11,7 +11,7 @@
         "modifier": {
             "name": "Magic resist",
             "operation": "multiply_base",
-            "value": 1.5
+            "value": -0.5
         }
     },
     "dealt": {
