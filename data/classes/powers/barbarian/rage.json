@@ -5,7 +5,7 @@
     "resource": {
         "type": "origins:resource",
         "min": 0,
-        "max": 60,
+        "max": 1200,
         "start_value": 0,
         "min_action": {
             "type": "origins:revoke_power",
@@ -20,13 +20,13 @@
                 "type": "origins:resource",
                 "resource": "*:*_resource",
                 "comparison": "<",
-                "compare_to": 60
+                "compare_to": 1200
             }
         }
     },
     "charge": {
         "type": "origins:action_over_time",
-        "interval": 20,
+        "interval": 1,
         "entity_action": {
             "type": "origins:change_resource",
             "resource": "*:*_resource",
@@ -41,7 +41,7 @@
     "grant": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:grant_power",
@@ -52,7 +52,7 @@
             "type": "origins:resource",
             "resource": "*:*_resource",
             "comparison": "==",
-            "compare_to": 60
+            "compare_to": 1200
         }
     }
 }

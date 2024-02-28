@@ -4,30 +4,25 @@
     "type": "origins:multiple",
     "timer": {
         "type": "origins:action_over_time",
-        "interval": 20,
+        "interval": 1,
         "entity_action": {
             "type": "origins:change_resource",
             "resource": "*:barbarian/rage_resource",
             "change": -1
         }
     },
-    "effects": {
-        "type": "origins:action_over_time",
-        "interval": 10,
-        "entity_action": {
-            "type": "origins:apply_effect",
-            "effects": [
-                {
-                    "effect": "minecraft:strength",
-                    "duration": 20,
-                    "show_particles": false
-                },
-                {
-                    "effect": "minecraft:resistance",
-                    "duration": 20,
-                    "show_particles": false
-                }
-            ]
+    "strength": {
+        "type": "origins:modify_damage_dealt",
+        "modifer": {
+            "operation": "addition",
+            "value": 3
+        }
+    },
+    "resistance": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.8
         }
     }
 }
