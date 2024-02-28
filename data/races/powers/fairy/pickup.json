@@ -1,0 +1,11 @@
+{
+    "name": "Larger Pick-Up Radius",
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:execute_command",
+        "permission_level": 4,
+        "command": "tp @e[type=minecraft:item,distance=..2.275,nbt={PickupDelay:0s}] @s"
+    }
+}

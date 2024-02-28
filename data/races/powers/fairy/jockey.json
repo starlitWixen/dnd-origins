@@ -1,0 +1,11 @@
+{
+    "name": "Jockey",
+    "description": "You can ride on other players.",
+    "type": "extraorigins:start_riding",
+    "key": {
+        "key": "key.use"
+    },
+    "condition": {
+        "type": "origins:sneaking"
+    }
+}

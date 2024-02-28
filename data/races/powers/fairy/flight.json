@@ -1,38 +1,51 @@
 {
     "name": "Flight",
     "description": "You can fly and hover in the air, so long as you aren't wearing armor.",
-    "type": "origins:creative_flight",
-    "condition": {
-        "type": "origins:and",
-        "conditions": [
-            {
-                "type": "origins:equipped_item",
-                "equipment_slot": "head",
-                "item_condition": {
-                    "type": "origins:empty"
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "key": {
+            "key": "key.origins.ternary_active"
+        }
+    },
+    "flight": {
+        "type": "origins:creative_flight",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "head",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "chest",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "legs",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "feet",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
                 }
-            },
-            {
-                "type": "origins:equipped_item",
-                "equipment_slot": "chest",
-                "item_condition": {
-                    "type": "origins:empty"
-                }
-            },
-            {
-                "type": "origins:equipped_item",
-                "equipment_slot": "legs",
-                "item_condition": {
-                    "type": "origins:empty"
-                }
-            },
-            {
-                "type": "origins:equipped_item",
-                "equipment_slot": "feet",
-                "item_condition": {
-                    "type": "origins:empty"
-                }
-            }
-        ]
+            ]
+        }
     }
 }
