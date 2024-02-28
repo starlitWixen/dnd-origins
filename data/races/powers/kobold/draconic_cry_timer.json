@@ -1,0 +1,22 @@
+{
+    "name": "Draconic Cry Timer",
+    "hidden": true,
+    "type": "origins:multiple",
+    "timer": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:kobold/draconic_cry_resource",
+            "change": -1
+        }
+    },
+    "effects": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_damage",
+            "operation": "addition",
+            "value": 3
+        }
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "name": "Draconic Cry",
+    "description": "You can empower yourself and give yourself strength by letting loose a mighty roar.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1200,
+        "start_value": 0,
+        "min_action": {
+            "type": "origins:revoke_power",
+            "power": "*:kobold/draconic_cry_timer",
+            "source": "*:*"
+        },
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 8,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "<",
+                "compare_to": 1200
+            }
+        }
+    },
+    "charge": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:power",
+            "power": "*:kobold/draconic_cry_timer",
+            "inverted": true
+        }
+    },
+    "activate": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "==",
+                "compare_to": 1200
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:entity.ender_dragon.ambient"
+                    },
+                    {
+                        "type": "origins:grant_power",
+                        "power": "*:kobold/draconic_cry_timer",
+                        "source": "*:*"
+                    }
+                ]
+            },
+            "else_action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.ender_dragon.ambient"
+            }
+        }
+    }
+}
