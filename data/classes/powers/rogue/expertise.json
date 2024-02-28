@@ -2,6 +2,24 @@
     "name": "Expertise",
     "description": "You are a master of your craft, and yield better results with your tools than others. You have permanent Looting and Fortune.",
     "type": "origins:multiple",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/toggle.png",
+            "text": "Toggle with %s."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "This ability operates on a toggle to switch between Fortune and Silk Touch. When Fortune is active, Silk Touch is not, and when Silk Touch is active, Fortune is not."
+        }
+    ],
+    "toggle": {
+        "type": "origins:toggle",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        }
+    },
     "fortune_1": {
         "type": "origins:modify_enchantment_level",
         "enchantment": "minecraft:fortune",
@@ -10,11 +28,20 @@
             "value": 1
         },
         "condition": {
-            "type": "origins:enchantment",
-            "enchantment": "minecraft:fortune",
-            "calculation": "sum",
-            "comparison": "==",
-            "compare_to": 0
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:fortune",
+                    "calculation": "sum",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
         }
     },
     "fortune_2": {
@@ -25,11 +52,20 @@
             "value": 2
         },
         "condition": {
-            "type": "origins:enchantment",
-            "enchantment": "minecraft:fortune",
-            "calculation": "sum",
-            "comparison": "==",
-            "compare_to": 1
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:fortune",
+                    "calculation": "sum",
+                    "comparison": "==",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
         }
     },
     "fortune_3": {
@@ -40,11 +76,20 @@
             "value": 3
         },
         "condition": {
-            "type": "origins:enchantment",
-            "enchantment": "minecraft:fortune",
-            "calculation": "sum",
-            "comparison": "==",
-            "compare_to": 2
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:fortune",
+                    "calculation": "sum",
+                    "comparison": "==",
+                    "compare_to": 2
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
         }
     },
     "fortune_4": {
@@ -55,11 +100,33 @@
             "value": 4
         },
         "condition": {
-            "type": "origins:enchantment",
-            "enchantment": "minecraft:fortune",
-            "calculation": "sum",
-            "comparison": "==",
-            "compare_to": 3
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:fortune",
+                    "calculation": "sum",
+                    "comparison": "==",
+                    "compare_to": 3
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
+        }
+    },
+    "silk_touch": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:silk_touch",
+        "modifier": {
+            "operation": "set_total",
+            "value": 1
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle",
+            "inverted": true
         }
     },
     "looting_1": {
