@@ -1,0 +1,16 @@
+{
+    "name": "Celestial Resistance",
+    "description": "You have resistance to damage from undead entities.",
+    "type": "origins:modify_damage_taken",
+    "bientity_condition": {
+        "type": "origins:actor_condition",
+        "condition": {
+            "type": "origins:entity_group",
+            "group": "undead"
+        }
+    },
+    "modifier": {
+        "operation": "addition",
+        "value": -4
+    }
+}

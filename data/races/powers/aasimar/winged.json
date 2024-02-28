@@ -1,0 +1,6 @@
+{
+    "name": "Winged",
+    "description": "You have wings, but cannot use them to fly unassisted and may only glide.",
+    "type": "origins:elytra_flight",
+    "render_elytra": true
+}
