@@ -1,0 +1,12 @@
+{
+	"name": "Darkness",
+	"description": "You know the Darkness spell.",
+	"powers": [
+		"races:tiefling/darkness"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

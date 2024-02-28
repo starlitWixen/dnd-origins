@@ -1,0 +1,12 @@
+{
+	"name": "Invisibility",
+	"description": "You know the Invisibility spell.",
+	"powers": [
+		"races:tiefling/invisibility"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 5,
+	"impact": 0
+}

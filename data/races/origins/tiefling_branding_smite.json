@@ -1,0 +1,12 @@
+{
+	"name": "Branding Smite",
+	"description": "You know the Branding Smite spell.",
+	"powers": [
+		"races:tiefling/branding_smite"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

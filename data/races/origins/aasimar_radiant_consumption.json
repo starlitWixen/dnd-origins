@@ -1,0 +1,13 @@
+{
+	"name": "Radiant Consumption",
+	"description": "Searing light radiates from your eyes and mouth.",
+	"powers": [
+		"races:aasimar/bright",
+		"races:aasimar/radiant_strike"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

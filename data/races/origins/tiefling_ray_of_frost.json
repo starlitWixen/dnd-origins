@@ -1,0 +1,12 @@
+{
+	"name": "Ray of Frost",
+	"description": "You know the Ray of Frost spell.",
+	"powers": [
+		"races:tiefling/ray_of_frost"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 6,
+	"impact": 0
+}

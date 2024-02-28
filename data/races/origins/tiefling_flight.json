@@ -1,0 +1,12 @@
+{
+	"name": "Flight",
+	"description": "You have wings, and can use them to fly.",
+	"powers": [
+		"races:tiefling/flight"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 0
+}

@@ -1,0 +1,12 @@
+{
+	"name": "Ray of Sickness",
+	"description": "You know the Ray of Sickness spell.",
+	"powers": [
+		"races:tiefling/ray_of_sickness"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 7,
+	"impact": 0
+}

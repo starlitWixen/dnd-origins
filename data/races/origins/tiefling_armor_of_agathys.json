@@ -1,0 +1,12 @@
+{
+	"name": "Armor of Agathys",
+	"description": "You know the Armor of Agathys spell.",
+	"powers": [
+		"races:tiefling/armor_of_agathys"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}

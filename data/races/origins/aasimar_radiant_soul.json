@@ -1,0 +1,13 @@
+{
+	"name": "Radiant Soul",
+	"description": "Two luminous, spectral wings sprout from your back.",
+	"powers": [
+		"races:aasimar/flight",
+		"races:aasimar/radiant_strike"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

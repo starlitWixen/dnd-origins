@@ -1,0 +1,13 @@
+{
+	"name": "Necrotic Shroud",
+	"description": "Your eyes become pools of darkness, and ghostly, flightless wings sprout from your back.",
+	"powers": [
+		"races:aasimar/winged",
+		"races:aasimar/undead_constitution"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}

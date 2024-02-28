@@ -1,0 +1,16 @@
+{
+	"name": "Aasimar",
+	"description": "Whether descended from a celestial being or infused with heavenly power, aasimar are mortals who carry a spark of the Upper Planes within their souls.",
+	"powers": [
+		"races:aasimar/celestial_resistance",
+		"races:darkvision",
+		"races:aasimar/healing_hands",
+		"races:aasimar/celestial_revelation",
+		"races:normal_height"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

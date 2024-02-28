@@ -1,0 +1,12 @@
+{
+	"name": "Hellish Rebuke",
+	"description": "You know the Hellish Rebuke spell.",
+	"powers": [
+		"races:tiefling/hellish_rebuke"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 4,
+	"impact": 0
+}
