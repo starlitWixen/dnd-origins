@@ -38,48 +38,103 @@
 	"short": {
 		"type": "origins:action_on_entity_use",
 		"bientity_action": {
-			"type": "origins:and",
-			"actions": [
-				{
-					"type": "origins:damage",
-					"amount": 6,
-					"damage_type": "minecraft:lightning"
-				},
-				{
-					"type": "origins:target_action",
-					"action": {
-						"type": "origins:set_on_fire",
-						"duration": 4
-					}
-				},
-				{
-					"type": "origins:actor_action",
-					"action": {
-						"type": "origins:and",
-						"actions": [
-							{
-								"type": "origins:change_resource",
-								"resource": "*:*_resource",
-								"operation": "set",
-								"change": 0
-							},
-							{
-								"type": "origins:raycast",
-								"shape_type": "visual",
-								"fluid_handling": "none",
-								"distance": 15,
-								"command_step": 0.25,
-								"command_along_ray": "particle electric_spark ~ ~ ~ 0 0 0 0 2 force"
-							},
-							{
-								"type": "origins:play_sound",
-								"sound": "minecraft:entity.lightning_bolt.thunder",
-								"volume": 1
-							}
-						]
-					}
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:target_condition",
+				"condition": {
+					"type": "origins:health",
+					"comparison": "<=",
+					"compare_to": 4
 				}
-			]
+			},
+			"if_action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:damage",
+						"amount": 1,
+						"damage_type": "minecraft:lightning"
+					},
+					{
+						"type": "origins:target_action",
+						"action": {
+							"type": "origins:set_on_fire",
+							"duration": 4
+						}
+					},
+					{
+						"type": "origins:actor_action",
+						"action": {
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:change_resource",
+									"resource": "*:*_resource",
+									"operation": "set",
+									"change": 0
+								},
+								{
+									"type": "origins:raycast",
+									"shape_type": "visual",
+									"fluid_handling": "none",
+									"distance": 15,
+									"command_step": 0.25,
+									"command_along_ray": "particle electric_spark ~ ~ ~ 0 0 0 0 2 force"
+								},
+								{
+									"type": "origins:play_sound",
+									"sound": "minecraft:entity.lightning_bolt.thunder",
+									"volume": 1
+								}
+							]
+						}
+					}
+				]
+			},
+			"else_action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:damage",
+						"amount": 6,
+						"damage_type": "minecraft:lightning"
+					},
+					{
+						"type": "origins:target_action",
+						"action": {
+							"type": "origins:set_on_fire",
+							"duration": 4
+						}
+					},
+					{
+						"type": "origins:actor_action",
+						"action": {
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:change_resource",
+									"resource": "*:*_resource",
+									"operation": "set",
+									"change": 0
+								},
+								{
+									"type": "origins:raycast",
+									"shape_type": "visual",
+									"fluid_handling": "none",
+									"distance": 15,
+									"command_step": 0.25,
+									"command_along_ray": "particle electric_spark ~ ~ ~ 0 0 0 0 2 force"
+								},
+								{
+									"type": "origins:play_sound",
+									"sound": "minecraft:entity.lightning_bolt.thunder",
+									"volume": 1
+								}
+							]
+						}
+					}
+				]
+			}
 		},
 		"item_condition": {
 			"type": "origins:empty"
@@ -112,30 +167,67 @@
 					"shape_type": "visual",
 					"fluid_handling": "none",
 					"bientity_action": {
-						"type": "origins:and",
-						"actions": [
-							{
-								"type": "origins:damage",
-								"amount": 6,
-								"damage_type": "minecraft:lightning"
-							},
-							{
-								"type": "origins:target_action",
-								"action": {
-									"type": "origins:set_on_fire",
-									"duration": 4
-								}
-							},
-							{
-								"type": "origins:actor_action",
-								"action": {
-									"type": "origins:change_resource",
-									"resource": "*:*_resource",
-									"operation": "set",
-									"change": 0
-								}
+						"type": "origins:if_else",
+						"condition": {
+							"type": "origins:target_condition",
+							"condition": {
+								"type": "origins:health",
+								"comparison": "<=",
+								"compare_to": 4
 							}
-						]
+						},
+						"if_action": {
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:damage",
+									"amount": 1,
+									"damage_type": "minecraft:lightning"
+								},
+								{
+									"type": "origins:target_action",
+									"action": {
+										"type": "origins:set_on_fire",
+										"duration": 4
+									}
+								},
+								{
+									"type": "origins:actor_action",
+									"action": {
+										"type": "origins:change_resource",
+										"resource": "*:*_resource",
+										"operation": "set",
+										"change": 0
+									}
+								}
+							]
+						},
+						"else_action": {
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:damage",
+									"amount": 6,
+									"damage_type": "minecraft:lightning"
+								},
+								{
+									"type": "origins:target_action",
+									"action": {
+										"type": "origins:set_on_fire",
+										"duration": 4
+									}
+								},
+								{
+									"type": "origins:actor_action",
+									"action": {
+										"type": "origins:change_resource",
+										"resource": "*:*_resource",
+										"operation": "set",
+										"change": 0
+									}
+								}
+							]
+						}
 					},
 					"distance": 15,
 					"command_step": 0.25,
