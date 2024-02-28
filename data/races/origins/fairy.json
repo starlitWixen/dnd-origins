@@ -5,11 +5,13 @@
 		"races:fairy/bite_sized",
 		"races:fairy/fairy_magic",
 		"races:fairy/fairy_dust",
-		"races:fairy/flight"
+		"races:fairy/jockey",
+		"races:fairy/flight",
+		"races:fairy/pickup"
 	],
 	"icon": {
 		"item": "origins:orb_of_origin"
 	},
-	"order": 5,
+	"order": 6,
 	"impact": 0
 }
