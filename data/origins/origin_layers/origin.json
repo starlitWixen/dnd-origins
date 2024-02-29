@@ -4,6 +4,7 @@
     "replace": true,
     "origins": [
         "races:aarakocra",
+        "races:aasimar",
         "races:dragonborn",
         "races:dwarf",
         "races:elf",
@@ -13,6 +14,7 @@
         "races:goblin",
         "races:halfling",
         "origins:human",
+        "races:kobold",
         "races:loxodon",
         "races:orc",
         "races:tabaxi",
