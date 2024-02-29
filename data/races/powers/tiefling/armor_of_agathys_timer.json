@@ -1,0 +1,36 @@
+{
+    "name": "Armor of Agathys Timer",
+    "hidden": true,
+    "type": "origins:multiple",
+    "timer": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:tiefling/armor_of_agathys_cooldown",
+            "change": -1
+        }
+    },
+    "hearts": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "value": 10
+        }
+    },
+    "no_regen": {
+        "type": "origins:disable_regen"
+    },
+    "thorns": {
+        "type": "origins:action_when_hit",
+        "bientity_action": {
+            "type": "origins:invert",
+            "action": {
+                "type": "origins:damage",
+                "amount": 2,
+                "damage_type": "minecraft:cold"
+            }
+        }
+    }
+}

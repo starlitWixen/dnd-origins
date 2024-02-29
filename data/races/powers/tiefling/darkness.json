@@ -1,0 +1,81 @@
+{
+    "name": "Darkness",
+    "description": "Magical darkness spreads outwards from you, afflicting all nearby entities.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1200,
+        "start_value": 0,
+        "min_action": {
+            "type": "origins:revoke_power",
+            "power": "*:tiefling/darkness_timer",
+            "source": "*:*"
+        },
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 24,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "<",
+                "compare_to": 1200
+            }
+        }
+    },
+    "charge": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:tiefling/darkness_timer",
+            "inverted": true
+        }
+    },
+    "grant": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.allay.item_taken"
+                },
+                {
+                    "type": "origins:area_of_effect",
+                    "radius": 5,
+                    "bientity_action": {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                                "effect": "minecraft:darkness",
+                                "duration": 1200
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "origins:grant_power",
+                    "power": "*:tiefling/darkness_timer",
+                    "source": "*:*"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 1200
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Ray of Sickness Timer",
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "*:tiefling/ray_of_sickness_resource",
+        "change": -1
+    }
+}

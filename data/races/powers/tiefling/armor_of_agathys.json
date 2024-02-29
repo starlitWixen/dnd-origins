@@ -1,0 +1,211 @@
+{
+    "name": "Armor of Agathys",
+    "description": "You gain 6 temporary hearts, and deal cold damage when an attacker makes contact with you so long as you have these hearts.",
+    "type": "origins:multiple",
+    "cooldown": {
+        "type": "origins:resource",
+        "min": 0, 
+        "max": 1200,
+        "start_value": 0,
+        "min_action": {
+            "type": "origins:revoke_power",
+            "power": "*:tiefling/armor_of_agathys_timer",
+            "source": "*:*"
+        },
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 0,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_cooldown",
+                "comparison": "<",
+                "compare_to": 1200
+            }
+        }
+    },
+    "charge": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_cooldown",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:tiefling/armor_of_agathys_timer",
+            "inverted": true
+        }
+    },
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 10,
+        "start_value": 0,
+        "min_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_cooldown",
+            "operation": "set",
+            "change": 0
+        }
+    },
+    "grant": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 10
+                },
+                {
+                    "type": "origins:grant_power",
+                    "power": "*:tiefling/armor_of_agathys_timer",
+                    "source": "*:*"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "comparison": "==",
+            "compare_to": 1200
+        }
+    },
+    "damage_1": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -1
+        },
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "damage_2": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -2
+        },
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 2
+        }
+    },
+    "damage_3": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -3
+        },
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 3
+        }
+    },
+    "damage_4": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -4
+        },
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 4
+        }
+    },
+    "damage_5": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -5
+        },
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 5
+        }
+    },
+    "damage_6": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -6
+        },
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 6
+        }
+    },
+    "damage_7": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -7
+        },
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 7
+        }
+    },
+    "damage_8": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -8
+        },
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 8
+        }
+    },
+    "damage_9": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -9
+        },
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 9
+        }
+    },
+    "damage_10": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -10
+        },
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": ">=",
+            "compare_to": 10
+        }
+    }
+}

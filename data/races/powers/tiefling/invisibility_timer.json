@@ -1,0 +1,48 @@
+{
+    "name": "Invisibility Timer",
+    "hidden": true,
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1200,
+        "start_value": 1200,
+        "min_action": {
+            "type": "origins:revoke_power",
+            "power": "*:*",
+            "source": "*:tiefling/invisibility"
+        },
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 4,
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:tiefling/invisibility",
+                "inverted": true
+            }
+        }
+    },
+    "timer": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "change": -1
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:tiefling/invisibility_resource",
+                    "change": -1
+                }
+            ]
+        }
+    },
+    "invisibility": {
+        "type": "origins:invisibility"
+    }
+}
