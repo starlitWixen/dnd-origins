@@ -5,12 +5,13 @@
 		"races:darkvision",
 		"races:tiefling/superior_darkvision",
 		"races:tiefling/hellish_resistance",
+		"races:tiefling/hellish_rebuke",
 		"races:tiefling/infernal_legacy",
 		"races:normal_height"
 	],
 	"icon": {
 		"item": "origins:orb_of_origin"
 	},
-	"order": 16,
+	"order": 15,
 	"impact": 0
 }
