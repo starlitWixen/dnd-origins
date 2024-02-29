@@ -4,6 +4,7 @@
     "replace": true,
     "origins": [
         "origins-classes:nitwit",
+        "classes:artificer",
         "classes:barbarian",
         "classes:bard",
         "classes:cleric",
