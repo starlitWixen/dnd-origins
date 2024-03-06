@@ -1,0 +1,25 @@
+{
+    "name": "Celestial Revelation",
+    "gui_title": {
+        "choose_origin": "Choose a celestial revelationl",
+        "view_origin": "This is your celestial revelation."
+    },
+    "replace": false,
+    "order": 1,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "races:aasimar",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "races:aasimar_necrotic_shroud",
+                "races:aasimar_radiant_consumption",
+                "races:aasimar_radiant_soul"
+            ]
+        }
+    ],
+    "allow_random": true
+}

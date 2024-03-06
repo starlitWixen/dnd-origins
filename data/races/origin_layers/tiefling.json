@@ -1,0 +1,29 @@
+{
+    "name": "Infernal Legacy",
+    "gui_title": {
+        "choose_origin": "Choose an Infernal Legacy.",
+        "view_origin": "This is your Infernal Legacy."
+    },
+    "replace": false,
+    "order": 1,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "races:tiefling",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "races:tiefling_armor_of_agathys",
+                "races:tiefling_branding_smite",
+                "races:tiefling_darkness",
+                "races:tiefling_flight",
+                "races:tiefling_invisibility",
+                "races:tiefling_ray_of_frost",
+                "races:tiefling_ray_of_sickness"
+            ]
+        }
+    ],
+    "allow_random": true
+}
