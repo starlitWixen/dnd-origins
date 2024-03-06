@@ -1,5 +1,5 @@
 {
-    "name": "Subrace",
-    "description": "There are four elf subraces: High Elves, Wood Elves, Dark Elves, and Eladrin.",
+    "name": "Infernal Legacy",
+    "description": "Your unique Infernal Legacy grants you certain abilities. Choose one of the following: Armor of Agathys, Branding Smite, Darkness, Flight, Invisibility, Ray of Frost, or Ray of Sickness.",
     "type": "origins:simple"
 }
