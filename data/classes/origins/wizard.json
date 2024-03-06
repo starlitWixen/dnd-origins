@@ -5,12 +5,18 @@
 		"classes:wizard/hp",
 		"classes:wizard/spellcasting",
 		"origins-classes:better_enchanting",
-		"classes:wizard/particles_grant"
+		"classes:wizard/spellcasting_singleplayer",
+		"classes:wizard/abjuration_collection",
+		"classes:wizard/conjuration_collection",
+		"classes:wizard/divination_collection",
+		"classes:wizard/enchantment_collection",
+		"classes:wizard/evocation_collection",
+		"classes:wizard/necromancy_collection",
+		"classes:wizard/transmutation_collection"
 	],
 	"icon": {
 		"item": "origins:orb_of_origin"
 	},
-	"order": 13,
-	"impact": 0,
-	"loading_priority": 10
+	"order": 11,
+	"impact": 0
 }
