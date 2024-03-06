@@ -9,19 +9,1328 @@
     "enabled": true,
     "origins": [
         {
+            "origins": [
+                "classes:wizard_none"
+            ]
+        },
+        {
             "condition": {
-                "type": "origins:origin",
-                "origin": "classes:wizard",
-                "layer": "origins-classes:class"
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_blast_protection",
+                "comparison": "==",
+                "compare_to": 1
             },
             "origins": [
-                "classes:wizard_abjuration",
-                "classes:wizard_conjuration",
-                "classes:wizard_divination",
-                "classes:wizard_enchantment",
-                "classes:wizard_evocation",
-                "classes:wizard_necromancy",
-                "classes:wizard_transmutation"
+                "classes:wizard_blast_protection_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_blast_protection",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_blast_protection_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_blast_protection",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_blast_protection_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_blast_protection",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_blast_protection_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_fire_protection",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_fire_protection_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_fire_protection",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_fire_protection_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_fire_protection",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_fire_protection_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_fire_protection",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_fire_protection_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_knockback",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_knockback_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_knockback",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_knockback_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_projectile_protection",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_projectile_protection_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_projectile_protection",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_projectile_protection_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_projectile_protection",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_projectile_protection_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_projectile_protection",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_projectile_protection_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_protection",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_protection_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_protection",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_protection_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_protection",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_protection_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_protection",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_protection_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_silk_touch",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_silk_touch"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_thorns",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_thorns_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_thorns",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_thorns_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_thorns",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_thorns_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_water_protection",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_water_protection_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_water_protection",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_water_protection_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_water_protection",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_water_protection_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/abjuration_collection_water_protection",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_water_protection_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/conjuration_collection_fortune",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_fortune_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/conjuration_collection_fortune",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_fortune_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/conjuration_collection_fortune",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_fortune_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/conjuration_collection_infinity",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_infinity"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/conjuration_collection_looting",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_looting_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/conjuration_collection_looting",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_looting_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/conjuration_collection_looting",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_looting_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/conjuration_collection_luck_of_the_sea",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_luck_of_the_sea_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/conjuration_collection_luck_of_the_sea",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_luck_of_the_sea_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/conjuration_collection_luck_of_the_sea",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_luck_of_the_sea_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/conjuration_collection_multishot",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_multishot"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_bane_of_arthropods",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_bane_of_arthropods_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_bane_of_arthropods",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_bane_of_arthropods_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_bane_of_arthropods",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_bane_of_arthropods_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_bane_of_arthropods",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_bane_of_arthropods_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_bane_of_arthropods",
+                "comparison": "==",
+                "compare_to": 5
+            },
+            "origins": [
+                "classes:wizard_bane_of_arthropods_5"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_impaling",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_impaling_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_impaling",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_impaling_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_impaling",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_impaling_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_impaling",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_impaling_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_impaling",
+                "comparison": "==",
+                "compare_to": 5
+            },
+            "origins": [
+                "classes:wizard_impaling_5"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_sharpness",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_sharpness_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_sharpness",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_sharpness_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_sharpness",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_sharpness_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_sharpness",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_sharpness_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_sharpness",
+                "comparison": "==",
+                "compare_to": 5
+            },
+            "origins": [
+                "classes:wizard_sharpness_5"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_smite",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_smite_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_smite",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_smite_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_smite",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_smite_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_smite",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_smite_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/divination_collection_smite",
+                "comparison": "==",
+                "compare_to": 5
+            },
+            "origins": [
+                "classes:wizard_smite_5"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_cleaving",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_cleaving_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_cleaving",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_cleaving_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_cleaving",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_cleaving_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_efficiency",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_efficiency_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_efficiency",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_efficiency_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_efficiency",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_efficiency_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_efficiency",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_efficiency_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_efficiency",
+                "comparison": "==",
+                "compare_to": 5
+            },
+            "origins": [
+                "classes:wizard_efficiency_5"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_loyalty",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_loyalty_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_loyalty",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_loyalty_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_loyalty",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_loyalty_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_lure",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_lure_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_lure",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_lure_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_lure",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_lure_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_piercing",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_piercing_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_piercing",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_piercing_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_piercing",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_piercing_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_piercing",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_piercing_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_power",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_power_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_power",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_power_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_power",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_power_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_power",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_power_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_power",
+                "comparison": "==",
+                "compare_to": 5
+            },
+            "origins": [
+                "classes:wizard_power_5"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_punch",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_punch_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_punch",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_punch_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_quick_charge",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_quick_charge_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_quick_charge",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_quick_charge_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_quick_charge",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_quick_charge_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_sweeping_edge",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_sweeping_edge_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_sweeping_edge",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_sweeping_edge_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/enchantment_collection_sweeping_edge",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_sweeping_edge_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/evocation_collection_channeling",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_channeling"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/evocation_collection_fire_aspect",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_fire_aspect_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/evocation_collection_fire_aspect",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_fire_aspect_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/evocation_collection_flame",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_flame"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/evocation_collection_frost_walker",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_frost_walker_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/evocation_collection_frost_walker",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_frost_walker_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/necromancy_collection_curse_of_binding",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_curse_of_binding"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/necromancy_collection_curse_of_vanishing",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_curse_of_vanishing"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/necromancy_collection_mending",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_mending"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_aqua_affinity",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_aqua_affinity"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_depth_strider",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_depth_strider_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_depth_strider",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_depth_strider_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_depth_strider",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_depth_strider_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_feather_falling",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_feather_falling_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_feather_falling",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_feather_falling_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_feather_falling",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_feather_falling_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_feather_falling",
+                "comparison": "==",
+                "compare_to": 4
+            },
+            "origins": [
+                "classes:wizard_feather_falling_4"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_respiration",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_respiration_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_respiration",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_respiration_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_respiration",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_respiration_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_riptide",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_riptide_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_riptide",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_riptide_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_riptide",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_riptide_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_soul_speed",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_soul_speed_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_soul_speed",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_soul_speed_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_soul_speed",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_soul_speed_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_swift_sneak",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_swift_sneak_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_swift_sneak",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_swift_sneak_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_swift_sneak",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_swift_sneak_3"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_unbreaking",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:wizard_unbreaking_1"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_unbreaking",
+                "comparison": "==",
+                "compare_to": 2
+            },
+            "origins": [
+                "classes:wizard_unbreaking_2"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:wizard/transmutation_collection_unbreaking",
+                "comparison": "==",
+                "compare_to": 3
+            },
+            "origins": [
+                "classes:wizard_unbreaking_3"
             ]
         }
     ],

@@ -15,9 +15,183 @@
                 "layer": "origins-classes:class"
             },
             "origins": [
-                "classes:artificer_armorer",
-                "classes:artificer_tinkerer",
-                "classes:artificer_toolsmith"
+                "classes:artificer_none"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_arcane_propulsion_armor",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_arcane_propulsion_armor"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_armor_of_the_ocean",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_armor_of_the_ocean"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_repulsion_armor",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_repulsion_armor"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_suit_of_spider_climbing",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_suit_of_spider_climbing"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_tunnel_bore",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_tunnel_bore"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_vanishing_armor",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_vanishing_armor"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_boots_of_the_winding_path",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_boots_of_the_winding_path"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_extending_arms",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_extending_arms"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_helm_of_awareness",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_helm_of_awareness"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_jet_boots",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_jet_boots"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_power_pants",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_power_pants"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_bag_of_holding",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_bag_of_holding"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_mechanical_wings",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_mechanical_wings"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_radiant_weapon",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_radiant_weapon"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_shatterpick",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_shatterpick"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_tunnel_bore",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_tunnel_bore"
             ]
         }
     ],
