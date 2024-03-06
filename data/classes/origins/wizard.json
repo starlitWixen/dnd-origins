@@ -4,11 +4,13 @@
 	"powers": [
 		"classes:wizard/hp",
 		"classes:wizard/spellcasting",
-		"origins-classes:better_enchanting"
+		"origins-classes:better_enchanting",
+		"classes:wizard/particles_grant"
 	],
 	"icon": {
 		"item": "origins:orb_of_origin"
 	},
-	"order": 11,
-	"impact": 0
+	"order": 13,
+	"impact": 0,
+	"loading_priority": 10
 }
