@@ -5,7 +5,7 @@
     "slowness_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -53,7 +53,7 @@
     "slowness_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -102,7 +102,7 @@
     "slowness_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -150,7 +150,7 @@
     "slowness_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -198,7 +198,7 @@
     "slowness_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -243,7 +243,7 @@
     "mining_fatigue_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -291,7 +291,7 @@
     "mining_fatigue_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -340,7 +340,7 @@
     "mining_fatigue_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -388,7 +388,7 @@
     "mining_fatigue_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -436,7 +436,7 @@
     "mining_fatigue_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -481,7 +481,7 @@
     "nausea_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -529,7 +529,7 @@
     "nausea_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -578,7 +578,7 @@
     "nausea_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -626,7 +626,7 @@
     "nausea_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -674,7 +674,7 @@
     "nausea_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -719,7 +719,7 @@
     "blindness_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -767,7 +767,7 @@
     "blindness_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -816,7 +816,7 @@
     "blindness_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -864,7 +864,7 @@
     "blindness_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -912,7 +912,7 @@
     "blindness_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -957,7 +957,7 @@
     "hunger_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1005,7 +1005,7 @@
     "hunger_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1054,7 +1054,7 @@
     "hunger_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1102,7 +1102,7 @@
     "hunger_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1150,7 +1150,7 @@
     "hunger_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1195,7 +1195,7 @@
     "weakness_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1243,7 +1243,7 @@
     "weakness_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1292,7 +1292,7 @@
     "weakness_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1340,7 +1340,7 @@
     "weakness_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1388,7 +1388,7 @@
     "weakness_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1433,7 +1433,7 @@
     "poison_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1481,7 +1481,7 @@
     "poison_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1530,7 +1530,7 @@
     "poison_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1578,7 +1578,7 @@
     "poison_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1626,7 +1626,7 @@
     "poison_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1671,7 +1671,7 @@
     "wither_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1719,7 +1719,7 @@
     "wither_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1768,7 +1768,7 @@
     "wither_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1816,7 +1816,7 @@
     "wither_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1864,7 +1864,7 @@
     "wither_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1909,7 +1909,7 @@
     "glowing_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1957,7 +1957,7 @@
     "glowing_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2006,7 +2006,7 @@
     "glowing_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2054,7 +2054,7 @@
     "glowing_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2102,7 +2102,7 @@
     "glowing_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2147,7 +2147,7 @@
     "levitation_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2195,7 +2195,7 @@
     "levitation_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2244,7 +2244,7 @@
     "levitation_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2292,7 +2292,7 @@
     "levitation_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2340,7 +2340,7 @@
     "levitation_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2385,7 +2385,7 @@
     "darkness_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2433,7 +2433,7 @@
     "darkness_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2482,7 +2482,7 @@
     "darkness_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2530,7 +2530,7 @@
     "darkness_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2578,7 +2578,7 @@
     "darkness_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2623,7 +2623,7 @@
     "instant_damage_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2672,7 +2672,7 @@
     "instant_damage_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2722,7 +2722,7 @@
     "instant_damage_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2771,7 +2771,7 @@
     "instant_damage_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2820,7 +2820,7 @@
     "instant_damage_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2866,7 +2866,7 @@
     "unluck_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2914,7 +2914,7 @@
     "unluck_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2963,7 +2963,7 @@
     "unluck_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3011,7 +3011,7 @@
     "unluck_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3059,7 +3059,7 @@
     "unluck_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",

@@ -1,0 +1,16 @@
+{
+    "name": "Helm of Awareness",
+    "hidden": true,
+    "type": "origins:multiple",
+    "glow": {
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:distance",
+            "comparison": "<=",
+            "compare_to": 30
+        }
+    },
+    "night_vision": {
+        "type": "origins:night_vision"
+    }
+}

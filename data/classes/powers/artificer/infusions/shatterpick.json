@@ -1,0 +1,16 @@
+{
+    "name": "Shatterpick",
+    "hidden": true,
+    "type": "origins:modify_break_speed",
+    "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "mineable/pickaxe"
+    },
+    "condition": {
+        "type": "origins:using_effective_tool"
+    },
+    "modifier": {
+        "value": 0.06,
+        "operation": "addition"
+    }
+}

@@ -1,0 +1,29 @@
+{
+	"name": "Jet Boots",
+    "hidden": true,
+	"type": "origins:active_self",
+  	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:add_velocity",
+				"y": 0.1,
+				"z": 2.0,
+				"space": "local"
+			},
+			{
+				"type": "origins:grant_power",
+				"power": "*:artificer/infusions/fall_immunity",
+				"source": "*:*"
+			}
+		]
+	},
+	"cooldown": 100,
+	"hud_render": {
+        	"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        	"bar_index": 1
+    	},
+	"key": {
+		"key": "key.origins.octonary_active"
+  	}
+}

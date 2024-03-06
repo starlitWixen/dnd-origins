@@ -13,7 +13,7 @@
     },
     "strength": {
         "type": "origins:modify_damage_dealt",
-        "modifer": {
+        "modifier": {
             "operation": "addition",
             "value": 3
         }

@@ -5,7 +5,7 @@
     "equipment": { 
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:if_else_list",
@@ -721,7 +721,7 @@
     "books": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:if_else_list",

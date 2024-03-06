@@ -11,7 +11,7 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Bound to \"Load Hotbar Activator\""
+            "text": "Bound to \"Active Power (Quaternary)\""
         }
     ],
     "resource": {
@@ -53,7 +53,7 @@
     "grant": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.loadToolbarActivator"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:area_of_effect",
@@ -93,21 +93,6 @@
             "resource": "*:*_resource",
             "comparison": "==",
             "compare_to": 1200
-        }
-    },
-    "change": {
-        "type": "origins:active_self",
-        "key": {
-            "key": "key.loadToolbarActivator"
-        },
-        "entity_action": {
-            "type": "origins:execute_command",
-            "command": "origin gui @s classes:paladin"
-        },
-        "condition": {
-            "type": "origins:power",
-            "power": "*:paladin/protection_timer",
-            "inverted": true
         }
     }
 }

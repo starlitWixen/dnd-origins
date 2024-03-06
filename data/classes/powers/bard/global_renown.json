@@ -7,7 +7,7 @@
         "type": "origins:apply_effect",
         "effect": {
             "effect": "minecraft:hero_of_the_village",
-            "duration": 20,
+            "duration": -1,
             "show_particles": false,
             "show_icon": false
         }

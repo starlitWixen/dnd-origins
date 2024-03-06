@@ -1,0 +1,13 @@
+{
+    "name": "Tunnel Bore",
+    "hidden": true,
+    "type": "origins:action_on_block_break",
+    "block_action": {
+        "type": "origins:execute_command",
+        "command": "fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air destroy"
+    },
+    "entity_action": {
+        "type": "origins:exhaust",
+        "amount": 0.015
+    }
+}

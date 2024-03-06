@@ -1,0 +1,65 @@
+{
+    "name": "Radiant Weapon",
+    "hidden": true,
+    "type": "apoli:multiple",
+    "light": {
+        "type": "apoli:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "apoli:and",
+            "actions": [
+                {
+                    "type": "apoli:spawn_entity",
+                    "entity_type": "armor_stand",
+                    "entity_action": {
+                        "type": "apoli:and",
+                        "actions": [
+                            {
+                                "type": "apoli:execute_command",
+                                "command": "execute align xyz run tp ~0.5 ~0.5 ~0.5"
+                            },
+                            {
+                                "type": "apoli:grant_power",
+                                "power": "*:artificer/infusions/light",
+                                "source": "*:*"
+                            }
+                        ]
+                    },
+                    "tag": "{Tags:[\"lightlibstand\"],Invulnerable:1,NoGravity:1,Invisible:1,Marker:1,Small:1}"
+                },
+                {
+                    "type": "apoli:spawn_entity",
+                    "entity_type": "armor_stand",
+                    "entity_action": {
+                        "type": "apoli:and",
+                        "actions": [
+                            {
+                                "type": "apoli:execute_command",
+                                "command": "execute align xyz run tp ~0.5 ~1.5 ~0.5"
+                            },
+                            {
+                                "type": "apoli:grant_power",
+                                "power": "*:artificer/infusions/light",
+                                "source": "*:*"
+                            }
+                        ]
+                    },
+                    "tag": "{Tags:[\"lightlibstand\"],Invulnerable:1,NoGravity:1,Invisible:1,Marker:1,Small:1}"
+                }
+            ]
+        }
+    },
+    "attack": {
+        "type": "origins:modify_damage_dealt",
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:blindness",
+                    "duration": 200
+                }
+            }
+        }
+    }
+}

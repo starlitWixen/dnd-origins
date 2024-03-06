@@ -1,0 +1,333 @@
+{
+    "name": "Infusion Collection",
+    "hidden": true,
+    "type": "origins:multiple",
+    "arcane_propulsion_armor": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "arcane_propulsion_armor_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_arcane_propulsion_armor",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:levitation"
+        }
+    },
+    "armor_of_the_ocean": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "armor_of_the_ocean_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_armor_of_the_ocean",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:water_breathing"
+        }
+    },
+    "bag_of_holding": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "bag_of_holding_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_bag_of_holding",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:inventory",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:bundle"
+                }
+            }
+        }
+    },
+    "boots_of_the_winding_path": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "boots_of_the_winding_path_activate": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_boots_of_the_winding_path",
+            "change": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:ender_pearl"
+            }
+        },
+        "trigger": "instant"
+    },
+    "extending_arms": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "extending_arms_activate": {
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_extending_arms",
+            "change": 1
+        },
+        "target_condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:enderman"
+        }
+    },
+    "helm_of_awareness": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "helm_of_awareness_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_helm_of_awareness",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:glowing"
+        }
+    },
+    "jet_boots": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "jet_boots_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_jet_boots",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:inventory",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "classes:boots"
+                }
+            }
+        }
+    },
+    "mechanical_wings": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "mechanical_wings_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_mechanical_wings",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:inventory",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:elytra"
+                }
+            }
+        }
+    },
+    "power_pants": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "power_pants_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_power_pants",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:speed"
+        }
+    },
+    "radiant_weapon": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "radiant_weapon_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_radiant_weapon",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:blindness"
+                },
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:darkness"
+                }
+            ]
+        }
+    },
+    "repulsion_armor": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "repulsion_armor_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_repulsion_armor",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:inventory",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "minecraft:trimmable_armor"
+                }
+            }
+        }
+    },
+    "shatterpick": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "shatterpick_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_shatterpick",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:haste"
+        }
+    },
+    "suit_of_spider_climbing": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "suit_of_spider_climbing_activate": {
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_suit_of_spider_climbing",
+            "change": 1
+        },
+        "target_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:entity_type",
+                    "entity_type": "minecraft:spider"
+                },
+                {
+                    "type": "origins:entity_type",
+                    "entity_type": "minecraft:cave_spider"
+                }
+            ]
+        }
+    },
+    "tunnel_bore": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "tunnel_bore_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_tunnel_bore",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:inventory",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:redstone"
+                }
+            }
+        }
+    },
+    "vanishing_armor": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "vanishing_armor_activate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_vanishing_armor",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:invisibility"
+        }
+    }
+}

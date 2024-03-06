@@ -1,0 +1,229 @@
+{
+    "name": "Arcane Armor",
+    "description": "Your metallurgical pursuits have led to you making armor a conduit for your magic. Enchantments on your armor are even more potent than they would be for non-Artificers.",
+    "type": "origins:multiple",
+    "protection": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:protection",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:protection",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "fire_protection": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:fire_protection",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:fire_protection",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "blast_protection": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:blast_protection",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:blast_protection",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "projectile_protection": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:projectile_protection",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:projectile_protection",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "feather_falling": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:feather_falling",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:feather_falling",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "respiration": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:respiration",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:respiration",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "thorns": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:thorns",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:thorns",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "depth_strider": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:depth_strider",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:depth_strider",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "unbreaking": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:unbreaking",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:unbreaking",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "soul_speed": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:soul_speed",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:soul_speed",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "swift_sneak": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:swift_sneak",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:swift_sneak",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "frost_walker": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:frost_walker",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:frost_walker",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "aqua_affinity": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:aqua_affinity",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:aqua_affinity",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "mending": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:mending",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        },
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:mending",
+            "use_modifications": false,
+            "calculation": "sum",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    }
+}

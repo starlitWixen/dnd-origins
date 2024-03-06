@@ -1,0 +1,54 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.no"
+        }
+    },
+    "bag": {
+        "type": "origins:inventory",
+        "title": "Bag of Holding",
+        "container_type": "chest",
+        "drop_on_death": false,
+        "key": {
+            "key": "key.origins.denary_active"
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "switch": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:toggle",
+            "power": "*:*_toggle"
+        },
+        "falling_action": {
+            "type": "origins:toggle",
+            "power": "*:*_toggle"
+        },
+        "condition": {
+            "type": "origins:inventory",
+            "item_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:bundle"
+                        }
+                    },
+                    {
+                        "type": "origins:nbt",
+                        "nbt": "{bagOfHolding: 1b}"
+                    }
+                ]
+            }
+        }
+    }
+}

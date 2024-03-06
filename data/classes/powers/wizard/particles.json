@@ -1,0 +1,8 @@
+{
+    "name": "Enchanting Particles",
+    "hidden": true,
+    "type": "origins:particle",
+    "particle": "minecraft:enchant",
+    "frequency": 6,
+    "visible_in_first_person": false
+}

@@ -1,0 +1,48 @@
+{
+    "name": "Repulsion Armor",
+    "hidden": true,
+    "type": "origins:attacker_action_when_hit",
+    "entity_action": {
+      "type": "origins:add_velocity",
+      "space": "local",
+      "y": 0.2,
+      "z": -1.5
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "head",
+                "item_condition": {
+                    "type": "origins:nbt",
+                    "nbt": "{repulsionArmor: 1b}"
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "chest",
+                "item_condition": {
+                    "type": "origins:nbt",
+                    "nbt": "{repulsionArmor: 1b}"
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "legs",
+                "item_condition": {
+                    "type": "origins:nbt",
+                    "nbt": "{repulsionArmor: 1b}"
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "feet",
+                "item_condition": {
+                    "type": "origins:nbt",
+                    "nbt": "{repulsionArmor: 1b}"
+                }
+            }
+        ]
+    }
+}

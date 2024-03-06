@@ -30,7 +30,18 @@
                 "type": "origins:equipped_item",
                 "equipment_slot": "chest",
                 "item_condition": {
-                    "type": "origins:empty"
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:empty"
+                        },
+                        {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:elytra"
+                            }
+                        }
+                    ]
                 }
             },
             {

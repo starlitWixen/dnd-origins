@@ -5,7 +5,7 @@
     "speed_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -53,7 +53,7 @@
     "speed_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -102,7 +102,7 @@
     "speed_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -150,7 +150,7 @@
     "speed_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -198,7 +198,7 @@
     "speed_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -243,7 +243,7 @@
     "haste_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -291,7 +291,7 @@
     "haste_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -340,7 +340,7 @@
     "haste_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -388,7 +388,7 @@
     "haste_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -436,7 +436,7 @@
     "haste_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -481,7 +481,7 @@
     "strength_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -529,7 +529,7 @@
     "strength_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -578,7 +578,7 @@
     "strength_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -626,7 +626,7 @@
     "strength_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -674,7 +674,7 @@
     "strength_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -719,7 +719,7 @@
     "jump_boost_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -767,7 +767,7 @@
     "jump_boost_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -816,7 +816,7 @@
     "jump_boost_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -864,7 +864,7 @@
     "jump_boost_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -912,7 +912,7 @@
     "jump_boost_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -957,7 +957,7 @@
     "regeneration_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1005,7 +1005,7 @@
     "regeneration_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1054,7 +1054,7 @@
     "regeneration_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1102,7 +1102,7 @@
     "regeneration_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1150,7 +1150,7 @@
     "regeneration_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1195,7 +1195,7 @@
     "resistance_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1243,7 +1243,7 @@
     "resistance_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1292,7 +1292,7 @@
     "resistance_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1340,7 +1340,7 @@
     "resistance_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1388,7 +1388,7 @@
     "resistance_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1433,7 +1433,7 @@
     "fire_resistance_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1481,7 +1481,7 @@
     "fire_resistance_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1530,7 +1530,7 @@
     "fire_resistance_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1578,7 +1578,7 @@
     "fire_resistance_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1626,7 +1626,7 @@
     "fire_resistance_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1671,7 +1671,7 @@
     "water_breathing_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1719,7 +1719,7 @@
     "water_breathing_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1768,7 +1768,7 @@
     "water_breathing_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1816,7 +1816,7 @@
     "water_breathing_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1864,7 +1864,7 @@
     "water_breathing_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1909,7 +1909,7 @@
     "invisibility_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -1957,7 +1957,7 @@
     "invisibility_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2006,7 +2006,7 @@
     "invisibility_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2054,7 +2054,7 @@
     "invisibility_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2102,7 +2102,7 @@
     "invisibility_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2147,7 +2147,7 @@
     "night_vision_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2195,7 +2195,7 @@
     "night_vision_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2244,7 +2244,7 @@
     "night_vision_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2292,7 +2292,7 @@
     "night_vision_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2340,7 +2340,7 @@
     "night_vision_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2385,7 +2385,7 @@
     "absorption_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2433,7 +2433,7 @@
     "absorption_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2482,7 +2482,7 @@
     "absorption_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2530,7 +2530,7 @@
     "absorption_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2578,7 +2578,7 @@
     "absorption_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2623,7 +2623,7 @@
     "saturation_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2671,7 +2671,7 @@
     "saturation_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2720,7 +2720,7 @@
     "saturation_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2768,7 +2768,7 @@
     "saturation_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2816,7 +2816,7 @@
     "saturation_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2861,7 +2861,7 @@
     "luck_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2909,7 +2909,7 @@
     "luck_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -2958,7 +2958,7 @@
     "luck_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3006,7 +3006,7 @@
     "luck_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3054,7 +3054,7 @@
     "luck_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3099,7 +3099,7 @@
     "slow_falling_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3147,7 +3147,7 @@
     "slow_falling_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3196,7 +3196,7 @@
     "slow_falling_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3244,7 +3244,7 @@
     "slow_falling_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3292,7 +3292,7 @@
     "slow_falling_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3337,7 +3337,7 @@
     "conduit_power_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3385,7 +3385,7 @@
     "conduit_power_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3434,7 +3434,7 @@
     "conduit_power_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3482,7 +3482,7 @@
     "conduit_power_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3530,7 +3530,7 @@
     "conduit_power_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3575,7 +3575,7 @@
     "dolphins_grace_none": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3623,7 +3623,7 @@
     "dolphins_grace_empowered": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3672,7 +3672,7 @@
     "dolphins_grace_extended": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3720,7 +3720,7 @@
     "dolphins_grace_quickened": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",
@@ -3768,7 +3768,7 @@
     "dolphins_grace_subtle": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.quaternary_active"
         },
         "entity_action": {
             "type": "origins:and",

@@ -1,0 +1,17 @@
+{
+    "name": "Extending Arms",
+    "hidden": true,
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "attribute": "reach-entity-attributes:reach",
+            "value": 2,
+            "operation": "addition"
+        },
+        {
+            "attribute": "reach-entity-attributes:attack_range",
+            "value": 2,
+            "operation": "addition"
+        }
+    ]
+}

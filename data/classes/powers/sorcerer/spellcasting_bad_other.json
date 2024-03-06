@@ -4037,10 +4037,13 @@
                     }
                 },
                 {
-                    "type": "origins:change_resource",
-                    "resource": "*:sorcerer/spellcasting_resource",
-                    "operation": "set",
-                    "change": 0
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:sorcerer/spellcasting_resource",
+                        "operation": "set",
+                        "change": 0
+                    }
                 }
             ]
         },

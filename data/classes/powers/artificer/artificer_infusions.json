@@ -1,0 +1,1246 @@
+{
+    "name": "Artificer Infusions",
+    "description": "Artificer infusions are extraordinary processes that rapidly turn a nonmagical object into a magic item.",
+    "type": "origins:multiple",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Active ability, %s to use."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "To use your Artificer Infusions ability, use your \"Active Power (Quaternary)\" key while holding the item you wish to infuse."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "The key to change the infusion you have selected is bound to your \"Active Power (Quinary)\" key."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "You cannot infuse an item multiple times. Once an item is infused, it cannot be overwritten."
+        }
+    ],
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 6000,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 20,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "<",
+                "compare_to": 6000
+            }
+        }
+    },
+    "charge": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1200
+        }
+    },
+    "arcane_propulsion_armor": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:arcane_propulsion_armor_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:arcane_propulsion_armor_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:arcane_propulsion_armor"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{arcanePropulsionArmor: 1b}"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_arcane_propulsion_armor",
+                    "layer": "classes:armorer"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "minecraft:trimmable_armor"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "armor_of_the_ocean": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:armor_of_the_ocean_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:armor_of_the_ocean_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:armor_of_the_ocean"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{armorOfTheOcean: 1b}"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_armor_of_the_ocean",
+                    "layer": "classes:armorer"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "minecraft:trimmable_armor"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "bag_of_holding": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:bag_of_holding_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:bag_of_holding_lore"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{bagOfHolding: 1b}"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_bag_of_holding",
+                    "layer": "classes:toolsmith"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:bundle"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "boots_of_the_winding_path": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:boots_of_the_winding_path_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:boots_of_the_winding_path_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:boots_of_the_winding_path"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_boots_of_the_winding_path",
+                    "layer": "classes:tinkerer"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "classes:boots"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "extending_arms": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:extending_arms_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:extending_arms_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:extending_arms"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_extending_arms",
+                    "layer": "classes:toolsmith"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "classes:chestplates"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "helm_of_awareness": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:helm_of_awareness_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:helm_of_awareness_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:helm_of_awareness"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_helm_of_awareness",
+                    "layer": "classes:tinkerer"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "classes:helmets"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "jet_boots": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:jet_boots_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:jet_boots_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:jet_boots"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_jet_boots",
+                    "layer": "classes:tinkerer"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "classes:boots"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "mechanical_wings": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:mechanical_wings_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:mechanical_wings_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:mechanical_wings"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_mechanical_wings",
+                    "layer": "classes:toolsmith"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:elytra"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "power_pants": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:power_pants_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:power_pants_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:power_pants"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_power_pants",
+                    "layer": "classes:tinkerer"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "classes:leggings"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "radiant_weapon": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:radiant_weapon_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:radiant_weapon_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:radiant_weapon"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_radiant_weapon",
+                    "layer": "classes:tinkerer"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "tag": "minecraft:axes"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "tag": "minecraft:swords"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:bow"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:crossbow"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "repulsion_armor": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:repulsion_armor_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:repulsion_armor_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:repulsion_armor"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{repulsionArmor: 1b}"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_repulsion_armor",
+                    "layer": "classes:armorer"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "minecraft:trimmable_armor"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "shatterpick": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:shatterpick_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:shatterpick_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:shatterpick"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_shatterpick",
+                    "layer": "classes:toolsmith"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "minecraft:pickaxes"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "suit_of_spider_climbing": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:suit_of_spider_climbing_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:suit_of_spider_climbing_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:suit_of_spider_climbing"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{suitOfSpiderClimbing: 1b}"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_suit_of_spider_climbing",
+                    "layer": "classes:armorer"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "minecraft:trimmable_armor"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "tunnel_bore": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:tunnel_bore_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:tunnel_bore_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:tunnel_bore"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_tunnel_bore",
+                    "layer": "classes:toolsmith"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "minecraft:pickaxes"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "vanishing_armor": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:vanishing_armor_name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:vanishing_armor_lore"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "classes:vanishing_armor"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{vanishingArmor: 1b}"
+                            },
+                            {
+                                "type": "origins:merge_nbt",
+                                "nbt": "{infused: 1b}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -5
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "classes:artificer_vanishing_armor",
+                    "layer": "classes:armorer"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "minecraft:trimmable_armor"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{infused: 1b}",
+                                "inverted": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "change": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quinary_active"
+        },
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "origin gui @s classes:artificer"
+        }
+    }
+}
