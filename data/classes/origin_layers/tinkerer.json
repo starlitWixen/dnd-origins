@@ -1,0 +1,78 @@
+{
+    "name": "Prepared Infusion",
+    "gui_title": {
+        "choose_origin": "Choose a prepared infusion.",
+        "view_origin": "This is your prepared infusion."
+    },
+    "replace": false,
+    "order": 5,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "classes:tinkerer",
+                "layer": "classes:artificer"
+            },
+            "origins": [
+                "classes:artificer_none"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_boots_of_the_winding_path",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_boots_of_the_winding_path"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_extending_arms",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_extending_arms"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_helm_of_awareness",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_helm_of_awareness"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_jet_boots",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_jet_boots"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_power_pants",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_power_pants"
+            ]
+        }
+    ],
+    "allow_random": true
+}

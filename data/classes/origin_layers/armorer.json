@@ -1,0 +1,89 @@
+{
+    "name": "Prepared Infusion",
+    "gui_title": {
+        "choose_origin": "Choose a prepared infusion.",
+        "view_origin": "This is your prepared infusion."
+    },
+    "replace": false,
+    "order": 5,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "classes:armorer",
+                "layer": "classes:artificer"
+            },
+            "origins": [
+                "classes:artificer_none"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_arcane_propulsion_armor",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_arcane_propulsion_armor"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_armor_of_the_ocean",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_armor_of_the_ocean"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_repulsion_armor",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_repulsion_armor"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_suit_of_spider_climbing",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_suit_of_spider_climbing"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_tunnel_bore",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_tunnel_bore"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "classes:artificer/infusion_collection_vanishing_armor",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "origins": [
+                "classes:artificer_vanishing_armor"
+            ]
+        }
+    ],
+    "allow_random": true
+}

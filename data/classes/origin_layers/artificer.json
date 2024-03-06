@@ -1,0 +1,25 @@
+{
+    "name": "Artificer Specialization",
+    "gui_title": {
+        "choose_origin": "Choose a specialization.",
+        "view_origin": "This is your specialization."
+    },
+    "replace": false,
+    "order": 4,
+    "enabled": true,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "classes:artificer",
+                "layer": "origins-classes:class"
+            },
+            "origins": [
+                "classes:artificer_armorer",
+                "classes:artificer_tinkerer",
+                "classes:artificer_toolsmith"
+            ]
+        }
+    ],
+    "allow_random": true
+}
