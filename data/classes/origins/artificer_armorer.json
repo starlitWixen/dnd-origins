@@ -1,0 +1,9 @@
+{
+	"name": "Armorer",
+	"description": "An artificer who specializes as an Armorer modifies armor to function almost like a second skin.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0
+}

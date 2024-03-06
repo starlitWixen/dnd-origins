@@ -1,0 +1,9 @@
+{
+	"name": "Boots of the Winding Path",
+	"description": "The wearer of the Boots of the Winding Path is able to teleport up to 40 blocks away. Activate with your \"Active Power (Nonary)\" key.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

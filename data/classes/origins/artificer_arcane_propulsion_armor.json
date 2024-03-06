@@ -1,0 +1,9 @@
+{
+	"name": "Arcane Propulsion Armor",
+	"description": "The wearer of a full set of Arcane Propulsion Armor gains a slight speed boost on land and in the air, as well as both levitation and slow falling, making for a limited version of flight.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

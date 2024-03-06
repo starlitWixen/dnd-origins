@@ -1,0 +1,9 @@
+{
+	"name": "Repulsion Armor",
+	"description": "The wearer of a full suit of Repulsion Armor will knock back enemies who attack them.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

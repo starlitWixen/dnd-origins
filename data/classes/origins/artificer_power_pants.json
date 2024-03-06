@@ -1,0 +1,9 @@
+{
+	"name": "Power Pants",
+	"description": "The wearer of a pair of Power Pants has a boost to their movement speed.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

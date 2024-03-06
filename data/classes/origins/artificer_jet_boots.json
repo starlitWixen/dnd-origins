@@ -1,0 +1,9 @@
+{
+	"name": "Jet Boots",
+	"description": "The wearer of a pair of Jet Boots can propel themselves forward with incredible speed. Activate with your \"Active Power (Octonary)\" key.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

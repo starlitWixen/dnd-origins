@@ -1,0 +1,9 @@
+{
+	"name": "Tinkerer",
+	"description": "An artificer who specializes as a Tinkerer modifies uses their arcane nature to replicate various effects channeled through pieces of clothing.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

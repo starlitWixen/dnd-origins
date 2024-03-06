@@ -1,0 +1,9 @@
+{
+	"name": "Suit of Spider Climbing",
+	"description": "The wearer of a full Suit of Spider Climbing can climb up any vertical surface.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

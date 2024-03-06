@@ -1,0 +1,9 @@
+{
+	"name": "Helm of Awareness",
+	"description": "The wearer of the Helm of Awareness has perfect vision in darkness, and can see nearby entities as being surrounded by a brilliant light.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

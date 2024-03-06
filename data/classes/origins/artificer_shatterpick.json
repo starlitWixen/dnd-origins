@@ -1,0 +1,9 @@
+{
+	"name": "Shatterpick",
+	"description": "The wielder of the Shatterpick has an increased mining speed.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

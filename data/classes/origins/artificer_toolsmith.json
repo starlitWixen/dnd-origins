@@ -1,0 +1,9 @@
+{
+	"name": "Toolsmith",
+	"description": "An artificer who specializes as a Toolsmith modifies common tools to increase their effectiveness.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

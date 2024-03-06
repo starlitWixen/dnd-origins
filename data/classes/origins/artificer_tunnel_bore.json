@@ -1,0 +1,9 @@
+{
+	"name": "Tunnel Bore",
+	"description": "The wielder of the Tunnel Bore is able to mine a wider area of blocks than normal.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}
