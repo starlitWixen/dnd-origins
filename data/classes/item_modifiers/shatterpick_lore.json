@@ -1,0 +1,16 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "The wielder of the Shatterpick",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "has an increased mining speed.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}

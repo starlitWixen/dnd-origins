@@ -1,0 +1,6 @@
+{
+    "function": "apoli:add_power",
+    "power": "classes:artificer/infusions/helm_of_awareness",
+    "slot": "head",
+    "negative": false
+}

@@ -1,0 +1,26 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "This bag has an interior space considerably",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "larger than its outside dimensions, and items",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "stored inside it do not drop upon death.",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "Use with your \"Active Power (Denary)\" key.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}

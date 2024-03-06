@@ -1,0 +1,21 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "The wearer of a pair of Jet Boots can propel",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "themselves forward with incredible speed.",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "Activate with your \"Active Power (Octonary)\" key.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}

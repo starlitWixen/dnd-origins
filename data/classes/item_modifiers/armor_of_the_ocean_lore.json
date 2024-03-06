@@ -1,0 +1,26 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "The wearer of a full set of Armor of the Ocean",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "can breathe both air and water, have their underwater",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "swimming speed and underwater mining speed increased,",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "and do not float or sink unless they want to.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}

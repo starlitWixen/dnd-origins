@@ -1,0 +1,6 @@
+{
+    "function": "apoli:add_power",
+    "power": "classes:artificer/infusions/radiant_weapon",
+    "slot": "mainhand",
+    "negative": false
+}

@@ -1,0 +1,6 @@
+{
+    "function": "apoli:add_power",
+    "power": "classes:artificer/infusions/mechanical_wings",
+    "slot": "chest",
+    "negative": false
+}

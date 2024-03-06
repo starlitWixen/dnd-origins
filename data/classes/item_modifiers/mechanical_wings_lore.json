@@ -1,0 +1,21 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "The wearer of a pair of Mechanical Wings can fly",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "unaided, so long as they aren't wearing any armor.",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "Sprint while in elytra flight to gain forward propulsion.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}

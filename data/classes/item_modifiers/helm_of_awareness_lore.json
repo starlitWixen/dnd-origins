@@ -1,0 +1,21 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "The wearer of the Helm of Awareness has perfect",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "vision in darkness, and can see nearby entities",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "as being surrounded by a brilliant light.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}

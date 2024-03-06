@@ -1,0 +1,6 @@
+{
+    "function": "apoli:add_power",
+    "power": "classes:artificer/infusions/suit_of_spider_climbing",
+    "slot": "head",
+    "negative": false
+}

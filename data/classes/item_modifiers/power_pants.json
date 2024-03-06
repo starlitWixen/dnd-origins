@@ -1,0 +1,6 @@
+{
+    "function": "apoli:add_power",
+    "power": "classes:artificer/infusions/power_pants",
+    "slot": "legs",
+    "negative": false
+}

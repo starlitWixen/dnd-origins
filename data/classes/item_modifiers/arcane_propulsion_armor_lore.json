@@ -1,0 +1,26 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "The wearer of a full set of Arcane Propulsion Armor",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "gains a slight speed boost on land and in the air,",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "as well as both levitation and slow falling,",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "making for a limited version of flight.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}

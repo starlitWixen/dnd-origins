@@ -1,0 +1,16 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "The wielder of a Radiant Weapon inflicts blindness with",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "their attacks, and sheds a bright light around them.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}

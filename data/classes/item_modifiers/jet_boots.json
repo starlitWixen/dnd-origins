@@ -1,0 +1,6 @@
+{
+    "function": "apoli:add_power",
+    "power": "classes:artificer/infusions/jet_boots",
+    "slot": "feet",
+    "negative": false
+}

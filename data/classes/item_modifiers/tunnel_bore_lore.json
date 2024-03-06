@@ -1,0 +1,16 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "The wielder of the Tunnel Bore is able to",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "mine a wider area of blocks than normal.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}

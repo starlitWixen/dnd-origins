@@ -1,0 +1,6 @@
+{
+    "function": "apoli:add_power",
+    "power": "classes:artificer/infusions/arcane_propulsion_armor",
+    "slot": "head",
+    "negative": false
+}

@@ -1,0 +1,6 @@
+{
+    "function": "apoli:add_power",
+    "power": "classes:artificer/infusions/fire_resistant_armor",
+    "slot": "head",
+    "negative": false
+}

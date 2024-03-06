@@ -1,0 +1,16 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "The wearer of a full suit of Repulsion Armor",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "will knock back enemies who attack them.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}

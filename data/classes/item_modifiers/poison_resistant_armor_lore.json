@@ -1,0 +1,21 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "The wearer of a full suit",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "of Poison Resistant Armor is",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "immune to all poison damage.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}

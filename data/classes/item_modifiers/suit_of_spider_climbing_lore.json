@@ -1,0 +1,16 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "The wearer of a full Suit of Spider Climbing",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "can climb up any vertical surface.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}

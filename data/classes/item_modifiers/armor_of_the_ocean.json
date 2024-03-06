@@ -1,0 +1,6 @@
+{
+    "function": "apoli:add_power",
+    "power": "classes:artificer/infusions/armor_of_the_ocean",
+    "slot": "head",
+    "negative": false
+}

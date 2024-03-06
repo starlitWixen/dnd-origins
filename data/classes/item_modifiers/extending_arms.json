@@ -1,0 +1,6 @@
+{
+    "function": "apoli:add_power",
+    "power": "classes:artificer/infusions/extending_arms",
+    "slot": "chest",
+    "negative": false
+}

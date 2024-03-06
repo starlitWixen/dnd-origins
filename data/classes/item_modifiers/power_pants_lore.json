@@ -1,0 +1,16 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "The wearer of a pair of Power Pants",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "has a boost to their movement speed.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}

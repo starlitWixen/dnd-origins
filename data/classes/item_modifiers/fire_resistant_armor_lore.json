@@ -1,0 +1,21 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "The wearer of a full suit",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "of Fire Resistant Armor is",
+            "color": "light_purple",
+            "italic": false
+        },
+        {
+            "text": "immune to all fire damage.",
+            "color": "light_purple",
+            "italic": false
+        }
+    ]
+}
