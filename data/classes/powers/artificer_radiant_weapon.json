@@ -1,0 +1,9 @@
+{
+	"name": "Radiant Weapon",
+	"description": "The wielder of a Radiant Weapon inflicts blindness with their attacks, and sheds a bright light around them.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

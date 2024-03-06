@@ -1,0 +1,9 @@
+{
+	"name": "Extending Arms",
+	"description": "The wielder of Extended Arms has increased reach.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

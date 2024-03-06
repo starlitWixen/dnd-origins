@@ -1,0 +1,9 @@
+{
+	"name": "Mechanical Wings",
+	"description": "The wearer of a pair of Mechanical Wings can fly unaided, so long as they aren't wearing any armor. Sprint while in elytra flight to gain forward propulsion.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

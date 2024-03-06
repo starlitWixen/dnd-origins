@@ -1,0 +1,9 @@
+{
+	"name": "Vanishing Armor",
+	"description": "The wearer of a full suit of Vanishing Armor can become completely invisible.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

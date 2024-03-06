@@ -1,0 +1,9 @@
+{
+	"name": "Armor of the Ocean",
+	"description": "The wearer of a full set of Armor of the Ocean can breathe both air and water, have their underwater swimming speed and underwater mining speed increased, and do not float or sink unless they want to.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}

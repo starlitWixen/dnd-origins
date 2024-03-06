@@ -1,0 +1,15 @@
+{
+	"name": "Artificer",
+	"description": "Masters of invention, artificers use ingenuity and magic to unlock extraordinary capabilities in objects.",
+	"powers": [
+		"classes:artificer/hp",
+		"classes:artificer/artificer_infusions",
+		"classes:artificer/arcane_armor",
+		"classes:artificer/infusion_collection"
+	],
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 0
+}
