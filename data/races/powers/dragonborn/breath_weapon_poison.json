@@ -144,7 +144,13 @@
 						]
 					},
 					"distance": 15,
-					"command_step": 0.25,
+					"miss_action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "operation": "set",
+                        "change": 0
+                    },
+                    "command_step": 0.25,
 					"command_along_ray": "particle dust 0.15 0.3 0.1 1 ~ ~ ~ 0.12 0.23 0.08 0 2 force"
 				},
 				{

@@ -145,6 +145,12 @@
                         ]
                     },
                     "distance": 15,
+                    "miss_action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "operation": "set",
+                        "change": 0
+                    },
                     "command_step": 0.25,
                     "command_along_ray": "function classes:nausea"
                 }

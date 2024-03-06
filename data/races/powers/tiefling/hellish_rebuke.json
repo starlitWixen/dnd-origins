@@ -109,7 +109,13 @@
                             }
                         ]
                     },
-                    "distance": 15
+                    "distance": 15,
+                    "miss_action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "operation": "set",
+                        "change": 0
+                    }
                 }
             ]
         },

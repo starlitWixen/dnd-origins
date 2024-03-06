@@ -52,7 +52,8 @@
                 "actions": [
                     {
                         "type": "origins:play_sound",
-                        "sound": "minecraft:entity.ender_dragon.ambient"
+                        "sound": "minecraft:entity.ender_dragon.ambient",
+                        "pitch": 2
                     },
                     {
                         "type": "origins:grant_power",
@@ -63,7 +64,8 @@
             },
             "else_action": {
                 "type": "origins:play_sound",
-                "sound": "minecraft:entity.ender_dragon.ambient"
+                "sound": "minecraft:entity.ender_dragon.ambient",
+                "pitch": 2
             }
         }
     }
