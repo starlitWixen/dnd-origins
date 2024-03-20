@@ -698,6 +698,11 @@
                                                 "effect": "minecraft:luck",
                                                 "duration": 1200,
                                                 "show_particles": false
+                                            },
+                                            {
+                                                "effect": "minecraft:haste",
+                                                "duration": 1200,
+                                                "show_particles": false
                                             }
                                         ]
                                     }
