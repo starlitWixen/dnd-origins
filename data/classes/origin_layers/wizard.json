@@ -9,6 +9,11 @@
     "enabled": true,
     "origins": [
         {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "classes:wizard",
+                "layer": "origins-classes:class"
+            },
             "origins": [
                 "classes:wizard_none"
             ]

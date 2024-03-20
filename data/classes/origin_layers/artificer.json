@@ -1,8 +1,8 @@
 {
-    "name": "Artificer Specialization",
+    "name": "Prepared Infusion",
     "gui_title": {
-        "choose_origin": "Choose a specialization.",
-        "view_origin": "This is your specialization."
+        "choose_origin": "Choose an infusion.",
+        "view_origin": "This is your prepared infusion."
     },
     "replace": false,
     "order": 4,
