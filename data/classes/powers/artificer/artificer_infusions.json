@@ -47,7 +47,7 @@
         "entity_action": {
             "type": "origins:change_resource",
             "resource": "*:*_resource",
-            "change": 1200
+            "change": 1
         }
     },
     "arcane_propulsion_armor": {
@@ -1239,8 +1239,42 @@
             "key": "key.origins.quinary_active"
         },
         "entity_action": {
-            "type": "origins:execute_command",
-            "command": "origin gui @s classes:artificer"
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:artificer_armorer",
+                        "layer": "classes:artificer"
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin gui @s classes:armorer"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:artificer_tinkerer",
+                        "layer": "classes:artificer"
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin gui @s classes:tinkerer"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "classes:artificer_toolsmith",
+                        "layer": "classes:artificer"
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin gui @s classes:toolsmith"
+                    }
+                }
+            ]
         }
     }
 }
