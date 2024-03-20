@@ -28,21 +28,8 @@
             "value": 1
         },
         "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:enchantment",
-                    "enchantment": "minecraft:fortune",
-                    "use_modifications": false,
-                    "calculation": "sum",
-                    "comparison": ">",
-                    "compare_to": 0
-                },
-                {
-                    "type": "origins:power_active",
-                    "power": "*:*_toggle"
-                }
-            ]
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
         }
     },
     "silk_touch": {
@@ -64,14 +51,6 @@
         "modifier": {
             "operation": "addition",
             "value": 1
-        },
-        "condition": {
-            "type": "origins:enchantment",
-            "enchantment": "minecraft:looting",
-            "use_modifications": false,
-            "calculation": "sum",
-            "comparison": "==",
-            "compare_to": 0
         }
     }
 }
