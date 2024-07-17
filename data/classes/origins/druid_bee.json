@@ -4,10 +4,6 @@
 	"powers": [
 		"classes:druid/bee/stats",
 		"classes:druid/bee/honey",
-		"classes:druid/bee/stinger",
-		"classes:druid/hover",
-		"origins:slow_falling",
-		"origins:like_air",
 		"classes:druid/bee/particles",
 		"origins:arthropod",
 		"classes:druid/neutral"

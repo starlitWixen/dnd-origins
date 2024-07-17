@@ -3,10 +3,6 @@
 	"description": "Your Wild Shape is a chicken.",
 	"powers": [
 		"classes:druid/chicken/stats",
-		"origins:slow_falling",
-        "origins:like_air",
-        "origins:tailwind",
-		"classes:druid/chicken/eggs",
 		"classes:druid/neutral"
 	],
 	"icon": {

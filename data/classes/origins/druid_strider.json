@@ -3,9 +3,7 @@
 	"description": "Your Wild Shape is a strider.",
 	"powers": [
 		"classes:druid/strider/stats",
-		"classes:druid/strider/lava_walk",
-        "classes:druid/rideable_creature",
-		"classes:druid/strider/hydrophobia",
+		"classes:druid/rideable_creature",
 		"classes:druid/neutral"
 	],
 	"icon": {

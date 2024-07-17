@@ -3,8 +3,6 @@
 	"description": "Your Wild Shape is an ocelot.",
 	"powers": [
 		"classes:druid/ocelot/stats",
-		"origins:fall_immunity",
-		"classes:druid/ocelot/zoomies",
 		"classes:druid/darkvision",
 		"classes:druid/ocelot/greebles",
 		"classes:druid/neutral"

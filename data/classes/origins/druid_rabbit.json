@@ -3,8 +3,6 @@
 	"description": "Your Wild Shape is a rabbit.",
 	"powers": [
 		"classes:druid/rabbit/stats",
-		"classes:druid/rabbit/strong_legs",
-        "classes:druid/rabbit/leap",
 		"classes:druid/neutral"
 	],
 	"icon": {

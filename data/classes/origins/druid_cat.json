@@ -4,7 +4,6 @@
 	"powers": [
 		"classes:druid/cat/stats",
 		"origins:fall_immunity",
-		"classes:druid/cat/zoomies",
 		"classes:druid/darkvision",
 		"classes:druid/cat/greebles",
 		"classes:druid/neutral"

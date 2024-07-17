@@ -4,8 +4,6 @@
 	"powers": [
 		"classes:druid/llama/stats",
 		"classes:druid/rideable_creature",
-		"classes:druid/storage",
-		"classes:druid/llama/spit",
 		"classes:druid/neutral"
 	],
 	"icon": {

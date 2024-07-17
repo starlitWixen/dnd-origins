@@ -4,8 +4,6 @@
 	"powers": [
 		"classes:druid/parrot/stats",
 		"classes:druid/parrot/imitate",
-		"classes:druid/flight",
-		"classes:druid/nimble",
 		"classes:druid/neutral"
 	],
 	"icon": {

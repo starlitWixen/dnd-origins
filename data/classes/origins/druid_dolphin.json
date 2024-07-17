@@ -3,8 +3,6 @@
 	"description": "Your Wild Shape is a dolphin.",
 	"powers": [
 		"classes:druid/dolphin/stats",
-        "classes:druid/bimodal_respiration",
-        "classes:druid/aquatic_adaptations",
         "classes:druid/dolphin/dolphins_grace",
 		"origins:aquatic",
 		"classes:druid/neutral"

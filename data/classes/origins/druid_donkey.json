@@ -4,8 +4,7 @@
 	"powers": [
 		"classes:druid/donkey/stats",
         "classes:druid/rideable_creature",
-        "classes:druid/storage",
-		"classes:druid/neutral"
+        "classes:druid/neutral"
 	],
 	"icon": {
 		"item": "origins:orb_of_origin"

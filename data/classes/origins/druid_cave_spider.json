@@ -3,11 +3,8 @@
 	"description": "Your Wild Shape is a cave spider.",
 	"powers": [
 		"classes:druid/cave_spider/stats",
-		"classes:druid/climbing",
-		"classes:druid/cave_spider/venom_glands",
-        "classes:druid/cave_spider/venom_immunity",
+		"classes:druid/cave_spider/venom_immunity",
 		"classes:druid/darkvision",
-		"classes:druid/cave_spider/cobweb",
 		"origins:arthropod",
 		"classes:druid/neutral"
 	],

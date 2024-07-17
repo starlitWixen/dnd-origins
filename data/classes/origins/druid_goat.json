@@ -3,7 +3,6 @@
 	"description": "Your Wild Shape is a goat.",
 	"powers": [
 		"classes:druid/goat/stats",
-        "classes:druid/goat/leap",
         "classes:druid/goat/ram",
 		"classes:druid/neutral"
 	],

@@ -4,9 +4,6 @@
 	"powers": [
 		"classes:druid/bat/stats",
 		"classes:druid/bat/sonar",
-		"classes:druid/flight",
-		"classes:druid/nimble",
-		"classes:druid/darkvision",
 		"classes:druid/neutral"
 	],
 	"icon": {

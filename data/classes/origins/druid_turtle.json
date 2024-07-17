@@ -3,8 +3,6 @@
 	"description": "Your Wild Shape is a turtle.",
 	"powers": [
 		"classes:druid/turtle/stats",
-		"classes:druid/bimodal_respiration",
-		"classes:druid/aquatic_adaptations",
 		"origins:aquatic",
 		"classes:druid/neutral"
 	],
