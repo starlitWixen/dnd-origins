@@ -1,131 +1,134 @@
 {
     "name": "Blessed Healer",
-    "description": "You can heal entities for 4 to 8 hearts of health.",
+    "description": "You can heal entities in a small radius for 4 to 8 hearts of health.",
     "type": "origins:multiple",
     "badges": [
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Active ability, crouch + right click an entity to use."
+            "text": "Active ability, %s to use."
         },
         {
-            "type": "origins:keybind",
-            "sprite": "origins:textures/gui/badge/toggle.png",
-            "text": "Toggle with %s. This power operates on a toggle so as to prevent accidental activations."
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Bound to \"Active Power (Quaternary)\""
         }
     ],
-    "toggle": {
-        "type": "origins:toggle",
-        "key": {
-            "key": "key.origins.secondary_active"
-        }
-    },
     "resource": {
         "type": "origins:resource",
         "min": 0,
         "max": 600,
+        "start_value": 0,
         "hud_render": {
-            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
-            "bar_index": 4,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 0,
             "condition": {
-                "type": "origins:power_active",
-                "power": "*:*_toggle"
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "==",
+                "compare_to": 600,
+                "inverted": true
             }
         },
-        "start_value": 0
+        "min_action": {
+            "type": "origins:revoke_power",
+            "power": "*:paladin/protection_timer",
+            "source": "*:*"
+        }
     },
-    "charge": {
+    "increase": {
         "type": "origins:action_over_time",
         "interval": 1,
         "entity_action": {
             "type": "origins:change_resource",
             "resource": "*:*_resource",
             "change": 1
-        }
-    },
-    "heal": {
-        "type": "origins:action_on_entity_use",
-        "bientity_action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:target_action",
-                    "action": {
-                        "type": "origins:choice",
-                        "actions": [
-                            {
-                                "element": {
-                                    "type": "origins:heal",
-                                    "amount": 8
-                                },
-                                "weight": 1
-                            },
-                            {
-                                "element": {
-                                    "type": "origins:heal",
-                                    "amount": 10
-                                },
-                                "weight": 1
-                            },
-                            {
-                                "element": {
-                                    "type": "origins:heal",
-                                    "amount": 12
-                                },
-                                "weight": 1
-                            },
-                            {
-                                "element": {
-                                    "type": "origins:heal",
-                                    "amount": 14
-                                },
-                                "weight": 1
-                            },
-                            {
-                                "element": {
-                                    "type": "origins:heal",
-                                    "amount": 16
-                                },
-                                "weight": 1
-                            }
-                        ]
-                    }
-                },
-                {
-                    "type": "origins:target_action",
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "particle heart ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
-                    }
-                },
-                {
-                    "type": "origins:actor_action",
-                    "action": {
-                        "type": "origins:change_resource",
-                        "resource": "*:*_resource",
-                        "change": 0,
-                        "operation": "set"
-                    }
-                }
-            ]
         },
         "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:resource",
-                    "resource": "*:*_resource",
-                    "comparison": "==",
-                    "compare_to": 600
-                },
-                {
-                    "type": "origins:sneaking"
-                },
-                {
-                    "type": "origins:power_active",
-                    "power": "*:*_toggle"
-                }
-            ]
+            "type": "origins:power",
+            "power": "*:paladin/protection_timer",
+            "inverted": true
+        }
+    },
+    "grant": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active"
+        },
+        "entity_action": {
+            "type": "origins:area_of_effect",
+            "radius": 10,
+            "bientity_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:choice",
+                            "actions": [
+                                {
+                                    "element": {
+                                        "type": "origins:heal",
+                                        "amount": 8
+                                    },
+                                    "weight": 1
+                                },
+                                {
+                                    "element": {
+                                        "type": "origins:heal",
+                                        "amount": 10
+                                    },
+                                    "weight": 1
+                                },
+                                {
+                                    "element": {
+                                        "type": "origins:heal",
+                                        "amount": 12
+                                    },
+                                    "weight": 1
+                                },
+                                {
+                                    "element": {
+                                        "type": "origins:heal",
+                                        "amount": 14
+                                    },
+                                    "weight": 1
+                                },
+                                {
+                                    "element": {
+                                        "type": "origins:heal",
+                                        "amount": 16
+                                    },
+                                    "weight": 1
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "particle heart ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                        }
+                    },
+                    {
+                        "type": "origins:actor_action",
+                        "action": {
+                            "type": "origins:change_resource",
+                            "resource": "*:*_resource",
+                            "change": 0,
+                            "operation": "set"
+                        }
+                    }
+                ]
+            },
+            "include_target": true
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 600
         }
     }
 }
