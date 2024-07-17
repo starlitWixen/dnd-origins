@@ -1,0 +1,10 @@
+{
+	"name": "3 Blocks",
+	"description": "You are 3 blocks tall.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0,
+	"unchoosable": true
+}

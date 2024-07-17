@@ -1,0 +1,10 @@
+{
+	"name": "Half Block",
+	"description": "You are half a block tall.",
+	"icon": {
+		"item": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 0,
+	"unchoosable": true
+}
