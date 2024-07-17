@@ -27,6 +27,11 @@
                 },
                 {
                     "type": "origins:origin",
+                    "origin": "size:dummy_3.0",
+                    "layer": "size:size"
+                },
+                {
+                    "type": "origins:origin",
                     "origin": "size:2.0",
                     "layer": "size:size"
                 },
@@ -67,6 +72,11 @@
                 },
                 {
                     "type": "origins:origin",
+                    "origin": "size:dummy_3.0",
+                    "layer": "size:size"
+                },
+                {
+                    "type": "origins:origin",
                     "origin": "size:2.0",
                     "layer": "size:size"
                 },
@@ -78,6 +88,11 @@
                 {
                     "type": "origins:origin",
                     "origin": "size:1.0",
+                    "layer": "size:size"
+                },
+                {
+                    "type": "origins:origin",
+                    "origin": "size:dummy_1.0",
                     "layer": "size:size"
                 },
                 {
