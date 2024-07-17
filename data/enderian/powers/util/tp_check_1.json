@@ -1,0 +1,478 @@
+{
+    "type": "origins:action_on_callback",
+    "execute_chosen_when_orb": true,
+    "entity_action_added": {
+        "type": "origins:delay",
+        "action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:command",
+                                "command": "execute as @p[tag=current] if entity @s[nbt={cardinal_components:{\"apoli:powers\":{Powers:[{\"Type\":\"enderian:pumpkin_hate\"}]}}}]",
+                                "comparison": "==",
+                                "compare_to": 1
+                            },
+                            {
+                                "type": "origins:command",
+                                "command": "execute as @p[tag=current] if entity @s[nbt={ForgeCaps:{\"apoli:powers\":{Powers:[{\"Type\":\"enderian:pumpkin_hate\"}]}}}]",
+                                "comparison": "==",
+                                "compare_to": 1
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:command",
+                                    "command": "resource get @p[tag=current] enderian:pumpkin_hate_temp_time",
+                                    "comparison": "==",
+                                    "compare_to": 0
+                                },
+                                "if_action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:predicate",
+                                        "predicate": "enderian:fabric"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "resource set @p[tag=current] enderian:pumpkin_hate_temp_time 0"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "resource set @p[tag=current] enderian:pumpkin_hate_temp_time 25"
+                                    }
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "execute as @e[tag=tp] if score @s playerid = @e[limit=1,sort=nearest,type=armor_stand,tag=tp] playerid run kill @s"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0.1,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": -0.1,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0.2,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": -0.2,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0.3,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": -0.3,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0.3,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": -0.4,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0.4,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0.5,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": -0.5,
+                                        "offset_z": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:in_block",
+                                "block_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:offset",
+                                            "condition": {
+                                                "type": "origins:movement_blocking"
+                                            },
+                                            "y": -1
+                                        },
+                                        {
+                                            "type": "origins:block",
+                                            "block": "minecraft:lily_pad"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "origins:in_block_anywhere",
+                                "block_condition": {
+                                    "type": "origins:fluid",
+                                    "fluid_condition": {
+                                        "inverted": true,
+                                        "type": "origins:empty"
+                                    }
+                                },
+                                "comparison": "==",
+                                "compare_to": 0
+                            },
+                            {
+                                "type": "origins:command",
+                                "command": "execute if entity @a[distance=..0.5,tag=current]",
+                                "comparison": "==",
+                                "compare_to": 0
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "tag @s add current"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "execute if block ~ ~-1 ~ #slabs if score @p[tag=current] playerid = @s playerid align y run tp @p[tag=current] ~ ~-0.5 ~ ~ ~"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "execute unless block ~ ~-1 ~ #slabs if block ~ ~ ~ lily_pad if score @p[tag=current] playerid = @s playerid align y run tp @p[tag=current] ~ ~0.1 ~ ~ ~"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "execute unless block ~ ~-1 ~ #slabs unless block ~ ~ ~ lily_pad if score @p[tag=current] playerid = @s playerid align y run tp @p[tag=current] ~ ~ ~ ~ ~"
+                            },
+                            {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:predicate",
+                                    "predicate": "enderian:fabric"
+                                },
+                                "if_action": {
+                                    "type": "origins:execute_command",
+                                    "command": "execute if score @p[tag=current] playerid = @s playerid run resource set @p[tag=current] enderian:teleportation_cooldown 0"
+                                },
+                                "else_action": {
+                                    "type": "origins:execute_command",
+                                    "command": "execute if score @p[tag=current] playerid = @s playerid run resource set @p[tag=current] enderian:teleportation_cooldown 60"
+                                }
+                            },
+                            {
+                                "type": "origins:block_action_at",
+                                "block_action": {
+                                    "type": "origins:delay",
+                                    "action": {
+                                        "type": "origins:execute_command",
+                                        "command": "playsound minecraft:entity.enderman.teleport player @a[distance=..25] ~ ~ ~"
+                                    },
+                                    "ticks": 3
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "summon origins:enderian_pearl ~ ~0.25 ~ {Silent:1b,Motion:[0.0,-0.5,0.0],Item:{id:\"minecraft:air\",Count:1b}}"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "execute as @e[tag=tp] if score @s playerid = @p[tag=current] playerid run kill @s"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "power grant @p[tag=current] enderian:util/tp_land enderian:util"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:command",
+                                "command": "tp @s ~ ~-1 ~",
+                                "comparison": ">=",
+                                "compare_to": 0
+                            },
+                            {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0.1,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": -0.1,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0.2,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": -0.2,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0.3,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": -0.3,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0.3,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": -0.4,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0.4,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": 0.5,
+                                        "offset_z": 0
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0,
+                                        "offset_y": -0.5,
+                                        "offset_z": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:in_block",
+                                "block_condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:offset",
+                                            "condition": {
+                                                "type": "origins:movement_blocking"
+                                            },
+                                            "y": -1
+                                        },
+                                        {
+                                            "type": "origins:block",
+                                            "block": "minecraft:lily_pad"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "origins:in_block_anywhere",
+                                "block_condition": {
+                                    "type": "origins:fluid",
+                                    "fluid_condition": {
+                                        "inverted": true,
+                                        "type": "origins:empty"
+                                    }
+                                },
+                                "comparison": "==",
+                                "compare_to": 0
+                            },
+                            {
+                                "type": "origins:command",
+                                "command": "execute if entity @a[distance=..0.5,tag=current]",
+                                "comparison": "==",
+                                "compare_to": 0
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "tag @s add current"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "execute if block ~ ~-1 ~ #slabs if score @p[tag=current] playerid = @s playerid align y run tp @p[tag=current] ~ ~-0.5 ~ ~ ~"
+                            },
+							{
+                                "type": "origins:execute_command",
+                                "command": "execute unless block ~ ~-1 ~ #slabs if block ~ ~ ~ lily_pad if score @p[tag=current] playerid = @s playerid align y run tp @p[tag=current] ~ ~0.1 ~ ~ ~"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "execute unless block ~ ~-1 ~ #slabs unless block ~ ~ ~ lily_pad if score @p[tag=current] playerid = @s playerid align y run tp @p[tag=current] ~ ~ ~ ~ ~"
+                            },
+                            {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:predicate",
+                                    "predicate": "enderian:fabric"
+                                },
+                                "if_action": {
+                                    "type": "origins:execute_command",
+                                    "command": "execute if score @p[tag=current] playerid = @s playerid run resource set @p[tag=current] enderian:teleportation_cooldown 0"
+                                },
+                                "else_action": {
+                                    "type": "origins:execute_command",
+                                    "command": "execute if score @p[tag=current] playerid = @s playerid run resource set @p[tag=current] enderian:teleportation_cooldown 60"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "summon origins:enderian_pearl ~ ~0.25 ~ {Silent:1b,Motion:[0.0,-0.5,0.0],Item:{id:\"minecraft:air\",Count:1b}}"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "power grant @p[tag=current] enderian:util/tp_land enderian:util"
+                            },
+                            {
+                                "type": "origins:block_action_at",
+                                "block_action": {
+                                    "type": "origins:delay",
+                                    "action": {
+                                        "type": "origins:execute_command",
+                                        "command": "playsound minecraft:entity.enderman.teleport player @a[distance=..25] ~ ~ ~"
+                                    },
+                                    "ticks": 3
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "execute as @e[tag=tp] if score @s playerid = @e[tag=current,limit=1,sort=nearest,type=armor_stand,tag=tp] playerid run kill @s"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:constant",
+                        "value": true
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "tag @s add current"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "execute as @e[tag=tp,tag=!current] if score @s playerid = @e[tag=current,limit=1,sort=nearest,type=armor_stand,tag=tp] playerid run power grant @s enderian:util/tp_check_2"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "kill @s"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "ticks": 0
+    }
+}
