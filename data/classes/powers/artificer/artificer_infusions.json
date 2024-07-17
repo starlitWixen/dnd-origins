@@ -793,7 +793,7 @@
                 {
                     "type": "origins:origin",
                     "origin": "classes:artificer_radiant_weapon",
-                    "layer": "classes:tinkerer"
+                    "layer": "classes:toolsmith"
                 },
                 {
                     "type": "origins:equipped_item",
@@ -826,6 +826,12 @@
                                         "type": "origins:ingredient",
                                         "ingredient": {
                                             "item": "minecraft:crossbow"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:trident"
                                         }
                                     }
                                 ]
