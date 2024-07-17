@@ -1,6 +1,0 @@
-{
-    "name": "Illager",
-    "description": "Illagers recognize you as one of their own and will not attack you.",
-    "type": "origins:entity_group",
-    "group": "illager"
-}
