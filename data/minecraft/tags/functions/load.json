@@ -1,5 +1,6 @@
 {
     "values": [
-        "enderian:load"
+        "enderian:load",
+        "enderian-classes:load"
     ]
 }
