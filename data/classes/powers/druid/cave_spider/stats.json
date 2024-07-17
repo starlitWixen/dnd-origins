@@ -1,0 +1,18 @@
+{
+    "name": "Stats",
+    "description": "You are 1 block tall, and you have 6 hearts.",
+    "type": "origins:action_on_callback",
+    "entity_action_added": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "origin set @s size:size size:dummy_1.0"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "walkers switchShape @s minecraft:cave_spider"
+            }
+        ]
+    }
+}

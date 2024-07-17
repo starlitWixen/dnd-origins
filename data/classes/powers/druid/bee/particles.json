@@ -1,0 +1,23 @@
+{
+    "name": "Nectar Particles",
+    "hidden": true,
+    "type": "origins:particle",
+    "particle": "minecraft:falling_nectar",
+    "frequency": 4,
+    "visible_in_first_person": false,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "*:druid/bee/honey_resource",
+                "comparison": ">",
+                "compare_to": 0
+            },
+            {
+                "type": "origins:on_block",
+                "inverted": true
+            }
+        ]
+    }
+}

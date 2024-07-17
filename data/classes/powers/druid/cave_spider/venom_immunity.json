@@ -1,0 +1,9 @@
+{
+    "name": "Venom Immunity",
+    "description": "You do not take damage from venoms and poisons.",
+    "hidden": false,
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:poison"
+    ]
+}

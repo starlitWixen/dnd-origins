@@ -1,0 +1,30 @@
+{
+    "name": "Flop",
+    "hidden": true,
+    "type": "origins:active_self",
+    "key": {
+        "key": "key.jump"
+    },
+    "entity_action": {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.puffer_fish.flop"
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water",
+                "inverted": true
+            },
+            {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:lava",
+                "inverted": true
+            },
+            {
+                "type": "origins:on_block"
+            }
+        ]
+    }
+}

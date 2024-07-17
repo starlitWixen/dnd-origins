@@ -1,0 +1,15 @@
+{
+    "name": "Launch",
+    "description": "You can launch enemies into the air.",
+    "type": "origins:target_action_on_hit",
+    "cooldown": 300,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 16
+    },
+    "entity_action": {
+        "type": "origins:add_velocity",
+        "y": 0.7
+    }
+}

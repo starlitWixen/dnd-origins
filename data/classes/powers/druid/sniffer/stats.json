@@ -1,0 +1,29 @@
+{
+    "name": "Stats",
+    "description": "You are 2 blocks tall, and you have 7 hearts.",
+    "type": "origins:multiple",
+    "change_size": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:2.0"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "walkers switchShape @s minecraft:sniffer"
+                }
+            ]
+        }
+    },
+    "speed": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_base",
+            "value": -0.6
+        }
+    }
+}

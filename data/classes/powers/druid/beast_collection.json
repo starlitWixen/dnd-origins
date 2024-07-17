@@ -1,0 +1,2365 @@
+{
+    "name": "Beast Collection",
+    "hidden": true,
+    "type": "origins:multiple",
+    "axolotl": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "axolotl_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_axolotl",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:axolotl"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_axolotl",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "bat": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "bat_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_bat",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:bat"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_bat",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "bee": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "bee_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_bee",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:bee"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_bee",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "camel": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "camel_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_camel",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:camel"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_camel",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "cat": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "cat_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_cat",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:cat"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_cat",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "cave_spider": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "cave_spider_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_cave_spider",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:cave_spider"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_cave_spider",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "chicken": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "chicken_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_chicken",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:chicken"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_chicken",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "cod": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "cod_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_cod",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:cod"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_cod",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "cow": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "cow_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_cow",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:cow"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_cow",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "dolphin": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "dolphin_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_dolphin",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:dolphin"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_dolphin",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "goat": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "goat_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_goat",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:goat"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_goat",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "donkey": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "donkey_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_donkey",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:donkey"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_donkey",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "fox": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "fox_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_fox",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:fox"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_fox",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "frog": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "frog_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_frog",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:frog"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_frog",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "glow_squid": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "glow_squid_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_glow_squid",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:glow_squid"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_glow_squid",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "horse": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "horse_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_horse",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:horse"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_horse",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "llama": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "llama_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_llama",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:llama"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_llama",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "mooshroom": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "mooshroom_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_mooshroom",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:mooshroom"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_mooshroom",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "mule": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "mule_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_mule",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:mule"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_mule",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "ocelot": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "ocelot_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_ocelot",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:ocelot"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_ocelot",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "panda": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "panda_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_panda",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:panda"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_panda",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "hoglin": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "hoglin_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_hoglin",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:hoglin"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_hoglin",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "zoglin": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "zoglin_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_zoglin",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:zoglin"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_zoglin",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "parrot": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "parrot_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_parrot",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:parrot"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_parrot",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "pig": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "pig_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_pig",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:pig"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_pig",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "polar_bear": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "polar_bear_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_polar_bear",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:polar_bear"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_polar_bear",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "pufferfish": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "pufferfish_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_pufferfish",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:pufferfish"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_pufferfish",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "rabbit": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "rabbit_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_rabbit",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:rabbit"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_rabbit",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "ravager": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "ravager_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_ravager",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:ravager"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_ravager",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "salmon": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "salmon_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_salmon",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:salmon"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_salmon",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "sheep": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "sheep_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_sheep",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:sheep"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_sheep",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "skeleton_horse": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "skeleton_horse_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_skeleton_horse",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:skeleton_horse"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_skeleton_horse",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "sniffer": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "sniffer_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_sniffer",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:sniffer"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_sniffer",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "spider": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "spider_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_spider",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:spider"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_spider",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "squid": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "squid_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_squid",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:squid"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_squid",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "strider": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "strider_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_strider",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:strider"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_strider",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "tadpole": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "tadpole_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_tadpole",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:tadpole"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_tadpole",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "tropical_fish": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "tropical_fish_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_tropical_fish",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:tropical_fish"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_tropical_fish",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "turtle": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "turtle_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_turtle",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:turtle"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_turtle",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "wolf": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "wolf_activate": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle glow ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.amethyst_block.chime"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_wolf",
+                        "change": 1
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:wolf"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_wolf",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    }
+}

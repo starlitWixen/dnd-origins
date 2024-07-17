@@ -1,0 +1,9 @@
+{
+    "name": "Thick Fur",
+    "description": "Your thick fur prevents you from being frozen.",
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "freeze"
+    }
+}

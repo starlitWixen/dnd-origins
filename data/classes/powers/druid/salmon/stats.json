@@ -1,0 +1,18 @@
+{
+    "name": "Stats",
+    "description": "You are half a block tall, and you have 1.5 hearts.",
+    "type": "origins:action_on_callback",
+    "entity_action_added": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "origin set @s size:size size:dummy_0.5"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "walkers switchShape @s minecraft:salmon"
+            }
+        ]
+    }
+}

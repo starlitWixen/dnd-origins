@@ -1,0 +1,6 @@
+{
+    "name": "Undead Attributes",
+    "description": "You are undead. You do not need to breathe, and you are affected by the Smite enchantment.",
+    "type": "origins:entity_group",
+    "group": "undead"
+}

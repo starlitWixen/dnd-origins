@@ -1,0 +1,13 @@
+{
+    "name": "Greebles",
+    "description": "You can see invisible entities.",
+    "type": "origins:entity_glow",
+    "entity_condition": {
+        "type": "origins:invisible"
+    },
+    "bientity_condition": {
+        "type": "origins:distance",
+        "comparison": "<=",
+        "compare_to": 30
+    }
+}

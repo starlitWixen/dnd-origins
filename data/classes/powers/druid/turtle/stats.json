@@ -1,0 +1,34 @@
+{
+    "name": "Stats",
+    "description": "You are 1 block tall, and you have 15 hearts.",
+    "type": "origins:multiple",
+    "change_size": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s size:size size:dummy_1.0"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "walkers switchShape @s minecraft:turtle"
+                }
+            ]
+        }
+    },
+    "slow_on_land": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_base",
+            "value": -0.6
+        },
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water",
+            "inverted": true
+        }
+    }
+}

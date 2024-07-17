@@ -1,0 +1,179 @@
+{
+    "name": "Honeymaker",
+    "description": "You can pollinate flowers and make honey products.",
+    "type": "origins:multiple",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Right click a flower to pollinate it. Once you've reached max pollen level, right click to create a honey product."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Harvest your honey while holding a bottle to create a honey bottle, or otherwise to create honeycomb."
+        }
+    ],
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 5,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 14,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        }
+    },
+    "timer": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1200,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 14,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_timer",
+                "comparison": "<",
+                "compare_to": 1200
+            }
+        }
+    },
+    "increase": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_timer",
+            "change": 1
+        }
+    },
+    "pollinate": {
+        "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.bee.pollinate"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "change": 1
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_timer",
+                    "operation": "set",
+                    "change": 0
+                }
+            ]
+        },
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "particle falling_nectar ~ ~0.5 ~ 0.3 0.3 0.3 0.009 4 normal @a"
+        },
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:flowers"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_resource",
+                    "comparison": "<",
+                    "compare_to": 5
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_timer",
+                    "comparison": "==",
+                    "compare_to": 1200
+                }
+            ]
+        }
+    },
+    "harvest": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.saveToolbarActivator"
+        },
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:glass_bottle"
+                    }
+                }
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:item.bottle.fill"
+                    },
+                    {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    },
+                    {
+                        "type": "origins:give",
+                        "stack": {
+                          "item": "minecraft:honey_bottle",
+                          "amount": 1
+                        }
+                    },
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "operation": "set",
+                        "change": 0
+                    }
+                ]
+            },
+            "else_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:block.beehive.shear"
+                    },
+                    {
+                        "type": "origins:give",
+                        "stack": {
+                          "item": "minecraft:honeycomb",
+                          "amount": 1
+                        }
+                    },
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "operation": "set",
+                        "change": 0
+                    }
+                ]
+            }
+        }
+    }
+}

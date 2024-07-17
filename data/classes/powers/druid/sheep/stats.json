@@ -1,0 +1,18 @@
+{
+    "name": "Stats",
+    "description": "You are 2 blocks tall, and you have 4 hearts.",
+    "type": "origins:action_on_callback",
+    "entity_action_added": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "origin set @s size:size size:2.0"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "walkers switchShape @s minecraft:sheep {Color:0}"
+            }
+        ]
+    }
+}

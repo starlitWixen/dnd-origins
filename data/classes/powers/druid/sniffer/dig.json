@@ -1,0 +1,91 @@
+{
+    "name": "Dig",
+    "description": "You are periodically able to dig and find ancient seeds.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 2400,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 22,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "<",
+                "compare_to": 2400
+            }
+        }
+    },
+    "recharge": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "operation": "add",
+            "change": 1
+        }
+    },
+    "sniff": {
+        "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.sniffer.drop_seed"
+                },
+                {
+                    "type": "origins:choice", 
+                    "actions": [
+                        {
+                            "element": {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:torchflower_seeds",
+                                    "amount": 1
+                                }
+                            },
+                            "weight": 10
+                        },
+                        {
+                            "element": {
+                                "type": "origins:give",
+                                "stack": {
+                                    "item": "minecraft:pitcher_pod",
+                                    "amount": 1
+                                }
+                            },
+                            "weight": 10
+                        }
+                    ]
+                }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "classes:sniffable"
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ]
+    },
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Right click an applicable block with an empty hand to activate."
+        }
+    ]
+}
